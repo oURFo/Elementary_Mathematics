@@ -2,7 +2,60 @@
    花圃數學園 - App Controller (Main Entry)
    ============================================ */
 
+/* ======================================================
+   Fullscreen
+   ====================================================== */
+function initFullscreen() {
+  const btn = document.getElementById('fullscreen-btn');
+  if (!btn) return;
+
+  const supported = document.fullscreenEnabled ||
+                    document.webkitFullscreenEnabled ||
+                    false;
+  if (!supported) { btn.style.display = 'none'; return; }
+
+  btn.addEventListener('click', toggleFullscreen);
+  document.addEventListener('fullscreenchange',       syncFullscreenBtn);
+  document.addEventListener('webkitfullscreenchange', syncFullscreenBtn);
+}
+
+function toggleFullscreen() {
+  const el = document.documentElement;
+  const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+  if (!isFs) {
+    (el.requestFullscreen || el.webkitRequestFullscreen).call(el, { navigationUI: 'hide' })
+      .catch(() => {});
+  } else {
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  }
+}
+
+function syncFullscreenBtn() {
+  const btn = document.getElementById('fullscreen-btn');
+  if (!btn) return;
+  const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+  btn.textContent = isFs ? '⊡' : '⛶';
+  btn.title       = isFs ? '離開全螢幕' : '全螢幕';
+}
+
+/* ======================================================
+   Post-process static <ruby> elements in HTML
+   (those written directly as <ruby>字<rt>注音</rt></ruby>
+   don't go through toRuby, so we split them here)
+   ====================================================== */
+function processStaticRuby() {
+  document.querySelectorAll('ruby > rt').forEach(rt => {
+    if (rt.children.length === 0 && rt.textContent.trim()) {
+      const { body, tone } = splitZhuyin(rt.textContent.trim());
+      rt.innerHTML = `<span class="zy-b">${body}</span>${tone ? `<span class="zy-t">${tone}</span>` : ''}`;
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
+
+  /* ── 0. Fix static ruby annotations ───── */
+  processStaticRuby();
 
   /* ── 1. Load question bank ─────────────── */
   await QuestionManager.init();
@@ -130,6 +183,9 @@ function bindEvents() {
   document.getElementById('submit-btn').addEventListener('click', () => {
     QuestionManager.handleFillSubmit();
   });
+
+  /* Fullscreen button */
+  initFullscreen();
 
   /* Keyboard support */
   document.addEventListener('keydown', e => {

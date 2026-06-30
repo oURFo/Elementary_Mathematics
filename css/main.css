@@ -211,29 +211,65 @@ html, body {
 }
 
 /* ============================================
-   Ruby / 注音 Annotations  (right-side vertical)
+   Ruby / 注音 Annotations
    ============================================
-   注音標注顯示在文字右側，由上往下直排
+   ‧ ruby        → 字 (左) + rt (右)，橫向排列
+   ‧ rt          → zy-b (音符，直排) + zy-t (調號，橫排右上角)
    ============================================ */
 ruby {
   display: inline-flex;
-  flex-direction: row;       /* 字 + 注音 橫向排列 */
-  align-items: flex-end;     /* 底部對齊 */
+  flex-direction: row;      /* 字在左，注音在右 */
+  align-items: flex-end;    /* 底部對齊 */
   vertical-align: bottom;
-  line-height: 2;            /* 為直排注音留空間 */
+  line-height: 2.2;
 }
 
 rt {
+  display: inline-flex;
+  flex-direction: row;      /* 音符直排區 + 調號橫排區 並列 */
+  align-items: flex-start;  /* 調號對齊頂端 */
   font-family: 'MingLiU', 'PMingLiU', 'BiauKai', '標楷體', var(--font-main);
-  font-size: .46em;
-  writing-mode: vertical-rl; /* 直排（由上往下）*/
-  text-orientation: upright;  /* 每個注音字元保持直立 */
-  line-height: 1.05;
-  letter-spacing: 0;
-  margin-left: .08em;
-  color: #888;
+  font-size: .44em;
+  margin-left: .1em;
   white-space: nowrap;
+  line-height: 1;
 }
+
+/* 注音音符本體（聲母 + 韻母）— 直排 */
+.zy-b {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: #777;
+}
+
+/* 調號（ˊˇˋ˙）— 橫排，顯示在音符右上角 */
+.zy-t {
+  writing-mode: horizontal-tb;
+  color: #777;
+  font-size: .95em;
+  line-height: 1;
+  margin-top: .05em;
+}
+
+/* ============================================
+   Fullscreen Button
+   ============================================ */
+.fullscreen-btn {
+  background: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 1.15rem;
+  line-height: 1;
+  padding: 4px 7px;
+  cursor: pointer;
+  color: var(--green-dark);
+  transition: background .15s, border-color .15s;
+  margin-right: 4px;
+}
+.fullscreen-btn:hover  { background: rgba(0,0,0,.07); border-color: rgba(0,0,0,.12); }
+.fullscreen-btn:active { background: rgba(0,0,0,.14); }
 
 /* ============================================
    App Header

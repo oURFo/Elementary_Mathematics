@@ -131,3 +131,37 @@
   width: 100% !important;
   height: 100% !important;
 }
+
+/* ============================================================
+   Safe Area — Android / iOS navigation bar / home indicator
+   viewport-fit=cover is set in the meta tag; these rules
+   pad the bottom of interactive zones so the nav bar can't
+   overlap any buttons.
+   ============================================================ */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+
+  /* Entire app sits above the nav bar */
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Answer / submit area gets the biggest breathing room */
+  .answer-area {
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+  }
+
+  /* Question panel scrollable area */
+  .question-panel {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Garden panel */
+  .garden-panel {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Modals — make sure the modal box floats above the bar */
+  .modal-overlay {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

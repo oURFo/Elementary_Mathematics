@@ -69,7 +69,7 @@ const ZHUYIN_MAP = {
   /* ── 數學動詞/描述 ───────────────────── */
   '等':'ㄉㄥˇ','於':'ㄩˊ','共':'ㄍㄨㄥˋ','總':'ㄗㄨㄥˇ',
   '剩':'ㄕㄥˋ','還':'ㄏㄞˊ','再':'ㄗㄞˋ','後':'ㄏㄡˋ',
-  '可':'ㄎㄜˇ','能':'ㄋㄥˊ','得':'ˊㄉㄜ',
+  '可':'ㄎㄜˇ','能':'ㄋㄥˊ','得':'ㄉㄜˊ',
   '算':'ㄙㄨㄢˋ','計':'ㄐㄧˋ','填':'ㄊㄧㄢˊ','空':'ㄎㄨㄥ',
   '排':'ㄆㄞˊ','列':'ㄌㄧˋ','選':'ㄒㄩㄢˇ','擇':'ㄗㄜˊ',
   '湊':'ㄘㄡˋ','換':'ㄏㄨㄢˋ','付':'ㄈㄨˋ','找':'ㄓㄠˇ',
@@ -159,7 +159,7 @@ const ZHUYIN_MAP = {
   '知':'ㄓ','道':'ㄉㄠˋ','看':'ㄎㄢˋ','說':'ㄕㄨㄛ',
   '問':'ㄨㄣˋ','答':'ㄉㄚˊ','題':'ㄊㄧˊ',
   '情':'ㄑㄧㄥˊ','況':'ㄎㄨㄤˋ','狀':'ㄓㄨㄤˋ','況':'ㄎㄨㄤˋ',
-  '關':'ㄍㄨㄢ','係':'ˋㄒㄧ','係':'ˋㄒㄧ',
+  '關':'ㄍㄨㄢ','係':'ㄒㄧˋ',
   '方':'ㄈㄤ','法':'ㄈㄚˇ','做':'ㄗㄨㄛˋ','到':'ㄉㄠˋ',
   '花':'ㄏㄨㄚ','園':'ㄩㄢˊ','裡':'ㄌㄧˇ','紅':'ㄏㄨㄥˊ','黃':'ㄏㄨㄤˊ',
   '朵':'ㄉㄨㄛˇ','共':'ㄍㄨㄥˋ','幾':'ㄐㄧˇ','朵':'ㄉㄨㄛˇ',
@@ -183,9 +183,32 @@ const ZHUYIN_MAP = {
 };
 
 /* ──────────────────────────────────────────
+   splitZhuyin(zhuyin)
+   將注音拆成「音符本體」和「聲調符號」
+   調號 ˊˇˋ 在尾端；輕聲 ˙ 在開頭
+   ────────────────────────────────────────── */
+const TONE_SET = new Set(['ˊ','ˇ','ˋ','˙']);
+
+function splitZhuyin(zhuyin) {
+  if (!zhuyin) return { body: zhuyin, tone: '' };
+  // 輕聲 ˙ 寫在最前面（如 ˙ㄉㄜ）
+  if (zhuyin[0] === '˙') {
+    return { body: zhuyin.slice(1), tone: '˙' };
+  }
+  // 其餘調號寫在最後面
+  const last = zhuyin[zhuyin.length - 1];
+  if (TONE_SET.has(last)) {
+    return { body: zhuyin.slice(0, -1), tone: last };
+  }
+  return { body: zhuyin, tone: '' };
+}
+
+/* ──────────────────────────────────────────
    toRuby(text)
    將含中文字的文字串轉為帶 <ruby> 注音標注的 HTML
-   非中文字（數字、符號、emoji）維持原樣
+   ‧ 音符本體直排（zy-b）
+   ‧ 調號橫排顯示在右上角（zy-t）
+   ‧ 非中文字（數字、符號、emoji）維持原樣
    ────────────────────────────────────────── */
 function toRuby(text) {
   if (!text || typeof text !== 'string') return text || '';
@@ -193,9 +216,10 @@ function toRuby(text) {
   for (const ch of text) {
     const zhuyin = ZHUYIN_MAP[ch];
     if (zhuyin) {
-      html += `<ruby>${ch}<rt>${zhuyin}</rt></ruby>`;
+      const { body, tone } = splitZhuyin(zhuyin);
+      const toneHtml = tone ? `<span class="zy-t">${tone}</span>` : '';
+      html += `<ruby>${ch}<rt><span class="zy-b">${body}</span>${toneHtml}</rt></ruby>`;
     } else {
-      // Escape HTML special chars for non-mapped characters
       html += ch.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     }
   }
