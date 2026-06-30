@@ -11,6 +11,7 @@ const QuestionManager = (() => {
   let usedIndices = [];
   let answerValue = '';
   let isAnswered = false;
+  let displayedOpts = [];   // shuffled option order for current MC question
 
   /* ── Load question bank ────────────────── */
   async function init() {
@@ -83,7 +84,7 @@ const QuestionManager = (() => {
     const qNum = document.getElementById('question-number');
     const p = Storage.getFlowerProgress(currentFlower.id);
     const num = (p.correct || 0) + 1;
-    qNum.innerHTML = `<ruby>第<rt>ㄉˋ</rt></ruby> ${num} <ruby>題<rt>ㄊㄧˊ</rt></ruby>`;
+    qNum.innerHTML = `<ruby>第<rt>ㄉㄧˋ</rt></ruby> ${num} <ruby>題<rt>ㄊㄧˊ</rt></ruby>`;
 
     // Context (情境題): show story paragraph before question
     const ctxEl = document.getElementById('question-context');
@@ -110,10 +111,13 @@ const QuestionManager = (() => {
       mcOpts.classList.remove('hidden');
       answerArea.classList.add('hidden');
 
+      // Shuffle options so the correct answer isn't always in the same position
+      displayedOpts = [...currentQuestion.opts].sort(() => Math.random() - 0.5);
+
       const btns = mcOpts.querySelectorAll('.mc-btn');
       btns.forEach((btn, i) => {
-        if (i < currentQuestion.opts.length) {
-          btn.innerHTML = toRuby(String(currentQuestion.opts[i]));
+        if (i < displayedOpts.length) {
+          btn.innerHTML = toRuby(String(displayedOpts[i]));
           btn.className = 'mc-btn';
           btn.disabled = false;
           btn.style.display = '';
@@ -139,9 +143,10 @@ const QuestionManager = (() => {
     const btns = document.querySelectorAll('.mc-btn');
     btns.forEach(b => b.disabled = true);
 
-    // answer stores the correct VALUE (string), not an index
-    const isCorrect = String(currentQuestion.opts[idx]) === String(currentQuestion.answer);
-    const correctIdx = currentQuestion.opts.findIndex(o => String(o) === String(currentQuestion.answer));
+    // Compare against the DISPLAYED (shuffled) options, not the original array
+    const selectedValue = String(displayedOpts[idx]);
+    const isCorrect = selectedValue === String(currentQuestion.answer);
+    const correctIdx = displayedOpts.findIndex(o => String(o) === String(currentQuestion.answer));
 
     if (isCorrect) {
       btns[idx].classList.add('correct');
@@ -268,6 +273,7 @@ const QuestionManager = (() => {
     btns.forEach(b => {
       b.className = 'mc-btn';
       b.disabled = false;
+      b.blur(); // clear focus/active state so tablet doesn't keep the pressed colour
     });
   }
 
