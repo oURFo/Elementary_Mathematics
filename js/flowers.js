@@ -1,0 +1,575 @@
+/* ============================================
+   花圃數學園 - Flower Definitions & Garden Logic
+   ============================================ */
+
+const STAGE_THRESHOLDS = [0, 10, 20, 30, 50];
+const STAGE_NAMES = ['種子', '發芽', '長葉', '花苞', '開花'];
+
+/* ------------------------------------------------------------------ */
+/*  SVG builder helpers                                                 */
+/* ------------------------------------------------------------------ */
+function soil(y = 54) {
+  return `<ellipse cx="28" cy="${y}" rx="22" ry="5" class="fl-soil"/>
+          <ellipse cx="28" cy="${y-1}" rx="18" ry="3" class="fl-soil-light" opacity=".5"/>`;
+}
+
+function seedShape() {
+  return `<ellipse cx="28" cy="48" rx="8" ry="6" class="fl-seed"/>
+          <ellipse cx="26" cy="46" rx="3" ry="2" class="fl-seed-inner" opacity=".5"/>`;
+}
+
+function stemLine(x1=28,y1=48,x2=28,y2=20, cls='fl-stem') {
+  return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" class="${cls}"/>`;
+}
+
+function leafPair(stemX,stemY,dir=1) {
+  const lx = stemX + dir*12;
+  return `<ellipse cx="${lx}" cy="${stemY}" rx="10" ry="5" class="fl-leaf" transform="rotate(${dir>0?-25:25},${lx},${stemY})"/>`;
+}
+
+/* ------------------------------------------------------------------ */
+/*  12 Flower Definitions                                               */
+/* ------------------------------------------------------------------ */
+const FLOWERS = [
+
+  /* 1. 向日葵 Sunflower ─ 數數 */
+  {
+    id: 'sunflower', name: '數數', chineseName: '向日葵', icon: '🌻',
+    difficulty: 1, color: '#ffc107',
+    svgs: [
+      /* stage 0 – seed */
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      /* stage 1 – sprout */
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,32)}
+        <ellipse cx="28" cy="28" rx="7" ry="5" class="fl-sprout"/>
+      </svg>`,
+      /* stage 2 – leaves */
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+      </svg>`,
+      /* stage 3 – bud */
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        ${leafPair(28,38,1)}${leafPair(28,28,-1)}
+        <circle cx="28" cy="12" r="8" fill="#5d4037"/>
+        <circle cx="28" cy="12" r="6" fill="#795548"/>
+      </svg>`,
+      /* stage 4 – bloom */
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        ${leafPair(28,40,1)}${leafPair(28,34,-1)}
+        <g transform="translate(28,18)">
+          ${[0,45,90,135,180,225,270,315].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*11)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*11)}" rx="5" ry="3" fill="#ffc107" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="7" fill="#5d4037"/>
+          <circle cx="0" cy="0" r="5" fill="#795548"/>
+          <circle cx="-1" cy="-1" r="2" fill="#4e342e" opacity=".6"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 2. 雛菊 Daisy ─ 比較 */
+  {
+    id: 'daisy', name: '比較', chineseName: '雛菊', icon: '🌼',
+    difficulty: 1, color: '#fff9c4',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}
+        <ellipse cx="28" cy="30" rx="6" ry="4" class="fl-sprout"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        ${leafPair(28,38,1)}
+        <ellipse cx="28" cy="12" rx="9" ry="7" fill="#e0e0e0"/>
+        <circle cx="28" cy="12" r="4" fill="#ffee58"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}
+        ${leafPair(28,40,1)}${leafPair(28,33,-1)}
+        <g transform="translate(28,16)">
+          ${[0,40,80,120,160,200,240,280,320].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*10)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*10)}" rx="4" ry="2.5" fill="#fff9c4" stroke="#ddd" stroke-width=".5" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="5" fill="#ffee58"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 3. 蒲公英 Dandelion ─ 分與合 */
+  {
+    id: 'dandelion', name: '分與合', chineseName: '蒲公英', icon: '🌬️',
+    difficulty: 2, color: '#eeeeee',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34,'fl-stem-thin')}
+        <ellipse cx="28" cy="31" rx="5" ry="3" fill="#aed581"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20,'fl-stem-thin')}
+        <ellipse cx="18" cy="35" rx="9" ry="4" fill="#aed581" transform="rotate(-30,18,35)"/>
+        <ellipse cx="38" cy="32" rx="9" ry="4" fill="#aed581" transform="rotate(30,38,32)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18,'fl-stem-thin')}
+        <ellipse cx="18" cy="36" rx="9" ry="4" fill="#aed581" transform="rotate(-30,18,36)"/>
+        <ellipse cx="38" cy="33" rx="9" ry="4" fill="#aed581" transform="rotate(30,38,33)"/>
+        <circle cx="28" cy="14" r="10" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+        <circle cx="28" cy="14" r="3" fill="#fdd835"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24,'fl-stem-thin')}
+        <ellipse cx="18" cy="38" rx="9" ry="4" fill="#aed581" transform="rotate(-30,18,38)"/>
+        <ellipse cx="38" cy="36" rx="9" ry="4" fill="#aed581" transform="rotate(30,38,36)"/>
+        <g transform="translate(28,16)">
+          ${[0,36,72,108,144,180,216,252,288,324].map(a=>`<line x1="0" y1="0" x2="${Math.round(Math.sin(a*Math.PI/180)*12)}" y2="${Math.round(-Math.cos(a*Math.PI/180)*12)}" stroke="#bdbdbd" stroke-width=".8"/>
+            <circle cx="${Math.round(Math.sin(a*Math.PI/180)*12)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*12)}" r="2" fill="white" stroke="#bdbdbd" stroke-width=".5"/>`).join('')}
+          <circle cx="0" cy="0" r="3" fill="#fdd835"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 4. 牽牛花 Morning Glory ─ 圖形 */
+  {
+    id: 'morning-glory', name: '圖形', chineseName: '牽牛花', icon: '🌺',
+    difficulty: 1, color: '#9575cd',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <path d="M28 48 Q24 38 22 30 Q26 26 30 30 Q32 38 28 48" fill="#a5d6a7" class="fl-stem"/>
+        <ellipse cx="24" cy="26" rx="6" ry="4" fill="#81c784"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <path d="M28 48 Q22 36 20 24" stroke="#52b788" stroke-width="2.5" fill="none"/>
+        <ellipse cx="14" cy="36" rx="10" ry="5" fill="#66bb6a" transform="rotate(-40,14,36)"/>
+        <ellipse cx="32" cy="28" rx="10" ry="5" fill="#66bb6a" transform="rotate(20,32,28)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <path d="M28 48 Q22 36 20 22" stroke="#52b788" stroke-width="2.5" fill="none"/>
+        <ellipse cx="14" cy="36" rx="10" ry="5" fill="#66bb6a" transform="rotate(-40,14,36)"/>
+        <ellipse cx="32" cy="28" rx="10" ry="5" fill="#66bb6a" transform="rotate(20,32,28)"/>
+        <ellipse cx="20" cy="16" rx="9" ry="7" fill="#9575cd" opacity=".8"/>
+        <circle cx="20" cy="16" r="4" fill="#ede7f6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <path d="M28 48 Q22 36 20 24" stroke="#52b788" stroke-width="2.5" fill="none"/>
+        <ellipse cx="14" cy="38" rx="10" ry="5" fill="#66bb6a" transform="rotate(-40,14,38)"/>
+        <ellipse cx="34" cy="30" rx="10" ry="5" fill="#66bb6a" transform="rotate(20,34,30)"/>
+        <g transform="translate(20,18)">
+          <path d="M0,-10 Q8,-6 9,4 Q4,10 0,10 Q-4,10 -9,4 Q-8,-6 0,-10Z" fill="#9575cd"/>
+          <path d="M0,-8 Q6,-4 7,3 Q3,8 0,8 Q-3,8 -7,3 Q-6,-4 0,-8Z" fill="#b39ddb"/>
+          <circle cx="0" cy="0" r="4" fill="#ede7f6"/>
+          <circle cx="0" cy="0" r="2" fill="#7e57c2"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 5. 櫻花 Cherry Blossom ─ 加法 */
+  {
+    id: 'cherry', name: '加法(10內)', chineseName: '櫻花', icon: '🌸',
+    difficulty: 2, color: '#f8bbd9',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="6" ry="4" fill="#c8e6c9"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}
+        ${leafPair(28,38,1)}${leafPair(28,31,-1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+        <circle cx="28" cy="14" r="8" fill="#f8bbd9"/>
+        <circle cx="28" cy="14" r="5" fill="#f48fb1"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,26)}
+        ${leafPair(28,40,1)}${leafPair(28,33,-1)}
+        <g transform="translate(28,18)">
+          ${[0,72,144,216,288].map(a=>`<path d="M0,-9 Q${Math.round(Math.sin((a+36)*Math.PI/180)*5)},${Math.round(-Math.cos((a+36)*Math.PI/180)*5)} ${Math.round(Math.sin(a*Math.PI/180)*9)},${Math.round(-Math.cos(a*Math.PI/180)*9)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*5)},${Math.round(-Math.cos((a-36)*Math.PI/180)*5)} 0,-9Z" fill="#f8bbd9" transform="rotate(${a})" opacity=".9"/>`).join('')}
+          <circle cx="0" cy="0" r="3" fill="#e91e63"/>
+          ${[0,72,144,216,288].map(a=>`<line x1="0" y1="0" x2="${Math.round(Math.sin(a*Math.PI/180)*5)}" y2="${Math.round(-Math.cos(a*Math.PI/180)*5)}" stroke="#f48fb1" stroke-width=".8"/>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 6. 玫瑰 Rose ─ 減法 */
+  {
+    id: 'rose', name: '減法(10內)', chineseName: '玫瑰', icon: '🌹',
+    difficulty: 2, color: '#ef5350',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#a5d6a7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="18" cy="35" rx="10" ry="5" fill="#388e3c" transform="rotate(-25,18,35)"/>
+        <path d="M22 28 Q20 22 24 18 Q28 16 30 20 Q28 26 22 28Z" fill="#388e3c"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="18" cy="36" rx="10" ry="5" fill="#388e3c" transform="rotate(-25,18,36)"/>
+        <path d="M22 28 Q20 22 24 18 Q28 16 30 20 Q28 26 22 28Z" fill="#388e3c"/>
+        <path d="M28 10 Q32 14 30 20 Q26 22 22 18 Q24 12 28 10Z" fill="#ef5350"/>
+        <path d="M28 10 Q24 14 26 20 Q30 22 34 18 Q32 12 28 10Z" fill="#c62828" opacity=".8"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,26)}
+        <ellipse cx="18" cy="38" rx="10" ry="5" fill="#388e3c" transform="rotate(-25,18,38)"/>
+        <path d="M22 32 Q20 24 26 20 Q30 18 32 22 Q30 30 22 32Z" fill="#388e3c"/>
+        <g transform="translate(28,18)">
+          <ellipse cx="0" cy="-5" rx="7" ry="5" fill="#ef5350"/>
+          <ellipse cx="5" cy="2" rx="6" ry="5" fill="#ef5350" transform="rotate(120)"/>
+          <ellipse cx="-5" cy="2" rx="6" ry="5" fill="#ef5350" transform="rotate(-120)"/>
+          <ellipse cx="0" cy="-3" rx="5" ry="4" fill="#c62828"/>
+          <ellipse cx="0" cy="-1" rx="3" ry="2.5" fill="#b71c1c"/>
+          <circle cx="0" cy="0" r="2" fill="#fce4ec"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 7. 薰衣草 Lavender ─ 時間 */
+  {
+    id: 'lavender', name: '時間', chineseName: '薰衣草', icon: '💜',
+    difficulty: 1, color: '#b39ddb',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33,'fl-lav-stem')}
+        <ellipse cx="28" cy="30" rx="4" ry="5" fill="#b39ddb" opacity=".5"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20,'fl-lav-stem')}
+        <line x1="28" y1="35" x2="18" y2="30" stroke="#7e57c2" stroke-width="1.5" fill="none"/>
+        <line x1="28" y1="35" x2="38" y2="30" stroke="#7e57c2" stroke-width="1.5" fill="none"/>
+        <ellipse cx="18" cy="28" rx="5" ry="3" fill="#aed581" transform="rotate(-30,18,28)"/>
+        <ellipse cx="38" cy="28" rx="5" ry="3" fill="#aed581" transform="rotate(30,38,28)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18,'fl-lav-stem')}
+        <line x1="28" y1="36" x2="18" y2="31" stroke="#7e57c2" stroke-width="1.5" fill="none"/>
+        <line x1="28" y1="36" x2="38" y2="31" stroke="#7e57c2" stroke-width="1.5" fill="none"/>
+        <ellipse cx="18" cy="29" rx="5" ry="3" fill="#aed581" transform="rotate(-30,18,29)"/>
+        <ellipse cx="38" cy="29" rx="5" ry="3" fill="#aed581" transform="rotate(30,38,29)"/>
+        <rect x="24" y="10" width="8" height="10" rx="4" fill="#b39ddb"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20,'fl-lav-stem')}
+        <line x1="28" y1="37" x2="17" y2="32" stroke="#7e57c2" stroke-width="1.5" fill="none"/>
+        <line x1="28" y1="37" x2="39" y2="32" stroke="#7e57c2" stroke-width="1.5" fill="none"/>
+        <ellipse cx="17" cy="30" rx="5" ry="3" fill="#aed581" transform="rotate(-30,17,30)"/>
+        <ellipse cx="39" cy="30" rx="5" ry="3" fill="#aed581" transform="rotate(30,39,30)"/>
+        <g transform="translate(28,20)">
+          ${[-3,0,3].map(x=>`<rect x="${x-2}" y="-10" width="4" height="12" rx="2" fill="#b39ddb" opacity="${x===0?1:.8}"/>
+          <rect x="${x-1.5}" y="-6" width="3" height="8" rx="1.5" fill="#9575cd" opacity=".7"/>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 8. 鬱金香 Tulip ─ 大數數 */
+  {
+    id: 'tulip', name: '大數數', chineseName: '鬱金香', icon: '🌷',
+    difficulty: 2, color: '#ff7043',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="30" rx="5" ry="4" fill="#a5d6a7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}
+        <ellipse cx="20" cy="36" rx="9" ry="4" fill="#66bb6a" transform="rotate(-20,20,36)"/>
+        <ellipse cx="36" cy="36" rx="9" ry="4" fill="#66bb6a" transform="rotate(20,36,36)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="20" cy="36" rx="9" ry="4" fill="#66bb6a" transform="rotate(-20,20,36)"/>
+        <ellipse cx="36" cy="36" rx="9" ry="4" fill="#66bb6a" transform="rotate(20,36,36)"/>
+        <path d="M20 20 Q20 8 28 8 Q36 8 36 20 Q32 24 28 24 Q24 24 20 20Z" fill="#ff7043"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}
+        <ellipse cx="20" cy="37" rx="9" ry="4" fill="#66bb6a" transform="rotate(-20,20,37)"/>
+        <ellipse cx="36" cy="37" rx="9" ry="4" fill="#66bb6a" transform="rotate(20,36,37)"/>
+        <path d="M21 22 Q19 10 28 8 Q37 10 35 22 Q32 28 28 28 Q24 28 21 22Z" fill="#ff7043"/>
+        <path d="M24 22 Q23 12 28 10 Q33 12 32 22 Q30 26 28 26 Q26 26 24 22Z" fill="#ffa726"/>
+        <path d="M27 20 Q26 14 28 12 Q30 14 29 20Z" fill="#fff9c4" opacity=".6"/>
+      </svg>`
+    ]
+  },
+
+  /* 9. 百合 Lily ─ 進階加法 */
+  {
+    id: 'lily', name: '進階加法', chineseName: '百合', icon: '🤍',
+    difficulty: 3, color: '#fff9c4',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}
+        <ellipse cx="28" cy="30" rx="5" ry="4" fill="#c8e6c9"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="18" cy="34" rx="11" ry="4" fill="#4caf50" transform="rotate(-15,18,34)"/>
+        <ellipse cx="38" cy="30" rx="11" ry="4" fill="#4caf50" transform="rotate(15,38,30)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="18" cy="35" rx="11" ry="4" fill="#4caf50" transform="rotate(-15,18,35)"/>
+        <ellipse cx="38" cy="31" rx="11" ry="4" fill="#4caf50" transform="rotate(15,38,31)"/>
+        <path d="M23 18 Q26 8 28 8 Q30 8 33 18 Q30 22 28 22 Q26 22 23 18Z" fill="#f5f5f5" stroke="#e0e0e0" stroke-width=".5"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        <ellipse cx="18" cy="37" rx="11" ry="4" fill="#4caf50" transform="rotate(-15,18,37)"/>
+        <ellipse cx="38" cy="34" rx="11" ry="4" fill="#4caf50" transform="rotate(15,38,34)"/>
+        <g transform="translate(28,18)">
+          ${[0,60,120,180,240,300].map((a,i)=>`<path d="M0,0 Q${Math.round(Math.sin((a+30)*Math.PI/180)*6)},${Math.round(-Math.cos((a+30)*Math.PI/180)*6)} ${Math.round(Math.sin(a*Math.PI/180)*12)},${Math.round(-Math.cos(a*Math.PI/180)*12)} Q${Math.round(Math.sin((a-30)*Math.PI/180)*6)},${Math.round(-Math.cos((a-30)*Math.PI/180)*6)} 0,0Z" fill="${i%2===0?'#fff9c4':'#f5f5f5'}" stroke="#e0e0e0" stroke-width=".5"/>`).join('')}
+          <circle cx="0" cy="0" r="3" fill="#fbc02d"/>
+          ${[0,72,144,216,288].map(a=>`<line x1="0" y1="0" x2="${Math.round(Math.sin(a*Math.PI/180)*5)}" y2="${Math.round(-Math.cos(a*Math.PI/180)*5)}" stroke="#f9a825" stroke-width=".8"/>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 10. 繡球花 Hydrangea ─ 進階減法 */
+  {
+    id: 'hydrangea', name: '進階減法', chineseName: '繡球花', icon: '💙',
+    difficulty: 3, color: '#80cbc4',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}
+        <ellipse cx="28" cy="30" rx="5" ry="4" fill="#a5d6a7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="17" cy="33" rx="11" ry="4" fill="#388e3c" transform="rotate(-20,17,33)"/>
+        <ellipse cx="39" cy="33" rx="11" ry="4" fill="#388e3c" transform="rotate(20,39,33)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="17" cy="35" rx="11" ry="4" fill="#388e3c" transform="rotate(-20,17,35)"/>
+        <ellipse cx="39" cy="35" rx="11" ry="4" fill="#388e3c" transform="rotate(20,39,35)"/>
+        <circle cx="28" cy="14" r="10" fill="#80cbc4" opacity=".6"/>
+        <circle cx="28" cy="14" r="7" fill="#4db6ac" opacity=".5"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,26)}
+        <ellipse cx="17" cy="38" rx="11" ry="4" fill="#388e3c" transform="rotate(-20,17,38)"/>
+        <ellipse cx="39" cy="38" rx="11" ry="4" fill="#388e3c" transform="rotate(20,39,38)"/>
+        <g transform="translate(28,18)">
+          ${[[-5,-7],[3,-8],[9,-2],[8,6],[1,10],[-6,8],[-10,1],[-9,-5]].map(([cx,cy])=>`
+            <g transform="translate(${cx},${cy})">
+              ${[0,90,180,270].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*3.5)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*3.5)}" rx="2.5" ry="1.5" fill="#80cbc4" transform="rotate(${a})"/>`).join('')}
+              <circle cx="0" cy="0" r="1.5" fill="#fff"/>
+            </g>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 11. 康乃馨 Carnation ─ 錢幣 */
+  {
+    id: 'carnation', name: '錢幣', chineseName: '康乃馨', icon: '🌸',
+    difficulty: 2, color: '#f48fb1',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#c8e6c9"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <path d="M22 36 Q16 30 20 24 Q24 22 28 26" stroke="#388e3c" stroke-width="2" fill="none"/>
+        <path d="M34 36 Q40 30 36 24 Q32 22 28 26" stroke="#388e3c" stroke-width="2" fill="none"/>
+        <ellipse cx="22" cy="32" rx="6" ry="3" fill="#66bb6a" transform="rotate(-30,22,32)"/>
+        <ellipse cx="34" cy="32" rx="6" ry="3" fill="#66bb6a" transform="rotate(30,34,32)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="22" cy="34" rx="6" ry="3" fill="#66bb6a" transform="rotate(-30,22,34)"/>
+        <ellipse cx="34" cy="34" rx="6" ry="3" fill="#66bb6a" transform="rotate(30,34,34)"/>
+        <path d="M22 14 Q22 8 28 6 Q34 8 34 14 Q34 20 28 20 Q22 20 22 14Z" fill="#f48fb1" opacity=".8"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,26)}
+        <ellipse cx="22" cy="37" rx="6" ry="3" fill="#66bb6a" transform="rotate(-30,22,37)"/>
+        <ellipse cx="34" cy="37" rx="6" ry="3" fill="#66bb6a" transform="rotate(30,34,37)"/>
+        <g transform="translate(28,18)">
+          ${[0,30,60,90,120,150,180,210,240,270,300,330].map(a=>`<path d="M0,-10 Q${Math.round(Math.sin((a+15)*Math.PI/180)*4)},${Math.round(-Math.cos((a+15)*Math.PI/180)*4)} ${Math.round(Math.sin(a*Math.PI/180)*8)},${Math.round(-Math.cos(a*Math.PI/180)*8)} Q${Math.round(Math.sin((a-15)*Math.PI/180)*4)},${Math.round(-Math.cos((a-15)*Math.PI/180)*4)} 0,-10Z" fill="${a%60===0?'#f48fb1':'#f06292'}" transform="rotate(${a})" opacity=".85"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#fce4ec"/>
+          <circle cx="0" cy="0" r="2" fill="#e91e63"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 12. 牡丹 Peony ─ 二位數加減 */
+  {
+    id: 'peony', name: '二位數加減', chineseName: '牡丹', icon: '🪷',
+    difficulty: 3, color: '#ce93d8',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#c8e6c9"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="17" cy="34" rx="12" ry="5" fill="#388e3c" transform="rotate(-20,17,34)"/>
+        <ellipse cx="39" cy="34" rx="12" ry="5" fill="#388e3c" transform="rotate(20,39,34)"/>
+        <ellipse cx="28" cy="24" rx="8" ry="4" fill="#4caf50"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="17" cy="36" rx="12" ry="5" fill="#388e3c" transform="rotate(-20,17,36)"/>
+        <ellipse cx="39" cy="36" rx="12" ry="5" fill="#388e3c" transform="rotate(20,39,36)"/>
+        <ellipse cx="28" cy="25" rx="8" ry="4" fill="#4caf50"/>
+        <circle cx="28" cy="14" r="9" fill="#ce93d8" opacity=".8"/>
+        <circle cx="28" cy="14" r="6" fill="#ba68c8" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,26)}
+        <ellipse cx="17" cy="38" rx="12" ry="5" fill="#388e3c" transform="rotate(-20,17,38)"/>
+        <ellipse cx="39" cy="38" rx="12" ry="5" fill="#388e3c" transform="rotate(20,39,38)"/>
+        <ellipse cx="28" cy="30" rx="8" ry="4" fill="#4caf50"/>
+        <g transform="translate(28,18)">
+          <circle cx="0" cy="0" r="12" fill="#ce93d8" opacity=".3"/>
+          ${[0,45,90,135,180,225,270,315].map(a=>`<path d="M0,-11 Q${Math.round(Math.sin((a+22)*Math.PI/180)*8)},${Math.round(-Math.cos((a+22)*Math.PI/180)*8)} ${Math.round(Math.sin(a*Math.PI/180)*10)},${Math.round(-Math.cos(a*Math.PI/180)*10)} Q${Math.round(Math.sin((a-22)*Math.PI/180)*8)},${Math.round(-Math.cos((a-22)*Math.PI/180)*8)} 0,-11Z" fill="#ce93d8" transform="rotate(${a})"/>`).join('')}
+          ${[22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5].map(a=>`<path d="M0,-7 Q${Math.round(Math.sin((a+15)*Math.PI/180)*5)},${Math.round(-Math.cos((a+15)*Math.PI/180)*5)} ${Math.round(Math.sin(a*Math.PI/180)*7)},${Math.round(-Math.cos(a*Math.PI/180)*7)} Q${Math.round(Math.sin((a-15)*Math.PI/180)*5)},${Math.round(-Math.cos((a-15)*Math.PI/180)*5)} 0,-7Z" fill="#ab47bc" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#fce4ec"/>
+          <circle cx="0" cy="0" r="2" fill="#e91e63" opacity=".6"/>
+        </g>
+      </svg>`
+    ]
+  }
+];
+
+/* ------------------------------------------------------------------ */
+/*  Garden Rendering                                                    */
+/* ------------------------------------------------------------------ */
+function getStage(correct) {
+  for (let i = STAGE_THRESHOLDS.length - 1; i >= 0; i--) {
+    if (correct >= STAGE_THRESHOLDS[i]) return i;
+  }
+  return 0;
+}
+
+function getProgressPercent(correct) {
+  return Math.min(100, Math.round((correct / 50) * 100));
+}
+
+function renderFlowerGrid() {
+  const grid = document.getElementById('flower-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  const progress = Storage.load().progress;
+
+  FLOWERS.forEach(flower => {
+    const p = progress[flower.id] || { correct: 0 };
+    const stage = getStage(p.correct);
+    const pct = getProgressPercent(p.correct);
+
+    const card = document.createElement('div');
+    card.className = 'flower-card' + (stage === 4 ? ' bloomed' : '');
+    card.dataset.id = flower.id;
+    card.dataset.stage = stage;
+    card.title = `${flower.chineseName} — ${flower.name}`;
+
+    card.innerHTML = `
+      <div class="flower-svg-wrap">${flower.svgs[stage]}</div>
+      <div class="flower-name">${toRuby(flower.chineseName)}</div>
+      <div class="flower-mini-progress">
+        <div class="flower-mini-fill" style="width:${pct}%"></div>
+      </div>`;
+
+    card.addEventListener('click', () => selectFlower(flower.id));
+    grid.appendChild(card);
+  });
+
+  updateBloomCount();
+}
+
+function updateFlowerCard(flowerId) {
+  const card = document.querySelector(`.flower-card[data-id="${flowerId}"]`);
+  if (!card) return;
+
+  const p = Storage.load().progress[flowerId] || { correct: 0 };
+  const stage = getStage(p.correct);
+  const pct = getProgressPercent(p.correct);
+  const flower = FLOWERS.find(f => f.id === flowerId);
+
+  card.dataset.stage = stage;
+  card.classList.toggle('bloomed', stage === 4);
+  card.querySelector('.flower-svg-wrap').innerHTML = flower.svgs[stage];
+  card.querySelector('.flower-mini-fill').style.width = pct + '%';
+
+  updateBloomCount();
+}
+
+function updateBloomCount() {
+  const progress = Storage.load().progress;
+  const count = FLOWERS.filter(f => getStage((progress[f.id] || {correct:0}).correct) === 4).length;
+  const el = document.getElementById('bloom-count');
+  if (el) el.textContent = count;
+}
+
+function selectFlower(flowerId) {
+  document.querySelectorAll('.flower-card').forEach(c => c.classList.remove('active'));
+  const card = document.querySelector(`.flower-card[data-id="${flowerId}"]`);
+  if (card) card.classList.add('active');
+
+  const flower = FLOWERS.find(f => f.id === flowerId);
+  if (flower) QuestionManager.loadTopic(flower);
+}
+
+function triggerLevelUpAnimation(flowerId, newStage) {
+  const card = document.querySelector(`.flower-card[data-id="${flowerId}"]`);
+  if (card) {
+    card.classList.add('levelup-burst');
+    setTimeout(() => card.classList.remove('levelup-burst'), 700);
+
+    const fx = document.createElement('div');
+    fx.className = 'card-bloom-fx';
+    card.appendChild(fx);
+    setTimeout(() => fx.remove(), 600);
+  }
+
+  const flower = FLOWERS.find(f => f.id === flowerId);
+  if (!flower) return;
+
+  const overlay = document.getElementById('levelup-overlay');
+  const display = document.getElementById('levelup-flower-display');
+  const title   = document.getElementById('levelup-title');
+  const msg     = document.getElementById('levelup-message');
+
+  display.textContent = flower.icon;
+  title.innerHTML = toRuby(flower.chineseName) + ' ' + toRuby(STAGE_NAMES[newStage]) + '<ruby>了<rt>˙ㄌㄜ</rt></ruby>！';
+
+  const msgs = [
+    '',
+    `太棒了！${flower.chineseName} 發芽了！繼續加油！`,
+    `哇！${flower.chineseName} 長葉了！你真厲害！`,
+    `好漂亮！${flower.chineseName} 結花苞了！快開花了！`,
+    `🎊 ${flower.chineseName} 完全開花了！你是數學高手！`
+  ];
+  msg.innerHTML = toRuby(msgs[newStage] || '');
+  overlay.classList.remove('hidden');
+}
