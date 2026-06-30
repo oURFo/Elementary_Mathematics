@@ -85,6 +85,15 @@ const QuestionManager = (() => {
     const num = (p.correct || 0) + 1;
     qNum.innerHTML = `<ruby>第<rt>ㄉˋ</rt></ruby> ${num} <ruby>題<rt>ㄊㄧˊ</rt></ruby>`;
 
+    // Context (情境題): show story paragraph before question
+    const ctxEl = document.getElementById('question-context');
+    if (currentQuestion.context) {
+      ctxEl.innerHTML = toRuby(currentQuestion.context);
+      ctxEl.classList.remove('hidden');
+    } else {
+      ctxEl.classList.add('hidden');
+    }
+
     // Question text (with auto 注音)
     document.getElementById('question-text').innerHTML = toRuby(currentQuestion.q);
 

@@ -459,6 +459,140 @@ const FLOWERS = [
       </svg>`
     ]
   }
+  /* 13. 水仙 Narcissus ─ 加減混合 */
+  {
+    id: 'narcissus', name: '加減混合', chineseName: '水仙', icon: '🌼',
+    difficulty: 3, color: '#fffde7',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,36)}<ellipse cx="28" cy="32" rx="5" ry="4" class="fl-sprout"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="20" cy="38" rx="3" ry="11" fill="#66bb6a" transform="rotate(-12,20,38)"/>
+        <ellipse cx="36" cy="36" rx="3" ry="11" fill="#66bb6a" transform="rotate(12,36,36)"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="20" cy="36" rx="3" ry="11" fill="#66bb6a" transform="rotate(-12,20,36)"/>
+        <ellipse cx="36" cy="34" rx="3" ry="11" fill="#66bb6a" transform="rotate(12,36,34)"/>
+        <ellipse cx="28" cy="12" rx="5" ry="8" fill="#fffde7"/>
+        <ellipse cx="28" cy="14" rx="3" ry="5" fill="#ffd54f" opacity=".6"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="20" cy="36" rx="3" ry="11" fill="#66bb6a" transform="rotate(-12,20,36)"/>
+        <ellipse cx="36" cy="34" rx="3" ry="11" fill="#66bb6a" transform="rotate(12,36,34)"/>
+        <ellipse cx="28" cy="4" rx="4" ry="8" fill="#fffde7"/>
+        <ellipse cx="37" cy="8" rx="4" ry="8" fill="#fffde7" transform="rotate(60,37,8)"/>
+        <ellipse cx="37" cy="18" rx="4" ry="8" fill="#fffde7" transform="rotate(120,37,18)"/>
+        <ellipse cx="28" cy="22" rx="4" ry="8" fill="#fffde7" transform="rotate(180,28,22)"/>
+        <ellipse cx="19" cy="18" rx="4" ry="8" fill="#fffde7" transform="rotate(240,19,18)"/>
+        <ellipse cx="19" cy="8" rx="4" ry="8" fill="#fffde7" transform="rotate(300,19,8)"/>
+        <circle cx="28" cy="13" r="6" fill="#ffd54f"/>
+        <circle cx="28" cy="13" r="3" fill="#ff8f00"/></svg>`
+    ]
+  },
+
+  /* 14. 荷花 Lotus ─ 綜合應用 */
+  {
+    id: 'lotus', name: '綜合應用', chineseName: '荷花', icon: '🪷',
+    difficulty: 3, color: '#fce4ec',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,36)}<ellipse cx="28" cy="31" rx="6" ry="5" fill="#f8bbd9"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="16" cy="34" rx="10" ry="6" fill="#a5d6a7" transform="rotate(-20,16,34)"/>
+        ${leafPair(28,32,1)}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="16" cy="32" rx="10" ry="6" fill="#a5d6a7" transform="rotate(-20,16,32)"/>
+        ${leafPair(28,30,1)}
+        <ellipse cx="28" cy="13" rx="6" ry="10" fill="#f48fb1"/>
+        <ellipse cx="28" cy="11" rx="4" ry="7" fill="#f8bbd9"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="15" cy="32" rx="11" ry="6" fill="#a5d6a7" transform="rotate(-20,15,32)"/>
+        ${leafPair(28,30,1)}
+        <ellipse cx="28" cy="3" rx="5" ry="9" fill="#f8bbd9"/>
+        <ellipse cx="38" cy="10" rx="5" ry="9" fill="#f8bbd9" transform="rotate(72,38,10)"/>
+        <ellipse cx="34" cy="21" rx="5" ry="9" fill="#f8bbd9" transform="rotate(144,34,21)"/>
+        <ellipse cx="22" cy="21" rx="5" ry="9" fill="#f8bbd9" transform="rotate(216,22,21)"/>
+        <ellipse cx="18" cy="10" rx="5" ry="9" fill="#f8bbd9" transform="rotate(288,18,10)"/>
+        <ellipse cx="28" cy="6" rx="3.5" ry="7" fill="#f48fb1"/>
+        <ellipse cx="35" cy="11" rx="3.5" ry="7" fill="#f48fb1" transform="rotate(72,35,11)"/>
+        <ellipse cx="32" cy="19" rx="3.5" ry="7" fill="#f48fb1" transform="rotate(144,32,19)"/>
+        <ellipse cx="24" cy="19" rx="3.5" ry="7" fill="#f48fb1" transform="rotate(216,24,19)"/>
+        <ellipse cx="21" cy="11" rx="3.5" ry="7" fill="#f48fb1" transform="rotate(288,21,11)"/>
+        <circle cx="28" cy="13" r="5" fill="#fff9c4"/>
+        <circle cx="28" cy="13" r="3" fill="#fdd835"/></svg>`
+    ]
+  },
+
+  /* 15. 茉莉 Jasmine ─ 基礎情境題 */
+  {
+    id: 'jasmine', name: '基礎情境題', chineseName: '茉莉', icon: '🤍',
+    difficulty: 4, color: '#f0fff4',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}<ellipse cx="28" cy="30" rx="6" ry="5" class="fl-sprout"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,1)}${leafPair(28,28,-1)}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        ${leafPair(28,36,1)}${leafPair(28,26,-1)}
+        <circle cx="28" cy="11" r="7" fill="#e8f5e9"/>
+        <ellipse cx="28" cy="11" rx="5" ry="7" fill="#f1f8e9"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,36,1)}${leafPair(28,28,-1)}
+        <ellipse cx="28" cy="3" rx="4" ry="7" fill="#f0f4f8"/>
+        <ellipse cx="36" cy="9" rx="4" ry="7" fill="#f0f4f8" transform="rotate(72,36,9)"/>
+        <ellipse cx="34" cy="20" rx="4" ry="7" fill="#f0f4f8" transform="rotate(144,34,20)"/>
+        <ellipse cx="22" cy="20" rx="4" ry="7" fill="#f0f4f8" transform="rotate(216,22,20)"/>
+        <ellipse cx="20" cy="9" rx="4" ry="7" fill="#f0f4f8" transform="rotate(288,20,9)"/>
+        <circle cx="28" cy="13" r="4" fill="#fdd835"/>
+        <circle cx="28" cy="13" r="2" fill="#f57f17"/>
+        <ellipse cx="12" cy="22" rx="3" ry="5" fill="#f0f4f8"/>
+        <ellipse cx="9" cy="22" rx="2" ry="4" fill="#f0f4f8" transform="rotate(-30,9,22)"/>
+        <ellipse cx="15" cy="22" rx="2" ry="4" fill="#f0f4f8" transform="rotate(30,15,22)"/>
+        <circle cx="12" cy="22" r="2" fill="#fdd835"/></svg>`
+    ]
+  },
+
+  /* 16. 紫羅蘭 Violet ─ 進階情境題 */
+  {
+    id: 'violet', name: '進階情境題', chineseName: '紫羅蘭', icon: '💜',
+    difficulty: 5, color: '#ede7f6',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,36)}<ellipse cx="28" cy="32" rx="5" ry="4" fill="#ce93d8"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="18" cy="34" rx="9" ry="7" fill="#a5d6a7" transform="rotate(-20,18,34)"/>
+        <ellipse cx="38" cy="32" rx="9" ry="7" fill="#a5d6a7" transform="rotate(20,38,32)"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        <ellipse cx="18" cy="32" rx="9" ry="7" fill="#a5d6a7" transform="rotate(-20,18,32)"/>
+        <ellipse cx="38" cy="30" rx="9" ry="7" fill="#a5d6a7" transform="rotate(20,38,30)"/>
+        <ellipse cx="28" cy="12" rx="5" ry="9" fill="#ce93d8"/>
+        <ellipse cx="28" cy="10" rx="3" ry="6" fill="#ede7f6"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="18" cy="32" rx="9" ry="7" fill="#a5d6a7" transform="rotate(-20,18,32)"/>
+        <ellipse cx="38" cy="30" rx="9" ry="7" fill="#a5d6a7" transform="rotate(20,38,30)"/>
+        <ellipse cx="28" cy="3" rx="5" ry="9" fill="#ce93d8"/>
+        <ellipse cx="38" cy="10" rx="5" ry="9" fill="#ce93d8" transform="rotate(72,38,10)"/>
+        <ellipse cx="34" cy="21" rx="5" ry="9" fill="#ab47bc" transform="rotate(144,34,21)"/>
+        <ellipse cx="22" cy="21" rx="5" ry="9" fill="#ab47bc" transform="rotate(216,22,21)"/>
+        <ellipse cx="18" cy="10" rx="5" ry="9" fill="#ce93d8" transform="rotate(288,18,10)"/>
+        <circle cx="28" cy="13" r="5" fill="#fffde7"/>
+        <circle cx="28" cy="13" r="2" fill="#fdd835"/></svg>`
+    ]
+  }
 ];
 
 /* ------------------------------------------------------------------ */
