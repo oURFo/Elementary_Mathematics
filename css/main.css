@@ -659,20 +659,20 @@ rt {
   font-size: 1.15rem;
   font-family: var(--font-main);
   cursor: pointer;
-  transition: background .2s, border-color .2s, transform .15s;
+  transition: background .25s, border-color .25s;
   font-weight: 600;
   color: #333;
-  /* Prevent sticky highlight/focus colour on touch devices */
+  /* Disable all browser-native touch/hover highlight so nothing sticks */
   -webkit-tap-highlight-color: transparent;
-  outline: none;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+  touch-action: manipulation;
 }
 
-.mc-btn:hover  { background: var(--green-pale); border-color: var(--green-mid); }
-.mc-btn:active { transform: scale(.97); }
-/* On touch devices :focus can linger — reset it so it looks neutral */
-.mc-btn:focus:not(:hover) { background: #f5f5f5; border-color: #ddd; outline: none; }
+/* No hover/active colour change — avoids the sticky-green problem on tablets.
+   Visual feedback comes only from .correct / .wrong set by JS after evaluation. */
+.mc-btn:focus { outline: none; }
 
 .mc-btn.correct {
   background: #d4edda;

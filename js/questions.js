@@ -273,7 +273,6 @@ const QuestionManager = (() => {
     btns.forEach(b => {
       b.className = 'mc-btn';
       b.disabled = false;
-      b.blur(); // clear focus/active state so tablet doesn't keep the pressed colour
     });
   }
 
