@@ -4,7 +4,8 @@
 
 const QuestionManager = (() => {
 
-  let allTopics = [];
+  let allTopicsG1 = [];
+  let allTopicsG2 = [];
   let currentTopic = null;
   let currentFlower = null;
   let currentQuestion = null;
@@ -13,15 +14,32 @@ const QuestionManager = (() => {
   let isAnswered = false;
   let displayedOpts = [];   // shuffled option order for current MC question
 
-  /* ── Load question bank ────────────────── */
+  /* ── Load question banks ────────────────── */
   async function init() {
     try {
-      const res = await fetch('data/questions.json');
-      const data = await res.json();
-      allTopics = data.topics;
+      const [res1, res2] = await Promise.all([
+        fetch('data/questions.json'),
+        fetch('data/questions_g2.json')
+      ]);
+      const [data1, data2] = await Promise.all([res1.json(), res2.json()]);
+      allTopicsG1 = data1.topics;
+      allTopicsG2 = data2.topics;
     } catch (e) {
       console.error('Failed to load questions:', e);
+      // Fallback: try loading only grade 1
+      try {
+        const res = await fetch('data/questions.json');
+        const data = await res.json();
+        allTopicsG1 = data.topics;
+      } catch (e2) {
+        console.error('Grade 1 questions also failed:', e2);
+      }
     }
+  }
+
+  /* ── Get active topics by grade ─────────── */
+  function getActiveTopics() {
+    return Storage.getGrade() === 2 ? allTopicsG2 : allTopicsG1;
   }
 
   /* ── Pick a question for current topic ─── */
@@ -42,7 +60,8 @@ const QuestionManager = (() => {
   /* ── Load topic into question panel ───── */
   function loadTopic(flower) {
     currentFlower = flower;
-    currentTopic = allTopics.find(t => t.id === flower.id);
+    const topics = getActiveTopics();
+    currentTopic = topics.find(t => t.id === flower.id);
     if (!currentTopic) return;
 
     usedIndices = [];

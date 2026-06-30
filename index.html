@@ -51,6 +51,11 @@
     <div class="header-left">
       <span class="app-logo">🌸</span>
       <h1 class="app-title"><ruby>花<rt>ㄏㄨㄚ</rt></ruby><ruby>圃<rt>ㄆㄨˇ</rt></ruby><ruby>數<rt>ㄕㄨˋ</rt></ruby><ruby>學<rt>ㄒㄩㄝˊ</rt></ruby><ruby>園<rt>ㄩㄢˊ</rt></ruby></h1>
+      <!-- Grade Tab Switcher -->
+      <div class="grade-tabs" id="grade-tabs">
+        <button class="grade-tab active" id="grade-tab-1" data-grade="1">🌱 <ruby>一<rt>ㄧ</rt></ruby><ruby>年<rt>ㄋㄧㄢˊ</rt></ruby><ruby>級<rt>ㄐㄧˊ</rt></ruby></button>
+        <button class="grade-tab" id="grade-tab-2" data-grade="2">🌿 <ruby>二<rt>ㄦˋ</rt></ruby><ruby>年<rt>ㄋㄧㄢˊ</rt></ruby><ruby>級<rt>ㄐㄧˊ</rt></ruby></button>
+      </div>
     </div>
     <div class="header-right">
       <div class="player-info">
@@ -68,8 +73,8 @@
     <!-- Left: Flower Garden Panel -->
     <section class="garden-panel">
       <div class="garden-header">
-        <span class="garden-title"><ruby>我<rt>ㄨㄛˇ</rt></ruby><ruby>的<rt>˙ㄉㄜ</rt></ruby><ruby>花<rt>ㄏㄨㄚ</rt></ruby><ruby>圃<rt>ㄆㄨˇ</rt></ruby></span>
-        <span class="garden-stats"><span id="bloom-count">0</span>/16 <ruby>開<rt>ㄎㄞ</rt></ruby><ruby>花<rt>ㄏㄨㄚ</rt></ruby></span>
+        <span class="garden-title" id="garden-title"><ruby>我<rt>ㄨㄛˇ</rt></ruby><ruby>的<rt>˙ㄉㄜ</rt></ruby><ruby>一<rt>ㄧ</rt></ruby><ruby>年<rt>ㄋㄧㄢˊ</rt></ruby><ruby>級<rt>ㄐㄧˊ</rt></ruby><ruby>花<rt>ㄏㄨㄚ</rt></ruby><ruby>圃<rt>ㄆㄨˇ</rt></ruby></span>
+        <span class="garden-stats"><span id="bloom-count">0</span>/<span id="bloom-total">16</span> <ruby>開<rt>ㄎㄞ</rt></ruby><ruby>花<rt>ㄏㄨㄚ</rt></ruby></span>
       </div>
 
       <div class="flower-grid" id="flower-grid">

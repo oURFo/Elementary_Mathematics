@@ -219,16 +219,16 @@ html, body {
 ruby {
   display: inline-flex;
   flex-direction: row;      /* 字在左，注音在右 */
-  align-items: flex-end;    /* 底部對齊 */
-  vertical-align: bottom;
-  line-height: 2.2;
+  align-items: center;      /* 垂直置中對齊 */
+  vertical-align: middle;   /* 與行內其他元素置中對齊 */
+  line-height: 1.5;         /* 調整為更緊湊美觀的行高 */
 }
 
 rt {
   display: inline-flex;
   flex-direction: row;      /* 音符直排區 + 調號橫排區 並列 */
-  align-items: flex-start;  /* 調號對齊頂端 */
-  font-family: 'MingLiU', 'PMingLiU', 'BiauKai', '標楷體', var(--font-main);
+  align-items: center;      /* 調號置中對齊 */
+  font-family: 'BiauKai', '標楷體', 'Microsoft JhengHei', '微軟正黑體', 'MingLiU', 'PMingLiU', sans-serif;
   font-size: .44em;
   margin-left: .1em;
   white-space: nowrap;
@@ -244,14 +244,28 @@ rt {
   color: #777;
 }
 
-/* 調號（ˊˇˋ˙）— 橫排，顯示在音符右上角 */
+/* 調號（ˊˇˋ˙）— 橫排，顯示在音符右側置中 */
 .zy-t {
   writing-mode: horizontal-tb;
   color: #777;
   font-size: .95em;
   line-height: 1;
-  margin-top: .05em;
+  margin-top: 0;
 }
+
+/* 輕聲（˙）專屬排版：聲母在上，音母在下，垂直置中 */
+rt.light-tone {
+  flex-direction: column;    /* 改為上下排列 */
+  align-items: center;       /* 水平居中對齊 */
+  justify-content: flex-end; /* 底部對齊以貼近漢字 */
+  line-height: 0.95;         /* 更緊湊的行高讓輕聲點靠近音符 */
+}
+
+rt.light-tone .zy-t {
+  margin-bottom: 0.1em;      /* 調整輕聲點與下方音符本體的距離 */
+  font-size: 1.1em;          /* 輕聲點稍微變大更容易看清 */
+}
+
 
 /* ============================================
    Fullscreen Button
@@ -299,6 +313,56 @@ rt {
   color: #fff;
   font-weight: 700;
   letter-spacing: .5px;
+}
+
+/* ============================================
+   Grade Tabs
+   ============================================ */
+.grade-tabs {
+  display: flex;
+  gap: 4px;
+  background: rgba(0,0,0,.2);
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 8px;
+}
+
+.grade-tab {
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  padding: 5px 14px;
+  font-size: .85rem;
+  font-family: var(--font-main);
+  color: rgba(255,255,255,.75);
+  cursor: pointer;
+  transition: background .2s, color .2s, transform .15s;
+  white-space: nowrap;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.grade-tab:hover {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+}
+
+.grade-tab.active {
+  background: #fff;
+  color: var(--green-dark);
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+.grade-tab.active:hover {
+  transform: none;
+}
+
+/* Grade 2 active colour — teal-green accent */
+.grade-tab[data-grade="2"].active {
+  background: #e8f5e9;
+  color: #1b5e20;
 }
 
 .header-right {

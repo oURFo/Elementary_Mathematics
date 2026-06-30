@@ -28,7 +28,7 @@ function leafPair(stemX,stemY,dir=1) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  12 Flower Definitions                                               */
+/*  16 Flower Definitions                                               */
 /* ------------------------------------------------------------------ */
 const FLOWERS = [
 
@@ -596,6 +596,578 @@ const FLOWERS = [
 ];
 
 /* ------------------------------------------------------------------ */
+/*  Grade 2: 16 Flower Definitions (全新設計)                           */
+/* ------------------------------------------------------------------ */
+const FLOWERS_G2 = [
+
+  /* 1. 木芙蓉 Hibiscus mutabilis ─ 200以內的數 */
+  {
+    id: 'hibiscus', name: '200以內的數', chineseName: '木芙蓉', icon: '🌺',
+    difficulty: 2, color: '#f8bbd9',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,32)}
+        <ellipse cx="28" cy="28" rx="7" ry="5" fill="#f8bbd9" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        ${leafPair(28,38,1)}${leafPair(28,28,-1)}
+        <circle cx="28" cy="12" r="9" fill="#f48fb1" opacity=".85"/>
+        <circle cx="28" cy="12" r="5" fill="#e91e63" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        ${leafPair(28,40,1)}${leafPair(28,32,-1)}
+        <g transform="translate(28,18)">
+          ${[0,72,144,216,288].map(a=>`<path d="M0,-11 Q${Math.round(Math.sin((a+36)*Math.PI/180)*7)},${Math.round(-Math.cos((a+36)*Math.PI/180)*7)} ${Math.round(Math.sin(a*Math.PI/180)*11)},${Math.round(-Math.cos(a*Math.PI/180)*11)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*7)},${Math.round(-Math.cos((a-36)*Math.PI/180)*7)} 0,-11Z" fill="#f8bbd9" transform="rotate(${a})" opacity=".9"/>`).join('')}
+          ${[36,108,180,252,324].map(a=>`<path d="M0,-8 Q${Math.round(Math.sin((a+36)*Math.PI/180)*5)},${Math.round(-Math.cos((a+36)*Math.PI/180)*5)} ${Math.round(Math.sin(a*Math.PI/180)*8)},${Math.round(-Math.cos(a*Math.PI/180)*8)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*5)},${Math.round(-Math.cos((a-36)*Math.PI/180)*5)} 0,-8Z" fill="#f48fb1" transform="rotate(${a})" opacity=".8"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#e91e63"/>
+          <circle cx="0" cy="0" r="2" fill="#fce4ec"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 2. 金盞花 Marigold ─ 二位數加法（進位） */
+  {
+    id: 'marigold', name: '二位數加法', chineseName: '金盞花', icon: '🌼',
+    difficulty: 2, color: '#ffa726',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#fff9c4"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,1)}${leafPair(28,28,-1)}
+        <circle cx="28" cy="12" r="10" fill="#ffa726" opacity=".8"/>
+        <circle cx="28" cy="12" r="5" fill="#ff6f00"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        ${leafPair(28,40,1)}${leafPair(28,32,-1)}
+        <g transform="translate(28,17)">
+          ${[0,22.5,45,67.5,90,112.5,135,157.5,180,202.5,225,247.5,270,292.5,315,337.5].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*10)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*10)}" rx="4" ry="2.5" fill="#ffa726" transform="rotate(${a})" opacity=".9"/>`).join('')}
+          ${[0,30,60,90,120,150,180,210,240,270,300,330].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*6)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*6)}" rx="3" ry="2" fill="#ffb74d" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#e65100"/>
+          <circle cx="0" cy="0" r="2" fill="#ff8f00"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 3. 桔梗 Bellflower ─ 二位數減法（退位） */
+  {
+    id: 'bellflower', name: '二位數減法', chineseName: '桔梗', icon: '💜',
+    difficulty: 2, color: '#7e57c2',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#ce93d8" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,38,-1)}${leafPair(28,30,1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,-1)}${leafPair(28,28,1)}
+        <path d="M19 14 Q19 4 28 4 Q37 4 37 14 Q37 22 28 22 Q19 22 19 14Z" fill="#7e57c2" opacity=".85"/>
+        <path d="M22 14 Q22 7 28 7 Q34 7 34 14 Q34 20 28 20 Q22 20 22 14Z" fill="#b39ddb"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        ${leafPair(28,40,-1)}${leafPair(28,32,1)}
+        <g transform="translate(28,16)">
+          ${[0,72,144,216,288].map(a=>`<path d="M0,-10 Q${Math.round(Math.sin((a+36)*Math.PI/180)*8)},${Math.round(-Math.cos((a+36)*Math.PI/180)*8)} ${Math.round(Math.sin(a*Math.PI/180)*10)},${Math.round(-Math.cos(a*Math.PI/180)*10)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*8)},${Math.round(-Math.cos((a-36)*Math.PI/180)*8)} 0,-10Z" fill="#7e57c2" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="5" fill="#ede7f6"/>
+          <circle cx="0" cy="0" r="3" fill="#7e57c2"/>
+          ${[0,72,144,216,288].map(a=>`<line x1="0" y1="0" x2="${Math.round(Math.sin(a*Math.PI/180)*4)}" y2="${Math.round(-Math.cos(a*Math.PI/180)*4)}" stroke="#9575cd" stroke-width="1"/>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 4. 波斯菊 Cosmos ─ 長度（公分） */
+  {
+    id: 'cosmos', name: '長度（公分）', chineseName: '波斯菊', icon: '🌸',
+    difficulty: 2, color: '#f48fb1',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34,'fl-stem-thin')}
+        <ellipse cx="28" cy="30" rx="4" ry="3" fill="#f8bbd9"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20,'fl-stem-thin')}
+        <ellipse cx="18" cy="36" rx="8" ry="3" fill="#66bb6a" transform="rotate(-25,18,36)"/>
+        <ellipse cx="38" cy="33" rx="8" ry="3" fill="#66bb6a" transform="rotate(25,38,33)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18,'fl-stem-thin')}
+        <ellipse cx="18" cy="36" rx="8" ry="3" fill="#66bb6a" transform="rotate(-25,18,36)"/>
+        <ellipse cx="38" cy="33" rx="8" ry="3" fill="#66bb6a" transform="rotate(25,38,33)"/>
+        <circle cx="28" cy="12" r="9" fill="#f48fb1" opacity=".7"/>
+        <circle cx="28" cy="12" r="4" fill="#fce4ec"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22,'fl-stem-thin')}
+        <ellipse cx="18" cy="38" rx="8" ry="3" fill="#66bb6a" transform="rotate(-25,18,38)"/>
+        <ellipse cx="38" cy="36" rx="8" ry="3" fill="#66bb6a" transform="rotate(25,38,36)"/>
+        <g transform="translate(28,16)">
+          ${[0,45,90,135,180,225,270,315].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*10)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*10)}" rx="3.5" ry="8" fill="#f48fb1" transform="rotate(${a})" opacity=".9"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#ffd54f"/>
+          <circle cx="0" cy="0" r="2" fill="#ff8f00"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 5. 風信子 Hyacinth ─ 容量 */
+  {
+    id: 'hyacinth', name: '容量', chineseName: '風信子', icon: '💙',
+    difficulty: 2, color: '#1e88e5',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}
+        <ellipse cx="28" cy="30" rx="4" ry="5" fill="#64b5f6" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="20" cy="38" rx="3" ry="10" fill="#388e3c" transform="rotate(-10,20,38)"/>
+        <ellipse cx="36" cy="36" rx="3" ry="10" fill="#388e3c" transform="rotate(10,36,36)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        <ellipse cx="20" cy="36" rx="3" ry="10" fill="#388e3c" transform="rotate(-10,20,36)"/>
+        <ellipse cx="36" cy="34" rx="3" ry="10" fill="#388e3c" transform="rotate(10,36,34)"/>
+        <rect x="23" y="6" width="10" height="14" rx="5" fill="#1e88e5" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="20" cy="36" rx="3" ry="10" fill="#388e3c" transform="rotate(-10,20,36)"/>
+        <ellipse cx="36" cy="34" rx="3" ry="10" fill="#388e3c" transform="rotate(10,36,34)"/>
+        <g transform="translate(28,18)">
+          ${[-4,-2,0,2,4].map((x,i)=>[...Array(5-Math.abs(x))].map((_,j)=>`<ellipse cx="${x*3}" cy="${-j*4 + (2-Math.abs(x))*2}" rx="3.5" ry="2.5" fill="${['#1565c0','#1976d2','#1e88e5','#2196f3','#42a5f5'][j]}" opacity=".9"/>`).join('')).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 6. 梔子花 Gardenia ─ 時間（時分） */
+  {
+    id: 'gardenia', name: '時間（時分）', chineseName: '梔子花', icon: '🤍',
+    difficulty: 2, color: '#f5f5f5',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="6" ry="4" fill="#e8f5e9"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,1)}${leafPair(28,28,-1)}
+        <circle cx="28" cy="12" r="9" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+        <circle cx="28" cy="12" r="6" fill="#eeeeee"/>
+        <circle cx="28" cy="12" r="2" fill="#bdbdbd"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        ${leafPair(28,40,1)}${leafPair(28,32,-1)}
+        <g transform="translate(28,17)">
+          ${[0,45,90,135,180,225,270,315].map((a,i)=>`<path d="M0,-10 Q${Math.round(Math.sin((a+22)*Math.PI/180)*7)},${Math.round(-Math.cos((a+22)*Math.PI/180)*7)} ${Math.round(Math.sin(a*Math.PI/180)*10)},${Math.round(-Math.cos(a*Math.PI/180)*10)} Q${Math.round(Math.sin((a-22)*Math.PI/180)*7)},${Math.round(-Math.cos((a-22)*Math.PI/180)*7)} 0,-10Z" fill="${i%2===0?'#fff':'#f5f5f5'}" stroke="#e0e0e0" stroke-width=".5" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="5" fill="#fff9c4"/>
+          <circle cx="0" cy="0" r="2" fill="#fdd835"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 7. 小太陽 Mini Sunflower ─ 乘法（2、4、5） */
+  {
+    id: 'small-sunflower', name: '乘法（2、4、5）', chineseName: '小太陽菊', icon: '🌻',
+    difficulty: 3, color: '#ffca28',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#fff9c4"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+        <circle cx="28" cy="12" r="9" fill="#ffca28"/>
+        <circle cx="28" cy="12" r="5" fill="#6d4c41"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        ${leafPair(28,40,1)}${leafPair(28,34,-1)}
+        <g transform="translate(28,17)">
+          ${[0,30,60,90,120,150,180,210,240,270,300,330].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*10)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*10)}" rx="4" ry="2.5" fill="#ffca28" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="6" fill="#4e342e"/>
+          <circle cx="0" cy="0" r="4" fill="#6d4c41"/>
+          ${[0,60,120,180,240,300].map(a=>`<circle cx="${Math.round(Math.sin(a*Math.PI/180)*2)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*2)}" r="0.8" fill="#3e2723"/>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 8. 夾竹桃 Oleander ─ 乘法（3、6、7） */
+  {
+    id: 'oleander', name: '乘法（3、6、7）', chineseName: '夾竹桃', icon: '🌸',
+    difficulty: 3, color: '#e91e63',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#f8bbd9" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="16" cy="34" rx="11" ry="4" fill="#388e3c" transform="rotate(-15,16,34)"/>
+        <ellipse cx="38" cy="30" rx="11" ry="4" fill="#388e3c" transform="rotate(15,38,30)"/>
+        <ellipse cx="28" cy="24" rx="7" ry="3" fill="#4caf50"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        <ellipse cx="16" cy="34" rx="11" ry="4" fill="#388e3c" transform="rotate(-15,16,34)"/>
+        <ellipse cx="38" cy="30" rx="11" ry="4" fill="#388e3c" transform="rotate(15,38,30)"/>
+        <path d="M20 12 Q22 4 28 4 Q34 4 36 12 Q32 18 28 18 Q24 18 20 12Z" fill="#e91e63" opacity=".85"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}
+        <ellipse cx="16" cy="36" rx="11" ry="4" fill="#388e3c" transform="rotate(-15,16,36)"/>
+        <ellipse cx="38" cy="32" rx="11" ry="4" fill="#388e3c" transform="rotate(15,38,32)"/>
+        <g transform="translate(28,16)">
+          ${[0,72,144,216,288].map(a=>`<path d="M0,-10 Q${Math.round(Math.sin((a+36)*Math.PI/180)*6)},${Math.round(-Math.cos((a+36)*Math.PI/180)*6)} ${Math.round(Math.sin(a*Math.PI/180)*9)},${Math.round(-Math.cos(a*Math.PI/180)*9)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*6)},${Math.round(-Math.cos((a-36)*Math.PI/180)*6)} 0,-10Z" fill="#e91e63" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#fff"/>
+          <circle cx="0" cy="0" r="2" fill="#e91e63"/>
+          ${[0,72,144,216,288].map(a=>`<line x1="0" y1="0" x2="${Math.round(Math.sin(a*Math.PI/180)*3)}" y2="${Math.round(-Math.cos(a*Math.PI/180)*3)}" stroke="#f48fb1" stroke-width="1"/>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 9. 蓮花 Lotus ─ 面積大小比較 */
+  {
+    id: 'water-lily', name: '面積大小比較', chineseName: '蓮花', icon: '🪷',
+    difficulty: 2, color: '#e1bee7',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,36,'fl-stem-thin')}
+        <ellipse cx="28" cy="32" rx="6" ry="4" fill="#80cbc4" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,28,'fl-stem-thin')}
+        <ellipse cx="28" cy="44" rx="18" ry="6" fill="#388e3c" opacity=".7"/>
+        <ellipse cx="14" cy="42" rx="10" ry="5" fill="#2e7d32" opacity=".8" transform="rotate(-15,14,42)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24,'fl-stem-thin')}
+        <ellipse cx="28" cy="46" rx="20" ry="6" fill="#388e3c" opacity=".7"/>
+        <ellipse cx="12" cy="44" rx="10" ry="5" fill="#2e7d32" opacity=".8" transform="rotate(-20,12,44)"/>
+        <path d="M22 22 Q22 12 28 10 Q34 12 34 22 Q31 28 28 28 Q25 28 22 22Z" fill="#e1bee7"/>
+        <path d="M24 22 Q24 14 28 12 Q32 14 32 22 Q30 26 28 26 Q26 26 24 22Z" fill="#f3e5f5"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,26,'fl-stem-thin')}
+        <ellipse cx="28" cy="46" rx="22" ry="7" fill="#388e3c" opacity=".7"/>
+        <ellipse cx="10" cy="44" rx="10" ry="5" fill="#2e7d32" opacity=".8" transform="rotate(-20,10,44)"/>
+        <g transform="translate(28,18)">
+          ${[0,72,144,216,288].map(a=>`<path d="M0,-12 Q${Math.round(Math.sin((a+36)*Math.PI/180)*5)},${Math.round(-Math.cos((a+36)*Math.PI/180)*5)} ${Math.round(Math.sin(a*Math.PI/180)*10)},${Math.round(-Math.cos(a*Math.PI/180)*10)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*5)},${Math.round(-Math.cos((a-36)*Math.PI/180)*5)} 0,-12Z" fill="#e1bee7" transform="rotate(${a})"/>`).join('')}
+          ${[36,108,180,252,324].map(a=>`<path d="M0,-8 Q${Math.round(Math.sin((a+36)*Math.PI/180)*4)},${Math.round(-Math.cos((a+36)*Math.PI/180)*4)} ${Math.round(Math.sin(a*Math.PI/180)*7)},${Math.round(-Math.cos(a*Math.PI/180)*7)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*4)},${Math.round(-Math.cos((a-36)*Math.PI/180)*4)} 0,-8Z" fill="#ce93d8" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#fff9c4"/>
+          <circle cx="0" cy="0" r="2" fill="#fdd835"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 10. 山茶花 Camellia ─ 1000以內的數 */
+  {
+    id: 'camellia', name: '1000以內的數', chineseName: '山茶花', icon: '🌹',
+    difficulty: 3, color: '#c62828',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#ef9a9a" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <path d="M22 36 Q16 30 20 24 Q24 20 28 24" stroke="#388e3c" stroke-width="2.5" fill="none"/>
+        <path d="M34 36 Q40 30 36 24 Q32 20 28 24" stroke="#388e3c" stroke-width="2.5" fill="none"/>
+        <ellipse cx="20" cy="32" rx="7" ry="3" fill="#4caf50" transform="rotate(-30,20,32)"/>
+        <ellipse cx="36" cy="32" rx="7" ry="3" fill="#4caf50" transform="rotate(30,36,32)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="18" cy="34" rx="10" ry="4" fill="#388e3c" transform="rotate(-20,18,34)"/>
+        <ellipse cx="38" cy="34" rx="10" ry="4" fill="#388e3c" transform="rotate(20,38,34)"/>
+        <circle cx="28" cy="13" r="10" fill="#c62828" opacity=".8"/>
+        <circle cx="28" cy="13" r="6" fill="#b71c1c"/>
+        <circle cx="28" cy="13" r="3" fill="#fce4ec" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        <ellipse cx="18" cy="36" rx="10" ry="4" fill="#388e3c" transform="rotate(-20,18,36)"/>
+        <ellipse cx="38" cy="36" rx="10" ry="4" fill="#388e3c" transform="rotate(20,38,36)"/>
+        <g transform="translate(28,17)">
+          <circle cx="0" cy="0" r="12" fill="#c62828" opacity=".25"/>
+          ${[0,45,90,135,180,225,270,315].map(a=>`<path d="M0,-11 Q${Math.round(Math.sin((a+22)*Math.PI/180)*8)},${Math.round(-Math.cos((a+22)*Math.PI/180)*8)} ${Math.round(Math.sin(a*Math.PI/180)*10)},${Math.round(-Math.cos(a*Math.PI/180)*10)} Q${Math.round(Math.sin((a-22)*Math.PI/180)*8)},${Math.round(-Math.cos((a-22)*Math.PI/180)*8)} 0,-11Z" fill="#c62828" transform="rotate(${a})"/>`).join('')}
+          ${[22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5].map(a=>`<path d="M0,-7 Q${Math.round(Math.sin((a+15)*Math.PI/180)*5)},${Math.round(-Math.cos((a+15)*Math.PI/180)*5)} ${Math.round(Math.sin(a*Math.PI/180)*7)},${Math.round(-Math.cos(a*Math.PI/180)*7)} Q${Math.round(Math.sin((a-15)*Math.PI/180)*5)},${Math.round(-Math.cos((a-15)*Math.PI/180)*5)} 0,-7Z" fill="#e53935" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="4" fill="#fff9c4"/>
+          ${[0,72,144,216,288].map(a=>`<line x1="0" y1="0" x2="${Math.round(Math.sin(a*Math.PI/180)*3)}" y2="${Math.round(-Math.cos(a*Math.PI/180)*3)}" stroke="#fdd835" stroke-width="1"/>`).join('')}
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 11. 紫藤 Wisteria ─ 三位數加減法 */
+  {
+    id: 'wisteria', name: '三位數加減法', chineseName: '紫藤', icon: '💜',
+    difficulty: 3, color: '#9c27b0',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <line x1="28" y1="48" x2="28" y2="10" stroke="#52b788" stroke-width="2.5"/>
+        <line x1="28" y1="14" x2="14" y2="14" stroke="#52b788" stroke-width="2"/>
+        <ellipse cx="14" cy="18" rx="4" ry="6" fill="#ce93d8" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <line x1="28" y1="48" x2="28" y2="8" stroke="#52b788" stroke-width="2.5"/>
+        <line x1="28" y1="12" x2="10" y2="12" stroke="#52b788" stroke-width="2"/>
+        <line x1="28" y1="18" x2="10" y2="18" stroke="#52b788" stroke-width="1.5"/>
+        <ellipse cx="10" cy="16" rx="3" ry="8" fill="#81c784" transform="rotate(-5,10,16)"/>
+        <ellipse cx="28" cy="32" rx="14" ry="4" fill="#81c784" opacity=".5"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <line x1="28" y1="48" x2="28" y2="6" stroke="#52b788" stroke-width="2.5"/>
+        <line x1="28" y1="10" x2="8" y2="10" stroke="#52b788" stroke-width="2"/>
+        <line x1="28" y1="16" x2="8" y2="16" stroke="#52b788" stroke-width="1.5"/>
+        <ellipse cx="8" cy="14" rx="3" ry="9" fill="#81c784" transform="rotate(-5,8,14)"/>
+        ${[0,4,8,12,16,20,24].map(y=>`<ellipse cx="${12+Math.round(Math.sin(y)*3)}" cy="${y+4}" rx="4" ry="3" fill="${y<8?'#9c27b0':y<16?'#7b1fa2':'#6a1b9a'}" opacity=".85"/>`).join('')}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        <line x1="28" y1="48" x2="28" y2="4" stroke="#52b788" stroke-width="2.5"/>
+        <line x1="28" y1="8" x2="6" y2="8" stroke="#52b788" stroke-width="2"/>
+        <line x1="28" y1="14" x2="6" y2="14" stroke="#52b788" stroke-width="1.5"/>
+        <line x1="28" y1="20" x2="10" y2="20" stroke="#52b788" stroke-width="1.5"/>
+        <ellipse cx="6" cy="12" rx="3" ry="10" fill="#81c784" transform="rotate(-5,6,12)"/>
+        ${[0,4,8,12,16,20,24,28].map((y,i)=>`<ellipse cx="${10+Math.round(Math.sin(i*0.8)*4)}" cy="${y+2}" rx="4.5" ry="3.5" fill="${['#ab47bc','#9c27b0','#8e24aa','#7b1fa2','#6a1b9a','#4a148c','#9c27b0','#ab47bc'][i]}" opacity=".9"/>`).join('')}
+        ${[0,5,10,15,20,25].map((y,i)=>`<ellipse cx="${38+Math.round(Math.sin(i)*3)}" cy="${y+8}" rx="4" ry="3" fill="${['#ce93d8','#ba68c8','#ab47bc','#9c27b0','#8e24aa','#7b1fa2'][i]}" opacity=".8"/>`).join('')}
+      </svg>`
+    ]
+  },
+
+  /* 12. 大向日葵 Large Sunflower ─ 公尺與公分 */
+  {
+    id: 'large-sunflower', name: '公尺與公分', chineseName: '大向日葵', icon: '🌻',
+    difficulty: 3, color: '#f9a825',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,50,28,30)}
+        <ellipse cx="28" cy="26" rx="8" ry="6" fill="#aed581" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,50,28,14)}
+        ${leafPair(28,40,1)}${leafPair(28,30,-1)}${leafPair(28,22,1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,50,28,12)}
+        ${leafPair(28,40,1)}${leafPair(28,30,-1)}${leafPair(28,22,1)}
+        <circle cx="28" cy="10" r="9" fill="#4e342e"/>
+        <circle cx="28" cy="10" r="7" fill="#6d4c41"/>
+        ${[0,45,90,135,180,225,270,315].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*12)}" cy="${10+Math.round(-Math.cos(a*Math.PI/180)*12)}" rx="4" ry="2.5" fill="#f9a825" transform="rotate(${a},${Math.round(Math.sin(a*Math.PI/180)*12)},${10+Math.round(-Math.cos(a*Math.PI/180)*12)})"/>`).join('')}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,50,28,14)}
+        ${leafPair(28,42,1)}${leafPair(28,33,-1)}${leafPair(28,24,1)}
+        <g transform="translate(28,10)">
+          ${[0,30,60,90,120,150,180,210,240,270,300,330].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*13)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*13)}" rx="5" ry="3" fill="#f9a825" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="8" fill="#4e342e"/>
+          <circle cx="0" cy="0" r="6" fill="#6d4c41"/>
+          ${[0,45,90,135,180,225,270,315].map(a=>`<circle cx="${Math.round(Math.sin(a*Math.PI/180)*3)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*3)}" r="1.2" fill="#3e2723"/>`).join('')}
+          <circle cx="0" cy="0" r="1.5" fill="#ff8f00"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 13. 龍膽 Gentian ─ 年月日 */
+  {
+    id: 'gentian', name: '年月日', chineseName: '龍膽', icon: '💙',
+    difficulty: 2, color: '#1565c0',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="4" ry="6" fill="#90caf9" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="18" cy="34" rx="9" ry="3.5" fill="#388e3c" transform="rotate(-20,18,34)"/>
+        <ellipse cx="38" cy="32" rx="9" ry="3.5" fill="#388e3c" transform="rotate(20,38,32)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="18" cy="36" rx="9" ry="3.5" fill="#388e3c" transform="rotate(-20,18,36)"/>
+        <ellipse cx="38" cy="34" rx="9" ry="3.5" fill="#388e3c" transform="rotate(20,38,34)"/>
+        <path d="M21 14 Q21 4 28 4 Q35 4 35 14 Q35 22 28 24 Q21 22 21 14Z" fill="#1565c0" opacity=".85"/>
+        <path d="M23 14 Q23 7 28 7 Q33 7 33 14 Q33 20 28 22 Q23 20 23 14Z" fill="#42a5f5"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}
+        <ellipse cx="18" cy="37" rx="9" ry="3.5" fill="#388e3c" transform="rotate(-20,18,37)"/>
+        <ellipse cx="38" cy="35" rx="9" ry="3.5" fill="#388e3c" transform="rotate(20,38,35)"/>
+        <g transform="translate(28,18)">
+          ${[[-3,0],[3,0],[0,-3]].map(([dx,dy])=>`<path d="M${dx},-10 Q${dx+6},-6 ${dx+8},${dy+2} Q${dx+4},${dy+8} ${dx},${dy+10} Q${dx-4},${dy+8} ${dx-8},${dy+2} Q${dx-6},-6 ${dx},-10Z" fill="#1565c0" opacity=".85"/>`).join('')}
+          <circle cx="0" cy="0" r="5" fill="#e3f2fd"/>
+          <circle cx="0" cy="0" r="3" fill="#42a5f5"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 14. 雞蛋花 Plumeria ─ 除法概念 */
+  {
+    id: 'plumeria', name: '除法概念', chineseName: '雞蛋花', icon: '🌼',
+    difficulty: 3, color: '#fffde7',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="5" ry="4" fill="#fff9c4" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        <ellipse cx="18" cy="34" rx="11" ry="4" fill="#558b2f" transform="rotate(-15,18,34)"/>
+        <ellipse cx="38" cy="32" rx="11" ry="4" fill="#558b2f" transform="rotate(15,38,32)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="18" cy="36" rx="11" ry="4" fill="#558b2f" transform="rotate(-15,18,36)"/>
+        <ellipse cx="38" cy="34" rx="11" ry="4" fill="#558b2f" transform="rotate(15,38,34)"/>
+        <circle cx="28" cy="12" r="9" fill="#fffde7" stroke="#fff176" stroke-width="1"/>
+        <circle cx="28" cy="12" r="5" fill="#fdd835" opacity=".7"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,23)}
+        <ellipse cx="18" cy="37" rx="11" ry="4" fill="#558b2f" transform="rotate(-15,18,37)"/>
+        <ellipse cx="38" cy="35" rx="11" ry="4" fill="#558b2f" transform="rotate(15,38,35)"/>
+        <g transform="translate(28,17)">
+          ${[0,72,144,216,288].map(a=>`<path d="M0,-11 Q${Math.round(Math.sin((a+36)*Math.PI/180)*6)},${Math.round(-Math.cos((a+36)*Math.PI/180)*6)} ${Math.round(Math.sin(a*Math.PI/180)*9)},${Math.round(-Math.cos(a*Math.PI/180)*9)} Q${Math.round(Math.sin((a-36)*Math.PI/180)*6)},${Math.round(-Math.cos((a-36)*Math.PI/180)*6)} 0,-11Z" fill="#fffde7" stroke="#fff176" stroke-width=".8" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="5" fill="#ffd54f"/>
+          <circle cx="0" cy="0" r="3" fill="#ff8f00"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 15. 百子蓮 Agapanthus ─ 認識分數 */
+  {
+    id: 'agapanthus', name: '認識分數', chineseName: '百子蓮', icon: '💙',
+    difficulty: 3, color: '#3949ab',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,32)}
+        <circle cx="28" cy="28" r="5" fill="#7986cb" opacity=".5"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        <ellipse cx="20" cy="38" rx="3" ry="10" fill="#558b2f" transform="rotate(-8,20,38)"/>
+        <ellipse cx="36" cy="36" rx="3" ry="10" fill="#558b2f" transform="rotate(8,36,36)"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}
+        <ellipse cx="20" cy="36" rx="3" ry="10" fill="#558b2f" transform="rotate(-8,20,36)"/>
+        <ellipse cx="36" cy="34" rx="3" ry="10" fill="#558b2f" transform="rotate(8,36,34)"/>
+        <circle cx="28" cy="12" r="9" fill="#3949ab" opacity=".7"/>
+        <circle cx="28" cy="12" r="5" fill="#7986cb" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,19)}
+        <ellipse cx="20" cy="36" rx="3" ry="10" fill="#558b2f" transform="rotate(-8,20,36)"/>
+        <ellipse cx="36" cy="34" rx="3" ry="10" fill="#558b2f" transform="rotate(8,36,34)"/>
+        <g transform="translate(28,13)">
+          ${[0,40,80,120,160,200,240,280,320].map((a,i)=>`<g transform="rotate(${a})">
+            <line x1="0" y1="0" x2="0" y2="-9" stroke="#5c6bc0" stroke-width="1.5"/>
+            <ellipse cx="0" cy="-11" rx="3" ry="2.5" fill="${i%3===0?'#3949ab':i%3===1?'#5c6bc0':'#7986cb'}"/>
+          </g>`).join('')}
+          <circle cx="0" cy="0" r="3" fill="#c5cae9"/>
+        </g>
+      </svg>`
+    ]
+  },
+
+  /* 16. 大理花 Dahlia ─ 平面與立體圖形 */
+  {
+    id: 'dahlia', name: '平面與立體圖形', chineseName: '大理花', icon: '🌸',
+    difficulty: 3, color: '#ad1457',
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,33)}
+        <ellipse cx="28" cy="29" rx="6" ry="5" fill="#f48fb1" opacity=".6"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}
+        ${leafPair(28,38,1)}${leafPair(28,30,-1)}
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,18)}
+        ${leafPair(28,38,1)}${leafPair(28,28,-1)}
+        <circle cx="28" cy="13" r="10" fill="#ad1457" opacity=".75"/>
+        <circle cx="28" cy="13" r="6" fill="#e91e63" opacity=".6"/>
+        <circle cx="28" cy="13" r="3" fill="#fce4ec"/>
+      </svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,24)}
+        ${leafPair(28,40,1)}${leafPair(28,32,-1)}
+        <g transform="translate(28,17)">
+          ${[0,22.5,45,67.5,90,112.5,135,157.5,180,202.5,225,247.5,270,292.5,315,337.5].map((a,i)=>`<path d="M0,-11 Q${Math.round(Math.sin((a+11)*Math.PI/180)*8)},${Math.round(-Math.cos((a+11)*Math.PI/180)*8)} ${Math.round(Math.sin(a*Math.PI/180)*10)},${Math.round(-Math.cos(a*Math.PI/180)*10)} Q${Math.round(Math.sin((a-11)*Math.PI/180)*8)},${Math.round(-Math.cos((a-11)*Math.PI/180)*8)} 0,-11Z" fill="${i%2===0?'#ad1457':'#e91e63'}" transform="rotate(${a})"/>`).join('')}
+          ${[0,30,60,90,120,150,180,210,240,270,300,330].map((a,i)=>`<path d="M0,-6 Q${Math.round(Math.sin((a+15)*Math.PI/180)*5)},${Math.round(-Math.cos((a+15)*Math.PI/180)*5)} ${Math.round(Math.sin(a*Math.PI/180)*6)},${Math.round(-Math.cos(a*Math.PI/180)*6)} Q${Math.round(Math.sin((a-15)*Math.PI/180)*5)},${Math.round(-Math.cos((a-15)*Math.PI/180)*5)} 0,-6Z" fill="${i%2===0?'#c2185b':'#f06292'}" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="3" fill="#fce4ec"/>
+          <circle cx="0" cy="0" r="1.5" fill="#e91e63"/>
+        </g>
+      </svg>`
+    ]
+  }
+];
+
+/* ------------------------------------------------------------------ */
+/*  Grade-aware helpers                                                 */
+/* ------------------------------------------------------------------ */
+
+/** Return the active flower list based on current grade */
+function getActiveFlowers() {
+  return Storage.getGrade() === 2 ? FLOWERS_G2 : FLOWERS;
+}
+
+/* ------------------------------------------------------------------ */
 /*  Garden Rendering                                                    */
 /* ------------------------------------------------------------------ */
 function getStage(correct) {
@@ -614,9 +1186,10 @@ function renderFlowerGrid() {
   if (!grid) return;
   grid.innerHTML = '';
 
-  const progress = Storage.load().progress;
+  const flowers = getActiveFlowers();
+  const progress = Storage.getActiveProgress();
 
-  FLOWERS.forEach(flower => {
+  flowers.forEach(flower => {
     const p = progress[flower.id] || { correct: 0 };
     const stage = getStage(p.correct);
     const pct = getProgressPercent(p.correct);
@@ -645,10 +1218,11 @@ function updateFlowerCard(flowerId) {
   const card = document.querySelector(`.flower-card[data-id="${flowerId}"]`);
   if (!card) return;
 
-  const p = Storage.load().progress[flowerId] || { correct: 0 };
+  const p = Storage.getFlowerProgress(flowerId);
   const stage = getStage(p.correct);
   const pct = getProgressPercent(p.correct);
-  const flower = FLOWERS.find(f => f.id === flowerId);
+  const flower = getActiveFlowers().find(f => f.id === flowerId);
+  if (!flower) return;
 
   card.dataset.stage = stage;
   card.classList.toggle('bloomed', stage === 4);
@@ -659,8 +1233,9 @@ function updateFlowerCard(flowerId) {
 }
 
 function updateBloomCount() {
-  const progress = Storage.load().progress;
-  const count = FLOWERS.filter(f => getStage((progress[f.id] || {correct:0}).correct) === 4).length;
+  const flowers = getActiveFlowers();
+  const progress = Storage.getActiveProgress();
+  const count = flowers.filter(f => getStage((progress[f.id] || {correct:0}).correct) === 4).length;
   const el = document.getElementById('bloom-count');
   if (el) el.textContent = count;
 }
@@ -670,7 +1245,7 @@ function selectFlower(flowerId) {
   const card = document.querySelector(`.flower-card[data-id="${flowerId}"]`);
   if (card) card.classList.add('active');
 
-  const flower = FLOWERS.find(f => f.id === flowerId);
+  const flower = getActiveFlowers().find(f => f.id === flowerId);
   if (flower) QuestionManager.loadTopic(flower);
 }
 
@@ -686,7 +1261,7 @@ function triggerLevelUpAnimation(flowerId, newStage) {
     setTimeout(() => fx.remove(), 600);
   }
 
-  const flower = FLOWERS.find(f => f.id === flowerId);
+  const flower = getActiveFlowers().find(f => f.id === flowerId);
   if (!flower) return;
 
   const overlay = document.getElementById('levelup-overlay');
@@ -707,3 +1282,4 @@ function triggerLevelUpAnimation(flowerId, newStage) {
   msg.innerHTML = toRuby(msgs[newStage] || '');
   overlay.classList.remove('hidden');
 }
+

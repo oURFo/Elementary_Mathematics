@@ -47,7 +47,12 @@ function processStaticRuby() {
   document.querySelectorAll('ruby > rt').forEach(rt => {
     if (rt.children.length === 0 && rt.textContent.trim()) {
       const { body, tone } = splitZhuyin(rt.textContent.trim());
-      rt.innerHTML = `<span class="zy-b">${body}</span>${tone ? `<span class="zy-t">${tone}</span>` : ''}`;
+      if (tone === '˙') {
+        rt.classList.add('light-tone');
+        rt.innerHTML = `<span class="zy-t">˙</span><span class="zy-b">${body}</span>`;
+      } else {
+        rt.innerHTML = `<span class="zy-b">${body}</span>${tone ? `<span class="zy-t">${tone}</span>` : ''}`;
+      }
     }
   });
 }
@@ -112,6 +117,10 @@ function startApp() {
   const nameEl = document.getElementById('player-name-display');
   nameEl.innerHTML = (typeof toRuby === 'function') ? toRuby(name) : name;
 
+  // Restore saved grade tab state
+  const savedGrade = Storage.getGrade();
+  updateGradeUI(savedGrade);
+
   // Render flower garden
   renderFlowerGrid();
 
@@ -120,9 +129,56 @@ function startApp() {
 }
 
 /* ======================================================
+   Grade Switch
+   ====================================================== */
+function switchGrade(grade) {
+  Storage.setGrade(grade);
+  updateGradeUI(grade);
+
+  // Clear question panel (show placeholder)
+  document.getElementById('question-area').classList.add('hidden');
+  document.getElementById('no-topic-placeholder').classList.remove('hidden');
+
+  // Re-render flower grid for new grade
+  renderFlowerGrid();
+}
+
+function updateGradeUI(grade) {
+  // Update Tab buttons
+  document.querySelectorAll('.grade-tab').forEach(tab => {
+    const tabGrade = parseInt(tab.dataset.grade);
+    tab.classList.toggle('active', tabGrade === grade);
+  });
+
+  // Update garden title
+  const titleEl = document.getElementById('garden-title');
+  if (titleEl) {
+    const gradeLabel = grade === 2 ? '二年級' : '一年級';
+    titleEl.innerHTML = toRuby('我的' + gradeLabel + '花圃');
+  }
+
+  // Update bloom total count
+  const totalEl = document.getElementById('bloom-total');
+  if (totalEl) {
+    const flowers = getActiveFlowers();
+    totalEl.textContent = flowers.length;
+  }
+}
+
+/* ======================================================
    Event Bindings
    ====================================================== */
 function bindEvents() {
+
+  /* Grade Tab buttons */
+  document.querySelectorAll('.grade-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const grade = parseInt(tab.dataset.grade);
+      if (grade !== Storage.getGrade()) {
+        switchGrade(grade);
+      }
+    });
+  });
 
   /* Reset button → show confirm modal */
   document.getElementById('reset-btn').addEventListener('click', () => {
