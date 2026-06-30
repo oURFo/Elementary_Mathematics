@@ -458,7 +458,7 @@ const FLOWERS = [
         </g>
       </svg>`
     ]
-  }
+  },
   /* 13. 水仙 Narcissus ─ 加減混合 */
   {
     id: 'narcissus', name: '加減混合', chineseName: '水仙', icon: '🌼',
