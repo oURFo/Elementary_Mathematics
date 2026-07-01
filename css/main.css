@@ -539,6 +539,20 @@ rt.light-tone .zy-t {
 }
 
 /* Garden Legend */
+.garden-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+.garden-footer a {
+  font-size: .68rem;
+  color: rgba(255,255,255,.28);
+  text-decoration: none;
+  letter-spacing: .02em;
+}
+.garden-footer a:hover {
+  color: rgba(255,255,255,.55);
+}
+
 .garden-legend {
   display: flex;
   gap: 6px;
