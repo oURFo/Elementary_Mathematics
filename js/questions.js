@@ -35,6 +35,14 @@ const QuestionManager = (() => {
         console.error('Grade 1 questions also failed:', e2);
       }
     }
+
+    // Connect visual questions callback
+    if (typeof VisualQuestions !== 'undefined') {
+      VisualQuestions.setAnswerCallback((isCorrect, correctAns) => {
+        if (isCorrect) onCorrect();
+        else onWrong(correctAns);
+      });
+    }
   }
 
   /* ── Get active topics by grade ─────────── */
@@ -95,15 +103,42 @@ const QuestionManager = (() => {
 
     isAnswered = false;
     answerValue = '';
-    updateAnswerDisplay();
     clearFeedback();
+
+    const p    = Storage.getFlowerProgress(currentFlower.id);
+    const num  = (p.correct || 0) + 1;
+    const numLabel = `<ruby>第<rt>ㄉㄧˋ</rt></ruby> ${num} <ruby>題<rt>ㄊㄧˊ</rt></ruby>`;
+
+    // ── Route: visual question ────────────────────────────────
+    if (currentQuestion.type === 'visual') {
+      // Hide regular UI
+      document.getElementById('question-content').classList.add('hidden');
+      document.getElementById('scratchpad-area').classList.add('hidden');
+      document.getElementById('answer-area').classList.add('hidden');
+      // Show visual UI
+      const vqa = document.getElementById('visual-question-area');
+      vqa.classList.remove('hidden');
+      // Set visual question number
+      const vqNum = document.getElementById('vq-q-number');
+      if (vqNum) vqNum.innerHTML = numLabel;
+      // Delegate to VisualQuestions module
+      if (typeof VisualQuestions !== 'undefined') {
+        VisualQuestions.show(currentQuestion);
+      }
+      return;
+    }
+
+    // ── Regular question: ensure visual area is hidden ────────
+    document.getElementById('visual-question-area').classList.add('hidden');
+    document.getElementById('question-content').classList.remove('hidden');
+    document.getElementById('scratchpad-area').classList.remove('hidden');
+
+    updateAnswerDisplay();
     resetMcButtons();
 
     // Question number
     const qNum = document.getElementById('question-number');
-    const p = Storage.getFlowerProgress(currentFlower.id);
-    const num = (p.correct || 0) + 1;
-    qNum.innerHTML = `<ruby>第<rt>ㄉㄧˋ</rt></ruby> ${num} <ruby>題<rt>ㄊㄧˊ</rt></ruby>`;
+    qNum.innerHTML = numLabel;
 
     // Context (情境題): show story paragraph before question
     const ctxEl = document.getElementById('question-context');

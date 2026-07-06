@@ -240,6 +240,11 @@ function bindEvents() {
     QuestionManager.handleFillSubmit();
   });
 
+  /* Visual Questions module bindings */
+  if (typeof VisualQuestions !== 'undefined') {
+    VisualQuestions.init();
+  }
+
   /* Fullscreen button */
   initFullscreen();
 

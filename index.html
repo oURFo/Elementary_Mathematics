@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/flowers.css">
   <link rel="stylesheet" href="css/particles.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/visual-questions.css">
 </head>
 <body>
 
@@ -172,6 +173,64 @@
           <button class="submit-btn" id="submit-btn"><ruby>確<rt>ㄑㄩㄝˋ</rt></ruby><ruby>認<rt>ㄖㄣˋ</rt></ruby><ruby>答<rt>ㄉㄚˊ</rt></ruby><ruby>案<rt>ㄢˋ</rt></ruby> ✓</button>
         </div>
 
+        <!-- ── Visual Question Area (hidden by default) ── -->
+        <div class="visual-question-area hidden" id="visual-question-area">
+
+          <!-- Question number -->
+          <div class="vq-q-number" id="vq-q-number"></div>
+
+          <!-- Question text with clickable noun chips -->
+          <div class="vq-question-text" id="vq-question-text"></div>
+
+          <!-- Status hint -->
+          <div class="vq-hint" id="vq-hint"></div>
+
+          <!-- Main object canvas -->
+          <div class="vq-main-canvas" id="vq-main-canvas">
+
+            <!-- Canvas object count badge (top-left) -->
+            <div class="vq-canvas-count" id="vq-canvas-count">0</div>
+
+            <!-- Zone labels (shown for 2-noun questions) -->
+            <div class="vq-zone-label vq-zone-label-a hidden" id="vq-zone-label-a"></div>
+            <div class="vq-zone-label vq-zone-label-b hidden" id="vq-zone-label-b"></div>
+
+            <!-- ADD mode: centre drop-zone (objects shrink & lock inside) -->
+            <div class="vq-drop-zone hidden" id="vq-drop-zone">
+              <div class="vq-drop-count" id="vq-drop-count">0</div>
+              <div class="vq-drop-label"><ruby>放<rt>ㄈㄤˋ</rt></ruby><ruby>入<rt>ㄖㄨˋ</rt></ruby><ruby>計<rt>ㄐㄧˋ</rt></ruby><ruby>算<rt>ㄙㄨㄢˋ</rt></ruby></div>
+            </div>
+
+            <!-- SUB-1 mode: single-noun remove box -->
+            <div class="vq-sub-single hidden" id="vq-sub-single">
+              <div class="vq-sub-count" id="vq-sub-count">0</div>
+              <div class="vq-sub-label"><ruby>拖<rt>ㄊㄨㄛ</rt></ruby><ruby>入<rt>ㄖㄨˋ</rt></ruby><ruby>移<rt>ㄧˊ</rt></ruby><ruby>除<rt>ㄔㄨˊ</rt></ruby></div>
+            </div>
+
+            <!-- SUB-2 mode: double-slot pair box -->
+            <div class="vq-sub-double hidden" id="vq-sub-double">
+              <div class="vq-sub-slot" id="vq-sub-slot-a">
+                <div class="vq-slot-noun" id="vq-slot-a-noun"></div>
+                <div class="vq-slot-drop">＋</div>
+              </div>
+              <div class="vq-sub-cross">✕</div>
+              <div class="vq-sub-slot" id="vq-sub-slot-b">
+                <div class="vq-slot-noun" id="vq-slot-b-noun"></div>
+                <div class="vq-slot-drop">＋</div>
+              </div>
+              <div class="vq-sub-count vq-sub-count-2" id="vq-sub-count-2">0</div>
+            </div>
+
+          </div><!-- /vq-main-canvas -->
+
+          <!-- Answer row (shown after op mode selected) -->
+          <div class="vq-answer-row hidden" id="vq-answer-row">
+            <span>目前答案：<strong class="vq-answer-num" id="vq-answer-display">0</strong></span>
+            <button id="vq-submit-btn"><ruby>確<rt>ㄑㄩㄝˋ</rt></ruby><ruby>認<rt>ㄖㄣˋ</rt></ruby><ruby>答<rt>ㄉㄚˊ</rt></ruby><ruby>案<rt>ㄢˋ</rt></ruby> ✓</button>
+          </div>
+
+        </div><!-- /visual-question-area -->
+
         <!-- Feedback -->
         <div class="answer-feedback hidden" id="answer-feedback">
           <div class="feedback-correct hidden" id="feedback-correct">
@@ -192,11 +251,31 @@
   <!-- Particle Layer -->
   <div id="particle-layer" class="particle-layer"></div>
 
+  <!-- Drawing Popup (for visual questions) -->
+  <div class="vq-draw-popup hidden" id="vq-draw-popup">
+    <div class="vq-draw-modal">
+      <div class="vq-draw-header">
+        <ruby>畫<rt>ㄏㄨㄚˋ</rt></ruby><ruby>一<rt>ㄧ</rt></ruby><ruby>個<rt>˙ㄍㄜ</rt></ruby>：<span class="vq-draw-noun" id="vq-draw-noun-label"></span>
+      </div>
+      <canvas id="vq-draw-canvas"></canvas>
+      <div class="vq-draw-toolbar">
+        <button class="vq-draw-tool active" id="vq-draw-pen">✏️ <ruby>畫<rt>ㄏㄨㄚˋ</rt></ruby><ruby>筆<rt>ㄅㄧˇ</rt></ruby></button>
+        <button class="vq-draw-tool" id="vq-draw-eraser">🧹 <ruby>橡<rt>ㄒㄧㄤˋ</rt></ruby><ruby>皮<rt>ㄆㄧˊ</rt></ruby><ruby>擦<rt>ㄘㄚ</rt></ruby></button>
+        <button class="vq-draw-tool" id="vq-draw-clear">🗑️ <ruby>清<rt>ㄑㄧㄥ</rt></ruby><ruby>除<rt>ㄔㄨˊ</rt></ruby></button>
+      </div>
+      <div class="vq-draw-footer">
+        <button id="vq-draw-cancel"><ruby>取<rt>ㄑㄩˇ</rt></ruby><ruby>消<rt>ㄒㄧㄠ</rt></ruby></button>
+        <button id="vq-draw-done"><ruby>完<rt>ㄨㄢˊ</rt></ruby><ruby>成<rt>ㄔㄥˊ</rt></ruby> ✓</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="js/zhuyin.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/flowers.js"></script>
   <script src="js/particles.js"></script>
+  <script src="js/visual-questions.js"></script>
   <script src="js/questions.js"></script>
   <script src="js/app.js"></script>
 </body>

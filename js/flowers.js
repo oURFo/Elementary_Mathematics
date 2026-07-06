@@ -592,6 +592,111 @@ const FLOWERS = [
         <circle cx="28" cy="13" r="5" fill="#fffde7"/>
         <circle cx="28" cy="13" r="2" fill="#fdd835"/></svg>`
     ]
+  },
+
+  /* 17. 向陽花 Sunstar ─ 視覺加法應用題 ★ special */
+  {
+    id: 'sunstar', name: '視覺加法', chineseName: '向陽花', icon: '⭐',
+    difficulty: 4, color: '#ff8f00', special: true,
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}<ellipse cx="28" cy="30" rx="6" ry="5" fill="#ffca28" opacity=".8"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}${leafPair(28,38,1)}${leafPair(28,28,-1)}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}${leafPair(28,36,1)}${leafPair(28,26,-1)}
+        <circle cx="28" cy="11" r="9" fill="#ffca28"/>
+        <circle cx="28" cy="11" r="5" fill="#ff8f00" opacity=".8"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}${leafPair(28,40,1)}${leafPair(28,30,-1)}
+        <g transform="translate(28,15)">
+          ${[0,30,60,90,120,150,180,210,240,270,300,330].map(a=>`<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*9)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*9)}" rx="2.5" ry="6" fill="#ffb300" transform="rotate(${a})"/>`).join('')}
+          <circle cx="0" cy="0" r="5" fill="#ff6d00"/>
+          <circle cx="0" cy="0" r="3" fill="#ffe0b2"/>
+        </g></svg>`
+    ]
+  },
+
+  /* 19. 彩虹花 Rainbow Flower ─ 雙名詞視覺加法 ★ special */
+  {
+    id: 'rainbow-flower', name: '雙名詞加法', chineseName: '彩虹花', icon: '🌈',
+    difficulty: 4, color: '#7b1fa2', special: true,
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}<circle cx="28" cy="30" r="5" fill="#ce93d8" opacity=".8"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}${leafPair(28,38,1)}${leafPair(28,28,-1)}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}${leafPair(28,36,1)}${leafPair(28,26,-1)}
+        <ellipse cx="28" cy="11" rx="7" ry="9" fill="#ab47bc" opacity=".85"/>
+        <circle cx="28" cy="11" r="4" fill="#fdd835" opacity=".7"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}${leafPair(28,40,1)}${leafPair(28,30,-1)}
+        <g transform="translate(28,15)">
+          ${[0,60,120,180,240,300].map((a,i) => {
+            const c = i%2===0 ? '#ff7043' : '#7e57c2';
+            return `<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*9)}" cy="${Math.round(-Math.cos(a*Math.PI/180)*9)}" rx="4" ry="8" fill="${c}" transform="rotate(${a})" opacity=".9"/>`;
+          }).join('')}
+          <circle cx="0" cy="0" r="5" fill="#ffeb3b"/>
+          <circle cx="0" cy="0" r="3" fill="#fff9c4"/>
+        </g></svg>`
+    ]
+  },
+
+  /* 18. 彩蝶花 Butterfly Flower ─ 視覺減法應用題 ★ special */
+  {
+    id: 'butterfly-flower', name: '視覺減法', chineseName: '彩蝶花', icon: '🦋',
+    difficulty: 4, color: '#e91e63', special: true,
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}<ellipse cx="28" cy="30" rx="5" ry="4" fill="#f48fb1" opacity=".8"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}${leafPair(28,38,-1)}${leafPair(28,28,1)}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}${leafPair(28,36,-1)}${leafPair(28,26,1)}
+        <ellipse cx="28" cy="12" rx="6" ry="9" fill="#e91e63" opacity=".85"/>
+        <ellipse cx="28" cy="10" rx="4" ry="6" fill="#f48fb1" opacity=".5"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}${leafPair(28,40,-1)}${leafPair(28,32,1)}
+        <g transform="translate(28,16)">
+          <ellipse cx="-7" cy="-5" rx="9" ry="11" fill="#e91e63" transform="rotate(-25,-7,-5)" opacity=".9"/>
+          <ellipse cx="7" cy="-5" rx="9" ry="11" fill="#e91e63" transform="rotate(25,7,-5)" opacity=".9"/>
+          <ellipse cx="-5" cy="7" rx="7" ry="7" fill="#ad1457" transform="rotate(20,-5,7)" opacity=".85"/>
+          <ellipse cx="5" cy="7" rx="7" ry="7" fill="#ad1457" transform="rotate(-20,5,7)" opacity=".85"/>
+          <ellipse cx="0" cy="1" rx="2" ry="7" fill="#1a1a2e" opacity=".6"/>
+          <circle cx="0" cy="-6" r="2" fill="#1a1a2e" opacity=".6"/>
+        </g></svg>`
+    ]
+  },
+
+  /* 20. 星光花 Starlight Flower ─ 雙名詞視覺減法 ★ special */
+  {
+    id: 'starlight-flower', name: '雙名詞減法', chineseName: '星光花', icon: '✨',
+    difficulty: 4, color: '#00838f', special: true,
+    svgs: [
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}${seedShape()}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,34)}<circle cx="28" cy="30" r="5" fill="#4dd0e1" opacity=".8"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,20)}${leafPair(28,38,-1)}${leafPair(28,28,1)}</svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,16)}${leafPair(28,36,-1)}${leafPair(28,26,1)}
+        <polygon points="28,4 30,9 35,9 31,12 33,17 28,14 23,17 25,12 21,9 26,9" fill="#00acc1" opacity=".85"/>
+        <circle cx="28" cy="11" r="3" fill="#e0f7fa" opacity=".7"/></svg>`,
+      `<svg viewBox="0 0 56 60" xmlns="http://www.w3.org/2000/svg">${soil()}
+        ${stemLine(28,48,28,22)}${leafPair(28,40,-1)}${leafPair(28,30,1)}
+        <g transform="translate(28,15)">
+          ${[0,45,90,135,180,225,270,315].map((a,i) => {
+            const big = i%2===0;
+            return `<ellipse cx="${Math.round(Math.sin(a*Math.PI/180)*(big?10:6))}" cy="${Math.round(-Math.cos(a*Math.PI/180)*(big?10:6))}" rx="${big?3:2}" ry="${big?9:5}" fill="${big?'#00acc1':'#4dd0e1'}" transform="rotate(${a})" opacity="${big?.9:.7}"/>`;
+          }).join('')}
+          <circle cx="0" cy="0" r="4" fill="#00838f"/>
+          <circle cx="0" cy="0" r="2.5" fill="#e0f7fa"/>
+        </g></svg>`
+    ]
   }
 ];
 
@@ -1195,7 +1300,7 @@ function renderFlowerGrid() {
     const pct = getProgressPercent(p.correct);
 
     const card = document.createElement('div');
-    card.className = 'flower-card' + (stage === 4 ? ' bloomed' : '');
+    card.className = 'flower-card' + (stage === 4 ? ' bloomed' : '') + (flower.special ? ' special-card' : '');
     card.dataset.id = flower.id;
     card.dataset.stage = stage;
     card.title = `${flower.chineseName} — ${flower.name}`;

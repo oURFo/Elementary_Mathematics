@@ -859,6 +859,110 @@
         {"type":"fi","context":"班上女生有14人，男生比女生少3人。","q":"班上男生有幾人？","visual":"👦","answer":"11"},
         {"type":"mc","context":"小朋友摺了8隻紙鶴，媽媽摺了比小朋友多7隻。","q":"媽媽摺了幾隻紙鶴？","visual":"🐦","answer":"15","opts":["13","14","15","16"]}
       ]
+    },
+    {
+      "id": "sunstar",
+      "name": "視覺加法",
+      "questions": [
+        {"type":"visual","q":"桌上有[蘋果:4]個，媽媽又放了[蘋果:3]個，共有幾個蘋果？","operation":"add","answer":"7"},
+        {"type":"visual","q":"花園有[花:5]朵，又種了[花:4]朵，共有幾朵花？","operation":"add","answer":"9"},
+        {"type":"visual","q":"小明有[鉛筆:6]支，哥哥給了[鉛筆:2]支，共有幾支鉛筆？","operation":"add","answer":"8"},
+        {"type":"visual","q":"籃子有[橘子:3]個，又放入[橘子:5]個，共有幾個橘子？","operation":"add","answer":"8"},
+        {"type":"visual","q":"小美有[糖果:7]顆，媽媽送了[糖果:3]顆，共有幾顆糖果？","operation":"add","answer":"10"},
+        {"type":"visual","q":"操場有[小朋友:8]個，又來了[小朋友:4]個，共有幾個小朋友？","operation":"add","answer":"12"},
+        {"type":"visual","q":"魚缸有[魚:5]條，又放入[魚:6]條，共有幾條魚？","operation":"add","answer":"11"},
+        {"type":"visual","q":"書架有[書:9]本，又加了[書:3]本，共有幾本書？","operation":"add","answer":"12"},
+        {"type":"visual","q":"樹上有[小鳥:4]隻，又飛來[小鳥:5]隻，共有幾隻小鳥？","operation":"add","answer":"9"},
+        {"type":"visual","q":"盒子有[餅乾:6]個，又加了[餅乾:6]個，共有幾個餅乾？","operation":"add","answer":"12"},
+        {"type":"visual","q":"小明有[彈珠:5]顆，小美有[彈珠:7]顆，合起來有幾顆？","operation":"add","answer":"12"},
+        {"type":"visual","q":"停車場有[車:4]輛，又開進[車:8]輛，共有幾輛車？","operation":"add","answer":"12"},
+        {"type":"visual","q":"花圃有[玫瑰:3]朵，又種了[玫瑰:9]朵，共有幾朵玫瑰？","operation":"add","answer":"12"},
+        {"type":"visual","q":"媽媽買了[雞蛋:8]個，奶奶又送了[雞蛋:5]個，共有幾個雞蛋？","operation":"add","answer":"13"},
+        {"type":"visual","q":"小弟有[積木:7]個，哥哥送了[積木:6]個，共有幾個積木？","operation":"add","answer":"13"},
+        {"type":"visual","q":"同學送了[卡片:9]張，老師又給了[卡片:5]張，共有幾張卡片？","operation":"add","answer":"14"},
+        {"type":"visual","q":"小美有[貼紙:6]張，姊姊送了[貼紙:9]張，共有幾張貼紙？","operation":"add","answer":"15"},
+        {"type":"visual","q":"花瓶有[花:8]朵，又插入[花:7]朵，共有幾朵花？","operation":"add","answer":"15"},
+        {"type":"visual","q":"小明今天看到[小鳥:6]隻，又飛來[小鳥:8]隻，共有幾隻小鳥？","operation":"add","answer":"14"},
+        {"type":"visual","q":"小明有[蘋果:9]個，哥哥給了[蘋果:6]個，共有幾個蘋果？","operation":"add","answer":"15"}
+      ]
+    },
+    {
+      "id": "butterfly-flower",
+      "name": "視覺減法",
+      "questions": [
+        {"type":"visual","q":"樹上有[小鳥:8]隻，飛走了3隻，還剩幾隻？","operation":"subtract","answer":"5"},
+        {"type":"visual","q":"盤子有[餅乾:10]個，吃了4個，還剩幾個？","operation":"subtract","answer":"6"},
+        {"type":"visual","q":"花園有[花:9]朵，摘了3朵，還剩幾朵？","operation":"subtract","answer":"6"},
+        {"type":"visual","q":"小明有[蘋果:7]個，吃了2個，還剩幾個？","operation":"subtract","answer":"5"},
+        {"type":"visual","q":"魚缸有[魚:12]條，放走了5條，還剩幾條？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"書架有[書:11]本，借走了2本，還剩幾本？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"停車場有[車:10]輛，開走了4輛，還剩幾輛？","operation":"subtract","answer":"6"},
+        {"type":"visual","q":"小美有[糖果:11]顆，送給同學2顆，還剩幾顆？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"花圃有[玫瑰:11]朵，摘走了4朵，還剩幾朵？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"教室有[小朋友:13]個，走了5個，還剩幾個？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"盒子有[彈珠:11]顆，拿走了2顆，還剩幾顆？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"農場有[小雞:12]隻，送走了3隻，還剩幾隻？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"小明有[鉛筆:10]支，送了4支，還剩幾支？","operation":"subtract","answer":"6"},
+        {"type":"visual","q":"籃子有[橘子:11]個，吃掉了3個，還剩幾個？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"樹上有[蝴蝶:12]隻，飛走了3隻，還剩幾隻？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"小弟有[積木:13]個，拿走了4個，還剩幾個？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"小美有[貼紙:12]張，用了3張，還剩幾張？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"花瓶有[花:14]朵，掉了5朵，還剩幾朵？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"操場有[小朋友:11]個，回家了2個，還剩幾個？","operation":"subtract","answer":"9"},
+        {"type":"visual","q":"小明有[卡片:12]張，送了3張，還剩幾張？","operation":"subtract","answer":"9"}
+      ]
+    },
+    {
+      "id": "rainbow-flower",
+      "name": "雙名詞加法",
+      "questions": [
+        {"type":"visual","q":"班上有[男生:5]個和[女生:3]個，班上共有幾人？","operation":"add","answer":"8"},
+        {"type":"visual","q":"桌上有[蘋果:4]個和[橘子:6]個，共有幾個水果？","operation":"add","answer":"10"},
+        {"type":"visual","q":"花園有[小貓:3]隻和[小狗:5]隻，共有幾隻動物？","operation":"add","answer":"8"},
+        {"type":"visual","q":"小明有[鉛筆:7]支和[書:4]本，共有幾樣文具？","operation":"add","answer":"11"},
+        {"type":"visual","q":"花圃有[玫瑰:4]朵和[百合:8]朵，共有幾朵花？","operation":"add","answer":"12"},
+        {"type":"visual","q":"魚缸有[魚:6]條和[蝦:5]隻，共有幾個動物？","operation":"add","answer":"11"},
+        {"type":"visual","q":"班上有[男同學:9]個和[女同學:6]個，共有幾個同學？","operation":"add","answer":"15"},
+        {"type":"visual","q":"公園有[大人:5]個和[小孩:7]個，共有幾人？","operation":"add","answer":"12"},
+        {"type":"visual","q":"農場有[貓:8]隻和[狗:4]隻，共有幾隻動物？","operation":"add","answer":"12"},
+        {"type":"visual","q":"書包有[書:6]本和[鉛筆:6]支，共有幾樣東西？","operation":"add","answer":"12"},
+        {"type":"visual","q":"草地有[白兔:5]隻和[黑兔:9]隻，共有幾隻兔子？","operation":"add","answer":"14"},
+        {"type":"visual","q":"盒子有[糖果:8]顆和[餅乾:6]個，共有幾個點心？","operation":"add","answer":"14"},
+        {"type":"visual","q":"籃子有[紅球:5]個和[藍球:9]個，共有幾個球？","operation":"add","answer":"14"},
+        {"type":"visual","q":"餐桌有[蘋果:7]個和[香蕉:7]根，共有幾個水果？","operation":"add","answer":"14"},
+        {"type":"visual","q":"廚房有[杯子:6]個和[盤子:9]個，共有幾個餐具？","operation":"add","answer":"15"},
+        {"type":"visual","q":"天空有[小鳥:7]隻和[蝴蝶:8]隻，共有幾個動物？","operation":"add","answer":"15"},
+        {"type":"visual","q":"公園有[小朋友:8]個和[大人:7]個，共有幾人？","operation":"add","answer":"15"},
+        {"type":"visual","q":"花瓶有[玫瑰:9]朵和[百合:6]朵，共有幾朵花？","operation":"add","answer":"15"},
+        {"type":"visual","q":"班上有[男生:6]個和[女生:9]個，班上共有幾人？","operation":"add","answer":"15"},
+        {"type":"visual","q":"農場有[小雞:7]隻和[小鴨:8]隻，共有幾隻？","operation":"add","answer":"15"}
+      ]
+    },
+    {
+      "id": "starlight-flower",
+      "name": "雙名詞減法",
+      "questions": [
+        {"type":"visual","q":"老師有[餅乾:8]個，分給了[小朋友:3]個，老師還剩幾個餅乾？","operation":"subtract","answer":"5"},
+        {"type":"visual","q":"小明有[糖果:10]顆，送給了[同學:4]個，還剩幾顆糖果？","operation":"subtract","answer":"6"},
+        {"type":"visual","q":"媽媽有[橘子:9]個，分給了[小孩:4]個，還剩幾個橘子？","operation":"subtract","answer":"5"},
+        {"type":"visual","q":"爸爸有[蘋果:11]個，送給[朋友:3]個，還剩幾個蘋果？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"老師有[書:12]本，借給了[同學:5]個，還剩幾本書？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"小美有[貼紙:10]張，送給了[同學:3]個，還剩幾張貼紙？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"媽媽有[雞蛋:9]個，給了[鄰居:4]個，還剩幾個雞蛋？","operation":"subtract","answer":"5"},
+        {"type":"visual","q":"老師有[積木:12]個，分給[小孩:4]個，還剩幾個積木？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"小明有[餅乾:11]個，分給了[朋友:4]個，還剩幾個餅乾？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"老師有[糖果:13]顆，送給了[同學:6]個，還剩幾顆糖果？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"媽媽有[花:10]朵，插入了[花瓶:4]個，還有幾朵花？","operation":"subtract","answer":"6"},
+        {"type":"visual","q":"小明有[鉛筆:11]支，送給了[同學:3]個，還剩幾支鉛筆？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"爸爸有[蘋果:9]個，給了[客人:2]個，還剩幾個蘋果？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"老師有[糖果:12]顆，分給了[小孩:4]個，還剩幾顆糖果？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"小美有[餅乾:11]個，分給了[朋友:3]個，還剩幾個餅乾？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"圖書館有[書:13]本，借走了[同學:5]個，還剩幾本書？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"媽媽有[橘子:10]個，分給了[朋友:4]個，還剩幾個橘子？","operation":"subtract","answer":"6"},
+        {"type":"visual","q":"老師有[雞蛋:12]個，送給了[同學:5]個，還剩幾個雞蛋？","operation":"subtract","answer":"7"},
+        {"type":"visual","q":"小明有[積木:13]個，借給了[同學:5]個，還剩幾個積木？","operation":"subtract","answer":"8"},
+        {"type":"visual","q":"老師有[糖果:10]顆，送給了[學生:2]個，還剩幾顆糖果？","operation":"subtract","answer":"8"}
+      ]
     }
   ]
 }
