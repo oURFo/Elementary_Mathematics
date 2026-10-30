@@ -10,11 +10,15 @@ const Storage = {
   _default() {
     return {
       playerName: '',
-      grade: 1,          // active grade (1 or 2)
-      progress: {},      // 一年級: { [flowerId]: { correct, totalAttempts } }
-      progressG2: {},    // 二年級: { [flowerId]: { correct, totalAttempts } }
+      grade: 1,          // active grade (1–6)
+      progress: {},      // 一年級
+      progressG2: {},    // 二年級
+      progressG3: {},    // 三年級
+      progressG4: {},    // 四年級
+      progressG5: {},    // 五年級
+      progressG6: {},    // 六年級
       lastPlayed: null,
-      version: 2
+      version: 3
     };
   },
 
@@ -24,9 +28,13 @@ const Storage = {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return this._default();
       const data = JSON.parse(raw);
-      // Migrate v1 → v2
+      // Migrate older versions
       if (!data.progress)   data.progress   = {};
       if (!data.progressG2) data.progressG2 = {};
+      if (!data.progressG3) data.progressG3 = {};
+      if (!data.progressG4) data.progressG4 = {};
+      if (!data.progressG5) data.progressG5 = {};
+      if (!data.progressG6) data.progressG6 = {};
       if (!data.grade)      data.grade       = 1;
       return data;
     } catch (e) {
@@ -77,7 +85,8 @@ const Storage = {
   /** Get the active progress object (based on current grade) */
   getActiveProgress() {
     const data = this.load();
-    return data.grade === 2 ? data.progressG2 : data.progress;
+    const key = ['progress','progressG2','progressG3','progressG4','progressG5','progressG6'][data.grade - 1] || 'progress';
+    return data[key];
   },
 
   /** Get progress for a specific flower (grade-aware) */
@@ -86,13 +95,18 @@ const Storage = {
     return prog[flowerId] || { correct: 0, totalAttempts: 0 };
   },
 
+  /** Get grade-keyed progress from loaded data */
+  _prog(data) {
+    const key = ['progress','progressG2','progressG3','progressG4','progressG5','progressG6'][data.grade - 1] || 'progress';
+    if (!data[key]) data[key] = {};
+    return data[key];
+  },
+
   /** Record a correct answer for a flower (grade-aware) */
   addCorrect(flowerId) {
     const data = this.load();
-    const prog = data.grade === 2 ? data.progressG2 : data.progress;
-    if (!prog[flowerId]) {
-      prog[flowerId] = { correct: 0, totalAttempts: 0 };
-    }
+    const prog = this._prog(data);
+    if (!prog[flowerId]) prog[flowerId] = { correct: 0, totalAttempts: 0 };
     prog[flowerId].correct += 1;
     prog[flowerId].totalAttempts = (prog[flowerId].totalAttempts || 0) + 1;
     this.save(data);
@@ -102,10 +116,8 @@ const Storage = {
   /** Record an incorrect attempt (grade-aware) */
   addAttempt(flowerId) {
     const data = this.load();
-    const prog = data.grade === 2 ? data.progressG2 : data.progress;
-    if (!prog[flowerId]) {
-      prog[flowerId] = { correct: 0, totalAttempts: 0 };
-    }
+    const prog = this._prog(data);
+    if (!prog[flowerId]) prog[flowerId] = { correct: 0, totalAttempts: 0 };
     prog[flowerId].totalAttempts = (prog[flowerId].totalAttempts || 0) + 1;
     this.save(data);
   },

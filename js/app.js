@@ -153,7 +153,8 @@ function updateGradeUI(grade) {
   // Update garden title
   const titleEl = document.getElementById('garden-title');
   if (titleEl) {
-    const gradeLabel = grade === 2 ? '二年級' : '一年級';
+    const gradeNames = ['一', '二', '三', '四', '五', '六'];
+    const gradeLabel = (gradeNames[grade - 1] || '一') + '年級';
     titleEl.innerHTML = toRuby('我的' + gradeLabel + '花圃');
   }
 

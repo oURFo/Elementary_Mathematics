@@ -320,19 +320,25 @@ rt.light-tone .zy-t {
    ============================================ */
 .grade-tabs {
   display: flex;
-  gap: 4px;
+  flex-wrap: nowrap;
+  gap: 2px;
   background: rgba(0,0,0,.2);
   border-radius: 20px;
   padding: 3px;
   margin-left: 8px;
+  max-width: min(560px, 52vw);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.grade-tabs::-webkit-scrollbar { display: none; }
 
 .grade-tab {
   background: transparent;
   border: none;
   border-radius: 16px;
-  padding: 5px 14px;
-  font-size: .85rem;
+  padding: 4px 8px;
+  font-size: .72rem;
   font-family: var(--font-main);
   color: rgba(255,255,255,.75);
   cursor: pointer;
@@ -341,7 +347,8 @@ rt.light-tone .zy-t {
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  flex-shrink: 0;
 }
 
 .grade-tab:hover {
@@ -359,11 +366,12 @@ rt.light-tone .zy-t {
   transform: none;
 }
 
-/* Grade 2 active colour — teal-green accent */
-.grade-tab[data-grade="2"].active {
-  background: #e8f5e9;
-  color: #1b5e20;
-}
+/* Distinct active colours per grade */
+.grade-tab[data-grade="2"].active { background: #e8f5e9; color: #1b5e20; }
+.grade-tab[data-grade="3"].active { background: #fce4ec; color: #880e4f; }
+.grade-tab[data-grade="4"].active { background: #fff8e1; color: #e65100; }
+.grade-tab[data-grade="5"].active { background: #e3f2fd; color: #0d47a1; }
+.grade-tab[data-grade="6"].active { background: #f3e5f5; color: #4a148c; }
 
 .header-right {
   display: flex;

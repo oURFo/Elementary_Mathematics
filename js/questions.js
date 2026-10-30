@@ -6,6 +6,10 @@ const QuestionManager = (() => {
 
   let allTopicsG1 = [];
   let allTopicsG2 = [];
+  let allTopicsG3 = [];
+  let allTopicsG4 = [];
+  let allTopicsG5 = [];
+  let allTopicsG6 = [];
   let currentTopic = null;
   let currentFlower = null;
   let currentQuestion = null;
@@ -17,23 +21,25 @@ const QuestionManager = (() => {
   /* ── Load question banks ────────────────── */
   async function init() {
     try {
-      const [res1, res2] = await Promise.all([
-        fetch('data/questions.json'),
-        fetch('data/questions_g2.json')
-      ]);
-      const [data1, data2] = await Promise.all([res1.json(), res2.json()]);
-      allTopicsG1 = data1.topics;
-      allTopicsG2 = data2.topics;
+      const urls = [
+        'data/questions.json',
+        'data/questions_g2.json',
+        'data/questions_g3.json',
+        'data/questions_g4.json',
+        'data/questions_g5.json',
+        'data/questions_g6.json',
+      ];
+      const results = await Promise.allSettled(urls.map(u => fetch(u).then(r => r.json())));
+      const banks = [allTopicsG1, allTopicsG2, allTopicsG3, allTopicsG4, allTopicsG5, allTopicsG6];
+      results.forEach((r, i) => {
+        if (r.status === 'fulfilled' && r.value && r.value.topics) {
+          banks[i].push(...r.value.topics);
+        } else if (i < 2) {
+          console.warn(`Grade ${i+1} questions failed to load`);
+        }
+      });
     } catch (e) {
       console.error('Failed to load questions:', e);
-      // Fallback: try loading only grade 1
-      try {
-        const res = await fetch('data/questions.json');
-        const data = await res.json();
-        allTopicsG1 = data.topics;
-      } catch (e2) {
-        console.error('Grade 1 questions also failed:', e2);
-      }
     }
 
     // Connect visual questions callback
@@ -47,7 +53,8 @@ const QuestionManager = (() => {
 
   /* ── Get active topics by grade ─────────── */
   function getActiveTopics() {
-    return Storage.getGrade() === 2 ? allTopicsG2 : allTopicsG1;
+    const banks = [allTopicsG1, allTopicsG2, allTopicsG3, allTopicsG4, allTopicsG5, allTopicsG6];
+    return banks[Storage.getGrade() - 1] || allTopicsG1;
   }
 
   /* ── Pick a question for current topic ─── */

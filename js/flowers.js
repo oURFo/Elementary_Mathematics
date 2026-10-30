@@ -1269,7 +1269,14 @@ const FLOWERS_G2 = [
 
 /** Return the active flower list based on current grade */
 function getActiveFlowers() {
-  return Storage.getGrade() === 2 ? FLOWERS_G2 : FLOWERS;
+  const grade = Storage.getGrade();
+  const banks = [FLOWERS, FLOWERS_G2,
+    typeof FLOWERS_G3 !== 'undefined' ? FLOWERS_G3 : [],
+    typeof FLOWERS_G4 !== 'undefined' ? FLOWERS_G4 : [],
+    typeof FLOWERS_G5 !== 'undefined' ? FLOWERS_G5 : [],
+    typeof FLOWERS_G6 !== 'undefined' ? FLOWERS_G6 : []
+  ];
+  return banks[grade - 1] || FLOWERS;
 }
 
 /* ------------------------------------------------------------------ */
