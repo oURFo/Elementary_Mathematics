@@ -7295,6 +7295,510 @@
           ]
         }
       ]
+    },
+    {
+      "id": "g4-sunstar",
+      "name": "視覺加法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "桌上有[蘋果:5]個，又放了[蘋果:5]個，共有幾個蘋果？",
+          "operation": "add",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[橘子:6]個，又放了[橘子:8]個，共有幾個橘子？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[糖果:7]個，又放了[糖果:11]個，共有幾個糖果？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[餅乾:8]個，又放了[餅乾:10]個，共有幾個餅乾？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[鉛筆:9]個，又放了[鉛筆:7]個，共有幾個鉛筆？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[書:10]個，又放了[書:8]個，共有幾個書？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[貼紙:11]個，又放了[貼紙:7]個，共有幾個貼紙？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[積木:12]個，又放了[積木:6]個，共有幾個積木？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[氣球:13]個，又放了[氣球:5]個，共有幾個氣球？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[花朵:14]個，又放了[花朵:5]個，共有幾個花朵？",
+          "operation": "add",
+          "answer": "19"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[蘋果:5]個，又放了[蘋果:5]個，共有幾個蘋果？",
+          "operation": "add",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[橘子:6]個，又放了[橘子:8]個，共有幾個橘子？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[糖果:7]個，又放了[糖果:11]個，共有幾個糖果？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[餅乾:8]個，又放了[餅乾:10]個，共有幾個餅乾？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[鉛筆:9]個，又放了[鉛筆:7]個，共有幾個鉛筆？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[書:10]個，又放了[書:8]個，共有幾個書？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[貼紙:11]個，又放了[貼紙:7]個，共有幾個貼紙？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[積木:12]個，又放了[積木:6]個，共有幾個積木？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[氣球:13]個，又放了[氣球:5]個，共有幾個氣球？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[花朵:14]個，又放了[花朵:5]個，共有幾個花朵？",
+          "operation": "add",
+          "answer": "19"
+        }
+      ]
+    },
+    {
+      "id": "g4-butterfly",
+      "name": "視覺減法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "盒子裡有[蘋果:8]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[橘子:11]個，拿走了8個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[糖果:14]個，拿走了11個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[餅乾:13]個，拿走了10個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[鉛筆:11]個，拿走了7個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[書:12]個，拿走了8個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[貼紙:13]個，拿走了7個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[積木:14]個，拿走了6個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[氣球:15]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[花朵:16]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "11"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[蘋果:8]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[橘子:11]個，拿走了8個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[糖果:14]個，拿走了11個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[餅乾:13]個，拿走了10個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[鉛筆:11]個，拿走了7個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[書:12]個，拿走了8個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[貼紙:13]個，拿走了7個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[積木:14]個，拿走了6個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[氣球:15]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[花朵:16]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "11"
+        }
+      ]
+    },
+    {
+      "id": "g4-rainbow",
+      "name": "雙名詞加法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "這裡有[男生:5]個和[女生:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[蘋果:6]個和[橘子:8]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[貓:7]個和[狗:9]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[紅球:8]個和[藍球:10]個，一共有幾個？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[書:9]個和[鉛筆:5]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[玫瑰:10]個和[百合:6]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[小雞:5]個和[小鴨:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[杯子:6]個和[盤子:8]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[男生:7]個和[女生:9]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[蘋果:8]個和[橘子:10]個，一共有幾個？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[貓:9]個和[狗:5]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[紅球:10]個和[藍球:6]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[書:5]個和[鉛筆:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[玫瑰:6]個和[百合:8]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[小雞:7]個和[小鴨:9]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[杯子:8]個和[盤子:10]個，一共有幾個？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[男生:9]個和[女生:5]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[蘋果:10]個和[橘子:6]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[貓:5]個和[狗:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[紅球:6]個和[藍球:8]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        }
+      ]
+    },
+    {
+      "id": "g4-starlight",
+      "name": "雙名詞減法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "老師有[餅乾:11]個，分給了[小朋友:5]個，還剩幾個餅乾？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[糖果:12]個，分給了[同學:6]個，還剩幾個糖果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[蘋果:13]個，分給了[朋友:7]個，還剩幾個蘋果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[書:14]個，分給了[同學:8]個，還剩幾個書？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[貼紙:15]個，分給了[小孩:9]個，還剩幾個貼紙？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[積木:11]個，分給了[朋友:5]個，還剩幾個積木？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[橘子:12]個，分給了[鄰居:6]個，還剩幾個橘子？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[鉛筆:13]個，分給了[同學:7]個，還剩幾個鉛筆？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[餅乾:14]個，分給了[小朋友:8]個，還剩幾個餅乾？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[糖果:15]個，分給了[同學:9]個，還剩幾個糖果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[蘋果:11]個，分給了[朋友:5]個，還剩幾個蘋果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[書:12]個，分給了[同學:6]個，還剩幾個書？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[貼紙:13]個，分給了[小孩:7]個，還剩幾個貼紙？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[積木:14]個，分給了[朋友:8]個，還剩幾個積木？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[橘子:15]個，分給了[鄰居:9]個，還剩幾個橘子？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[鉛筆:11]個，分給了[同學:5]個，還剩幾個鉛筆？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[餅乾:12]個，分給了[小朋友:6]個，還剩幾個餅乾？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[糖果:13]個，分給了[同學:7]個，還剩幾個糖果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[蘋果:14]個，分給了[朋友:8]個，還剩幾個蘋果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[書:15]個，分給了[同學:9]個，還剩幾個書？",
+          "operation": "subtract",
+          "answer": "6"
+        }
+      ]
     }
   ]
 }

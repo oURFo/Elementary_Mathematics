@@ -457,3 +457,7 @@ const FLOWERS_G4 = [
     ]
   }
 ];
+
+if (typeof makeSpecialVisualFlowers === 'function') {
+  FLOWERS_G4.push(...makeSpecialVisualFlowers('g4'));
+}

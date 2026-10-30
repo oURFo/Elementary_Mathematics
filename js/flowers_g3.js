@@ -517,3 +517,7 @@ const FLOWERS_G3 = [
   }
 
 ];
+
+if (typeof makeSpecialVisualFlowers === 'function') {
+  FLOWERS_G3.push(...makeSpecialVisualFlowers('g3'));
+}
