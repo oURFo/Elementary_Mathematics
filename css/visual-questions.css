@@ -1,0 +1,450 @@
+/* ============================================================
+   視覺應用題 (Visual Questions) Module  v2
+   css/visual-questions.css
+   ============================================================ */
+
+/* ── Container ─────────────────────────────────────────────── */
+.visual-question-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* ── Question number ────────────────────────────────────────── */
+.vq-q-number {
+  font-size: .82rem;
+  color: #888;
+  font-weight: 600;
+  padding: 0 2px;
+}
+
+/* ── Question text ──────────────────────────────────────────── */
+.vq-question-text {
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 2.6;
+  color: #2c3e50;
+  padding: 0 2px;
+}
+
+/* ── Noun chip – undrawn (draw mode) ───────────────────────── */
+.vq-noun-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #fff3cd;
+  border: 2px dashed #f0a500;
+  border-radius: 8px;
+  padding: 1px 8px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #856404;
+  font-family: var(--font-main);
+  font-size: .95em;
+  vertical-align: middle;
+  transition: background .14s, transform .1s;
+  line-height: 1.8;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  outline: none;
+}
+.vq-noun-chip:hover:not(:disabled) { background: #ffe08a; transform: scale(1.06); }
+
+/* Noun chip – drawn (stamp mode) */
+.vq-noun-chip.drawn {
+  background: #d4edda;
+  border: 2px solid #28a745;
+  color: #155724;
+  cursor: pointer;
+}
+.vq-noun-chip.drawn:hover:not(:disabled) { background: #b7dfca; transform: scale(1.05); }
+
+/* Noun chip – exhausted */
+.vq-noun-chip.exhausted {
+  background: #e9ecef;
+  border: 2px solid #adb5bd;
+  color: #6c757d;
+  cursor: default;
+  opacity: .75;
+}
+
+/* Count badge on chip */
+.chip-count, .chip-remaining {
+  background: #f0a500;
+  color: #fff;
+  border-radius: 999px;
+  font-size: .68em;
+  padding: 1px 6px;
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.vq-noun-chip.drawn .chip-remaining { background: #28a745; }
+.chip-remaining.zero                { background: #adb5bd; }
+
+/* ── Hint / status text ─────────────────────────────────────── */
+.vq-hint {
+  font-size: .82rem;
+  color: #999;
+  padding: 2px 2px;
+  min-height: 1.2em;
+}
+.vq-hint.ready {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* ── Main object canvas ─────────────────────────────────────── */
+.vq-main-canvas {
+  position: relative;
+  flex: 1;
+  min-height: 180px;
+  border: 2.5px dashed #c8c8c8;
+  border-radius: var(--radius-md);
+  background: #f9f9f9;
+  overflow: hidden;
+  transition: border-color .2s, background .2s;
+}
+.vq-main-canvas.op-active {
+  border-color: #4caf50;
+  background: #f0fff4;
+}
+
+/* 2-noun zone divider */
+.vq-main-canvas.two-zones::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  height: 92%;
+  width: 2px;
+  background: rgba(0,0,0,.07);
+  pointer-events: none;
+  border-radius: 1px;
+}
+
+/* ── Zone labels ───────────────────────────────────────────── */
+.vq-zone-label {
+  position: absolute;
+  top: 5px;
+  background: rgba(255,255,255,.88);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: .7rem;
+  font-weight: 700;
+  color: #555;
+  pointer-events: none;
+  z-index: 3;
+  border: 1px solid rgba(0,0,0,.08);
+}
+.vq-zone-label-a { left: 8px; }
+.vq-zone-label-b { left: calc(50% + 8px); }
+
+/* ── Draggable object ───────────────────────────────────────── */
+.vq-object {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  border-radius: 8px;
+  -webkit-tap-highlight-color: transparent;
+}
+.vq-object:active { cursor: grabbing; }
+.vq-object img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  display: block;
+  pointer-events: none;
+  object-fit: contain;
+}
+
+
+/* ── Object count badge ─────────────────────────────────────── */
+.vq-canvas-count {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0,0,0,.48);
+  color: #fff;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: .76rem;
+  font-weight: 700;
+  pointer-events: none;
+  min-width: 28px;
+  text-align: center;
+  z-index: 4;
+}
+
+/* ── ADD drop-zone (centre, objects lock inside) ────────────── */
+.vq-drop-zone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 110px;
+  border: 3px dashed #2196f3;
+  border-radius: 14px;
+  background: rgba(33,150,243,.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 6px;
+  gap: 2px;
+  pointer-events: none;
+  transition: background .15s;
+  z-index: 2;
+}
+.vq-drop-zone.drag-over { background: rgba(33,150,243,.2); border-color: #1565c0; }
+.vq-drop-count {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #1565c0;
+  line-height: 1;
+  position: relative;
+  z-index: 20;
+}
+.vq-drop-label {
+  font-size: .58rem;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+/* ── SUB-1 single-noun remove box ───────────────────────────── */
+.vq-sub-single {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 86px;
+  border: 3px dashed #e53935;
+  border-radius: 14px;
+  background: rgba(229,57,53,.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  pointer-events: none;
+  transition: background .15s;
+  z-index: 2;
+}
+.vq-sub-single.drag-over { background: rgba(229,57,53,.22); border-color: #b71c1c; }
+.vq-sub-count {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #c62828;
+  line-height: 1;
+}
+.vq-sub-label {
+  font-size: .58rem;
+  color: #c62828;
+  font-weight: 600;
+}
+
+/* ── SUB-2 double-slot box ──────────────────────────────────── */
+.vq-sub-double {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+  transition: background .15s;
+  z-index: 2;
+}
+.vq-sub-double.drag-over .vq-sub-slot { border-color: #b71c1c; background: rgba(229,57,53,.18); }
+
+.vq-sub-slot {
+  width: 78px;
+  height: 86px;
+  border: 3px dashed #e53935;
+  border-radius: 12px;
+  background: rgba(229,57,53,.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background .15s, border-color .15s;
+  position: relative;
+}
+.vq-sub-slot.filled {
+  background: rgba(229,57,53,.18);
+  border-style: solid;
+  border-color: #e53935;
+}
+
+.vq-slot-noun {
+  font-size: .68rem;
+  font-weight: 700;
+  color: #c62828;
+  text-align: center;
+  line-height: 1.3;
+}
+.vq-slot-drop {
+  font-size: 1.3rem;
+  color: #e53935;
+  opacity: .7;
+}
+
+.vq-sub-cross {
+  font-size: .9rem;
+  font-weight: 900;
+  color: #e53935;
+  opacity: .6;
+}
+
+.vq-sub-count-2 {
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #c62828;
+  background: rgba(255,255,255,.9);
+  border-radius: 8px;
+  padding: 2px 10px;
+  border: 2px solid #e5393540;
+  white-space: nowrap;
+}
+
+/* ── Answer row ─────────────────────────────────────────────── */
+.vq-answer-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0 2px;
+  flex-wrap: wrap;
+}
+.vq-answer-row > span { font-size: .95rem; color: #555; }
+.vq-answer-num {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #2c3e50;
+  min-width: 2.5ch;
+  display: inline-block;
+  text-align: center;
+}
+#vq-submit-btn {
+  padding: 9px 18px;
+  border-radius: var(--radius-md);
+  background: var(--green-mid, #52b788);
+  color: #fff;
+  border: none;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: .95rem;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity .15s;
+}
+#vq-submit-btn:hover { opacity: .88; }
+
+/* ============================================================
+   Drawing Popup
+   ============================================================ */
+.vq-draw-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(0,0,0,.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vq-draw-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  width: min(340px, 92vw);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.35);
+}
+.vq-draw-header {
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+}
+.vq-draw-noun { color: #e67e22; font-size: 1.2em; }
+
+#vq-draw-canvas {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  touch-action: none;
+  cursor: crosshair;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+.vq-draw-toolbar {
+  display: flex;
+  gap: 6px;
+}
+.vq-draw-tool {
+  flex: 1;
+  padding: 7px 5px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: .86rem;
+  font-family: var(--font-main);
+  transition: background .12s;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  outline: none;
+}
+.vq-draw-tool.active { background: #e8f5e9; border-color: #4caf50; font-weight: 700; }
+.vq-draw-footer { display: flex; gap: 8px; }
+.vq-draw-footer button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: .92rem;
+  font-family: var(--font-main);
+  cursor: pointer;
+  font-weight: 600;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+#vq-draw-cancel { background: #f0f0f0; color: #555; }
+#vq-draw-done   { background: var(--green-mid, #52b788); color: #fff; }
+
+/* ============================================================
+   Special flower cards (golden accent)
+   ============================================================ */
+.flower-card.special-card {
+  background: linear-gradient(135deg, rgba(255,215,0,.18) 0%, rgba(255,160,0,.12) 100%);
+  border: 2px solid rgba(255,160,0,.5) !important;
+}
+.flower-card.special-card:hover {
+  background: linear-gradient(135deg, rgba(255,215,0,.3) 0%, rgba(255,160,0,.22) 100%);
+  border-color: rgba(255,140,0,.75) !important;
+}
+.flower-card.special-card.active {
+  border-color: #ff8f00 !important;
+  box-shadow: 0 0 0 3px rgba(255,143,0,.35);
+}

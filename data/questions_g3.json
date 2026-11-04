@@ -1,0 +1,7804 @@
+{
+  "topics": [
+    {
+      "id": "gomphrena",
+      "name": "四位數",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "3456的千位數字是多少？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "7895的百位數字是多少？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "6234的十位數字是多少？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "9078的個位數字是多少？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "7000+800+90+5=？",
+          "visual": null,
+          "answer": "7895"
+        },
+        {
+          "type": "fi",
+          "q": "4000+300+20+1=？",
+          "visual": null,
+          "answer": "4321"
+        },
+        {
+          "type": "fi",
+          "q": "6000+50+7=？",
+          "visual": null,
+          "answer": "6057"
+        },
+        {
+          "type": "fi",
+          "q": "9000+9=？",
+          "visual": null,
+          "answer": "9009"
+        },
+        {
+          "type": "fi",
+          "q": "5000+400=？",
+          "visual": null,
+          "answer": "5400"
+        },
+        {
+          "type": "fi",
+          "q": "2000+30=？",
+          "visual": null,
+          "answer": "2030"
+        },
+        {
+          "type": "fi",
+          "q": "最小的四位數是多少？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "最大的四位數是多少？",
+          "visual": null,
+          "answer": "9999"
+        },
+        {
+          "type": "fi",
+          "q": "8000比7000大多少？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "5個千等於多少？",
+          "visual": null,
+          "answer": "5000"
+        },
+        {
+          "type": "fi",
+          "q": "4582中，5代表幾個百？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "3047中，4代表幾個十？",
+          "visual": null,
+          "answer": "40"
+        },
+        {
+          "type": "fi",
+          "q": "比9000大1的數是多少？",
+          "visual": null,
+          "answer": "9001"
+        },
+        {
+          "type": "fi",
+          "q": "6000+400+70+8=？",
+          "visual": null,
+          "answer": "6478"
+        },
+        {
+          "type": "fi",
+          "q": "8305=8000+□+5，□是多少？",
+          "visual": null,
+          "answer": "300"
+        },
+        {
+          "type": "fi",
+          "q": "3809有幾個千？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "6010的十位數字是多少？",
+          "visual": null,
+          "answer": "1"
+        },
+        {
+          "type": "fi",
+          "q": "4560的百位數字是多少？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "9000+900+90+9=？",
+          "visual": null,
+          "answer": "9999"
+        },
+        {
+          "type": "fi",
+          "q": "1000+200+30+4=？",
+          "visual": null,
+          "answer": "1234"
+        },
+        {
+          "type": "fi",
+          "q": "7056的十位數字是多少？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "mc",
+          "q": "1234中，2在哪個位置？",
+          "visual": null,
+          "answer": "百位",
+          "opts": [
+            "千位",
+            "百位",
+            "十位",
+            "個位"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "哪個數比5000大？",
+          "visual": null,
+          "answer": "5001",
+          "opts": [
+            "4999",
+            "4000",
+            "5001",
+            "3000"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5306的百位數字是多少？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "5",
+            "3",
+            "0",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7000+80+3=？",
+          "visual": null,
+          "answer": "7083",
+          "opts": [
+            "7083",
+            "7830",
+            "7803",
+            "783"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個數最大？",
+          "visual": null,
+          "answer": "6543",
+          "opts": [
+            "3456",
+            "6543",
+            "4653",
+            "5634"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個數最小？",
+          "visual": null,
+          "answer": "1290",
+          "opts": [
+            "2109",
+            "1290",
+            "9012",
+            "2019"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "四位數的千位最小可以是幾？",
+          "visual": null,
+          "answer": "1",
+          "opts": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5個千加3個百是多少？",
+          "visual": null,
+          "answer": "5300",
+          "opts": [
+            "5300",
+            "5030",
+            "5003",
+            "503"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "9000比8000大多少？",
+          "visual": null,
+          "answer": "1000",
+          "opts": [
+            "100",
+            "1000",
+            "10",
+            "10000"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個是四位數？",
+          "visual": null,
+          "answer": "1000",
+          "opts": [
+            "999",
+            "1000",
+            "100",
+            "99"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "6200的百位數字是幾？",
+          "visual": null,
+          "answer": "2",
+          "opts": [
+            "6",
+            "2",
+            "0",
+            "62"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7654中，6代表多少？",
+          "visual": null,
+          "answer": "600",
+          "opts": [
+            "6",
+            "60",
+            "600",
+            "6000"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "哪個數等於六千零八？",
+          "visual": null,
+          "answer": "6008",
+          "opts": [
+            "6080",
+            "6008",
+            "6800",
+            "608"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5432的個位數字是多少？",
+          "visual": null,
+          "answer": "2",
+          "opts": [
+            "5",
+            "4",
+            "3",
+            "2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "8760的十位數字是幾？",
+          "visual": null,
+          "answer": "6",
+          "opts": [
+            "8",
+            "7",
+            "6",
+            "0"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "9001中，千位數字是幾？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "0",
+            "1",
+            "90"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1001比1000大多少？",
+          "visual": null,
+          "answer": "1",
+          "opts": [
+            "1",
+            "10",
+            "100",
+            "1000"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個數有最大的千位數字？",
+          "visual": null,
+          "answer": "9001",
+          "opts": [
+            "7654",
+            "8123",
+            "6999",
+            "9001"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7006等於多少？",
+          "visual": null,
+          "answer": "7000+6",
+          "opts": [
+            "7000+6",
+            "7000+60",
+            "700+6",
+            "7000+600+6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3000+500=？",
+          "visual": null,
+          "answer": "3500",
+          "opts": [
+            "3500",
+            "3050",
+            "350",
+            "35000"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4289的千位是幾？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "2",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最接近5000？",
+          "visual": null,
+          "answer": "4998",
+          "opts": [
+            "4998",
+            "5100",
+            "4500",
+            "5500"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2000+300+4=？",
+          "visual": null,
+          "answer": "2304",
+          "opts": [
+            "2304",
+            "2340",
+            "2034",
+            "234"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5個千加7個十是多少？",
+          "visual": null,
+          "answer": "5070",
+          "opts": [
+            "5070",
+            "5700",
+            "5007",
+            "507"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "哪個數在3000和4000之間？",
+          "visual": null,
+          "answer": "3500",
+          "opts": [
+            "2999",
+            "3500",
+            "4001",
+            "4500"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cornflower",
+      "name": "三位數加法",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "123+456=？",
+          "visual": null,
+          "answer": "579"
+        },
+        {
+          "type": "fi",
+          "q": "250+430=？",
+          "visual": null,
+          "answer": "680"
+        },
+        {
+          "type": "fi",
+          "q": "148+253=？",
+          "visual": null,
+          "answer": "401"
+        },
+        {
+          "type": "fi",
+          "q": "365+427=？",
+          "visual": null,
+          "answer": "792"
+        },
+        {
+          "type": "fi",
+          "q": "519+263=？",
+          "visual": null,
+          "answer": "782"
+        },
+        {
+          "type": "fi",
+          "q": "438+156=？",
+          "visual": null,
+          "answer": "594"
+        },
+        {
+          "type": "fi",
+          "q": "275+318=？",
+          "visual": null,
+          "answer": "593"
+        },
+        {
+          "type": "fi",
+          "q": "487+205=？",
+          "visual": null,
+          "answer": "692"
+        },
+        {
+          "type": "fi",
+          "q": "326+468=？",
+          "visual": null,
+          "answer": "794"
+        },
+        {
+          "type": "fi",
+          "q": "147+653=？",
+          "visual": null,
+          "answer": "800"
+        },
+        {
+          "type": "fi",
+          "q": "560+340=？",
+          "visual": null,
+          "answer": "900"
+        },
+        {
+          "type": "fi",
+          "q": "208+492=？",
+          "visual": null,
+          "answer": "700"
+        },
+        {
+          "type": "fi",
+          "q": "357+143=？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "432+168=？",
+          "visual": null,
+          "answer": "600"
+        },
+        {
+          "type": "fi",
+          "q": "463+128=？",
+          "visual": null,
+          "answer": "591"
+        },
+        {
+          "type": "fi",
+          "q": "315+476=？",
+          "visual": null,
+          "answer": "791"
+        },
+        {
+          "type": "fi",
+          "q": "228+364=？",
+          "visual": null,
+          "answer": "592"
+        },
+        {
+          "type": "fi",
+          "q": "368+425=？",
+          "visual": null,
+          "answer": "793"
+        },
+        {
+          "type": "fi",
+          "q": "247+538=？",
+          "visual": null,
+          "answer": "785"
+        },
+        {
+          "type": "fi",
+          "q": "162+489=？",
+          "visual": null,
+          "answer": "651"
+        },
+        {
+          "type": "fi",
+          "q": "456+237=？",
+          "visual": null,
+          "answer": "693"
+        },
+        {
+          "type": "fi",
+          "q": "281+469=？",
+          "visual": null,
+          "answer": "750"
+        },
+        {
+          "type": "fi",
+          "q": "345+278=？",
+          "visual": null,
+          "answer": "623"
+        },
+        {
+          "type": "fi",
+          "q": "163+497=？",
+          "visual": null,
+          "answer": "660"
+        },
+        {
+          "type": "fi",
+          "q": "520+283=？",
+          "visual": null,
+          "answer": "803"
+        },
+        {
+          "type": "mc",
+          "q": "234+457=？",
+          "visual": null,
+          "answer": "691",
+          "opts": [
+            "691",
+            "681",
+            "701",
+            "611"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "165+328=？",
+          "visual": null,
+          "answer": "493",
+          "opts": [
+            "493",
+            "483",
+            "503",
+            "473"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "248+135=？",
+          "visual": null,
+          "answer": "383",
+          "opts": [
+            "383",
+            "373",
+            "393",
+            "363"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "400+399=？",
+          "visual": null,
+          "answer": "799",
+          "opts": [
+            "799",
+            "809",
+            "789",
+            "699"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "362+278=？",
+          "visual": null,
+          "answer": "640",
+          "opts": [
+            "630",
+            "640",
+            "620",
+            "650"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "475+326=？",
+          "visual": null,
+          "answer": "801",
+          "opts": [
+            "801",
+            "791",
+            "811",
+            "701"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "217+583=？",
+          "visual": null,
+          "answer": "800",
+          "opts": [
+            "800",
+            "810",
+            "790",
+            "700"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "143+259=？",
+          "visual": null,
+          "answer": "402",
+          "opts": [
+            "402",
+            "392",
+            "412",
+            "312"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "368+124=？",
+          "visual": null,
+          "answer": "492",
+          "opts": [
+            "492",
+            "482",
+            "502",
+            "472"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "525+375=？",
+          "visual": null,
+          "answer": "900",
+          "opts": [
+            "900",
+            "890",
+            "910",
+            "800"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "246+354=？",
+          "visual": null,
+          "answer": "600",
+          "opts": [
+            "600",
+            "590",
+            "610",
+            "500"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "182+419=？",
+          "visual": null,
+          "answer": "601",
+          "opts": [
+            "601",
+            "591",
+            "611",
+            "501"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "356+245=？",
+          "visual": null,
+          "answer": "601",
+          "opts": [
+            "601",
+            "591",
+            "611",
+            "701"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "483+217=？",
+          "visual": null,
+          "answer": "700",
+          "opts": [
+            "700",
+            "690",
+            "710",
+            "600"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "318+254=？",
+          "visual": null,
+          "answer": "572",
+          "opts": [
+            "572",
+            "562",
+            "582",
+            "462"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "174+256=？",
+          "visual": null,
+          "answer": "430",
+          "opts": [
+            "430",
+            "420",
+            "440",
+            "330"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "265+137=？",
+          "visual": null,
+          "answer": "402",
+          "opts": [
+            "402",
+            "392",
+            "412",
+            "302"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "346+157=？",
+          "visual": null,
+          "answer": "503",
+          "opts": [
+            "503",
+            "493",
+            "513",
+            "403"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "428+362=？",
+          "visual": null,
+          "answer": "790",
+          "opts": [
+            "790",
+            "780",
+            "800",
+            "700"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "154+348=？",
+          "visual": null,
+          "answer": "502",
+          "opts": [
+            "502",
+            "492",
+            "512",
+            "402"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "237+463=？",
+          "visual": null,
+          "answer": "700",
+          "opts": [
+            "700",
+            "690",
+            "710",
+            "600"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "319+281=？",
+          "visual": null,
+          "answer": "600",
+          "opts": [
+            "600",
+            "590",
+            "610",
+            "500"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "462+338=？",
+          "visual": null,
+          "answer": "800",
+          "opts": [
+            "800",
+            "790",
+            "810",
+            "700"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "275+426=？",
+          "visual": null,
+          "answer": "701",
+          "opts": [
+            "701",
+            "691",
+            "711",
+            "601"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "384+216=？",
+          "visual": null,
+          "answer": "600",
+          "opts": [
+            "600",
+            "590",
+            "610",
+            "500"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gentian",
+      "name": "三位數減法",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "700-456=？",
+          "visual": null,
+          "answer": "244"
+        },
+        {
+          "type": "fi",
+          "q": "900-367=？",
+          "visual": null,
+          "answer": "533"
+        },
+        {
+          "type": "fi",
+          "q": "842-378=？",
+          "visual": null,
+          "answer": "464"
+        },
+        {
+          "type": "fi",
+          "q": "600-245=？",
+          "visual": null,
+          "answer": "355"
+        },
+        {
+          "type": "fi",
+          "q": "753-418=？",
+          "visual": null,
+          "answer": "335"
+        },
+        {
+          "type": "fi",
+          "q": "500-163=？",
+          "visual": null,
+          "answer": "337"
+        },
+        {
+          "type": "fi",
+          "q": "634-289=？",
+          "visual": null,
+          "answer": "345"
+        },
+        {
+          "type": "fi",
+          "q": "800-452=？",
+          "visual": null,
+          "answer": "348"
+        },
+        {
+          "type": "fi",
+          "q": "921-436=？",
+          "visual": null,
+          "answer": "485"
+        },
+        {
+          "type": "fi",
+          "q": "740-358=？",
+          "visual": null,
+          "answer": "382"
+        },
+        {
+          "type": "fi",
+          "q": "683-247=？",
+          "visual": null,
+          "answer": "436"
+        },
+        {
+          "type": "fi",
+          "q": "450-183=？",
+          "visual": null,
+          "answer": "267"
+        },
+        {
+          "type": "fi",
+          "q": "700-300=？",
+          "visual": null,
+          "answer": "400"
+        },
+        {
+          "type": "fi",
+          "q": "500-250=？",
+          "visual": null,
+          "answer": "250"
+        },
+        {
+          "type": "fi",
+          "q": "805-346=？",
+          "visual": null,
+          "answer": "459"
+        },
+        {
+          "type": "fi",
+          "q": "930-765=？",
+          "visual": null,
+          "answer": "165"
+        },
+        {
+          "type": "fi",
+          "q": "482-219=？",
+          "visual": null,
+          "answer": "263"
+        },
+        {
+          "type": "fi",
+          "q": "613-256=？",
+          "visual": null,
+          "answer": "357"
+        },
+        {
+          "type": "fi",
+          "q": "740-483=？",
+          "visual": null,
+          "answer": "257"
+        },
+        {
+          "type": "fi",
+          "q": "524-268=？",
+          "visual": null,
+          "answer": "256"
+        },
+        {
+          "type": "fi",
+          "q": "861-395=？",
+          "visual": null,
+          "answer": "466"
+        },
+        {
+          "type": "fi",
+          "q": "703-458=？",
+          "visual": null,
+          "answer": "245"
+        },
+        {
+          "type": "fi",
+          "q": "900-99=？",
+          "visual": null,
+          "answer": "801"
+        },
+        {
+          "type": "fi",
+          "q": "600-1=？",
+          "visual": null,
+          "answer": "599"
+        },
+        {
+          "type": "fi",
+          "q": "832-496=？",
+          "visual": null,
+          "answer": "336"
+        },
+        {
+          "type": "mc",
+          "q": "521-276=？",
+          "visual": null,
+          "answer": "245",
+          "opts": [
+            "245",
+            "255",
+            "235",
+            "345"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "700-432=？",
+          "visual": null,
+          "answer": "268",
+          "opts": [
+            "268",
+            "278",
+            "258",
+            "368"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "843-567=？",
+          "visual": null,
+          "answer": "276",
+          "opts": [
+            "276",
+            "286",
+            "266",
+            "376"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "900-654=？",
+          "visual": null,
+          "answer": "246",
+          "opts": [
+            "246",
+            "256",
+            "236",
+            "346"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "612-358=？",
+          "visual": null,
+          "answer": "254",
+          "opts": [
+            "254",
+            "264",
+            "244",
+            "354"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "730-465=？",
+          "visual": null,
+          "answer": "265",
+          "opts": [
+            "265",
+            "275",
+            "255",
+            "365"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "500-184=？",
+          "visual": null,
+          "answer": "316",
+          "opts": [
+            "316",
+            "326",
+            "306",
+            "416"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "802-457=？",
+          "visual": null,
+          "answer": "345",
+          "opts": [
+            "345",
+            "355",
+            "335",
+            "445"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "647-289=？",
+          "visual": null,
+          "answer": "358",
+          "opts": [
+            "358",
+            "368",
+            "348",
+            "458"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "900-100=？",
+          "visual": null,
+          "answer": "800",
+          "opts": [
+            "800",
+            "810",
+            "790",
+            "700"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "700-50=？",
+          "visual": null,
+          "answer": "650",
+          "opts": [
+            "650",
+            "660",
+            "640",
+            "750"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "835-400=？",
+          "visual": null,
+          "answer": "435",
+          "opts": [
+            "435",
+            "445",
+            "425",
+            "535"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "624-300=？",
+          "visual": null,
+          "answer": "324",
+          "opts": [
+            "324",
+            "334",
+            "314",
+            "424"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "750-250=？",
+          "visual": null,
+          "answer": "500",
+          "opts": [
+            "500",
+            "510",
+            "490",
+            "600"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "903-456=？",
+          "visual": null,
+          "answer": "447",
+          "opts": [
+            "447",
+            "457",
+            "437",
+            "547"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "600-375=？",
+          "visual": null,
+          "answer": "225",
+          "opts": [
+            "225",
+            "235",
+            "215",
+            "325"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "481-239=？",
+          "visual": null,
+          "answer": "242",
+          "opts": [
+            "242",
+            "252",
+            "232",
+            "342"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "700-449=？",
+          "visual": null,
+          "answer": "251",
+          "opts": [
+            "251",
+            "261",
+            "241",
+            "351"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "823-568=？",
+          "visual": null,
+          "answer": "255",
+          "opts": [
+            "255",
+            "265",
+            "245",
+            "355"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "500-326=？",
+          "visual": null,
+          "answer": "174",
+          "opts": [
+            "174",
+            "184",
+            "164",
+            "274"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "934-678=？",
+          "visual": null,
+          "answer": "256",
+          "opts": [
+            "256",
+            "266",
+            "246",
+            "356"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "600-47=？",
+          "visual": null,
+          "answer": "553",
+          "opts": [
+            "553",
+            "563",
+            "543",
+            "653"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "720-369=？",
+          "visual": null,
+          "answer": "351",
+          "opts": [
+            "351",
+            "361",
+            "341",
+            "451"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "805-279=？",
+          "visual": null,
+          "answer": "526",
+          "opts": [
+            "526",
+            "536",
+            "516",
+            "626"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "900-345=？",
+          "visual": null,
+          "answer": "555",
+          "opts": [
+            "555",
+            "565",
+            "545",
+            "655"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cockscomb",
+      "name": "乘法（九九乘法表）",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "7×8=？",
+          "visual": null,
+          "answer": "56"
+        },
+        {
+          "type": "fi",
+          "q": "9×6=？",
+          "visual": null,
+          "answer": "54"
+        },
+        {
+          "type": "fi",
+          "q": "6×7=？",
+          "visual": null,
+          "answer": "42"
+        },
+        {
+          "type": "fi",
+          "q": "8×9=？",
+          "visual": null,
+          "answer": "72"
+        },
+        {
+          "type": "fi",
+          "q": "5×8=？",
+          "visual": null,
+          "answer": "40"
+        },
+        {
+          "type": "fi",
+          "q": "4×9=？",
+          "visual": null,
+          "answer": "36"
+        },
+        {
+          "type": "fi",
+          "q": "3×7=？",
+          "visual": null,
+          "answer": "21"
+        },
+        {
+          "type": "fi",
+          "q": "6×8=？",
+          "visual": null,
+          "answer": "48"
+        },
+        {
+          "type": "fi",
+          "q": "9×9=？",
+          "visual": null,
+          "answer": "81"
+        },
+        {
+          "type": "fi",
+          "q": "7×7=？",
+          "visual": null,
+          "answer": "49"
+        },
+        {
+          "type": "fi",
+          "q": "5×6=？",
+          "visual": null,
+          "answer": "30"
+        },
+        {
+          "type": "fi",
+          "q": "4×7=？",
+          "visual": null,
+          "answer": "28"
+        },
+        {
+          "type": "fi",
+          "q": "3×8=？",
+          "visual": null,
+          "answer": "24"
+        },
+        {
+          "type": "fi",
+          "q": "2×9=？",
+          "visual": null,
+          "answer": "18"
+        },
+        {
+          "type": "fi",
+          "q": "9×7=？",
+          "visual": null,
+          "answer": "63"
+        },
+        {
+          "type": "fi",
+          "q": "5×9=？",
+          "visual": null,
+          "answer": "45"
+        },
+        {
+          "type": "fi",
+          "q": "4×8=？",
+          "visual": null,
+          "answer": "32"
+        },
+        {
+          "type": "fi",
+          "q": "7×5=？",
+          "visual": null,
+          "answer": "35"
+        },
+        {
+          "type": "fi",
+          "q": "2×8=？",
+          "visual": null,
+          "answer": "16"
+        },
+        {
+          "type": "fi",
+          "q": "8×8=？",
+          "visual": null,
+          "answer": "64"
+        },
+        {
+          "type": "fi",
+          "q": "9×3=？",
+          "visual": null,
+          "answer": "27"
+        },
+        {
+          "type": "fi",
+          "q": "4×□=28，□是多少？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "fi",
+          "q": "7×□=56，□是多少？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "□×9=81，□是多少？",
+          "visual": null,
+          "answer": "9"
+        },
+        {
+          "type": "fi",
+          "q": "6×□=42，□是多少？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "mc",
+          "q": "3×9=？",
+          "visual": null,
+          "answer": "27",
+          "opts": [
+            "27",
+            "29",
+            "21",
+            "24"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "8×7=？",
+          "visual": null,
+          "answer": "56",
+          "opts": [
+            "56",
+            "54",
+            "58",
+            "64"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "6×5=？",
+          "visual": null,
+          "answer": "30",
+          "opts": [
+            "30",
+            "35",
+            "25",
+            "36"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "9×4=？",
+          "visual": null,
+          "answer": "36",
+          "opts": [
+            "36",
+            "32",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7×6=？",
+          "visual": null,
+          "answer": "42",
+          "opts": [
+            "42",
+            "48",
+            "36",
+            "49"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "8×4=？",
+          "visual": null,
+          "answer": "32",
+          "opts": [
+            "32",
+            "36",
+            "28",
+            "40"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5×7=？",
+          "visual": null,
+          "answer": "35",
+          "opts": [
+            "35",
+            "30",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "9×8=？",
+          "visual": null,
+          "answer": "72",
+          "opts": [
+            "72",
+            "63",
+            "81",
+            "64"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "6×9=？",
+          "visual": null,
+          "answer": "54",
+          "opts": [
+            "54",
+            "56",
+            "63",
+            "72"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4×6=？",
+          "visual": null,
+          "answer": "24",
+          "opts": [
+            "24",
+            "28",
+            "20",
+            "36"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7×4=？",
+          "visual": null,
+          "answer": "28",
+          "opts": [
+            "28",
+            "24",
+            "32",
+            "35"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5×5=？",
+          "visual": null,
+          "answer": "25",
+          "opts": [
+            "25",
+            "20",
+            "30",
+            "35"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "8×3=？",
+          "visual": null,
+          "answer": "24",
+          "opts": [
+            "24",
+            "21",
+            "28",
+            "18"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "9×5=？",
+          "visual": null,
+          "answer": "45",
+          "opts": [
+            "45",
+            "40",
+            "50",
+            "54"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "6×6=？",
+          "visual": null,
+          "answer": "36",
+          "opts": [
+            "36",
+            "30",
+            "42",
+            "48"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7×9=？",
+          "visual": null,
+          "answer": "63",
+          "opts": [
+            "63",
+            "56",
+            "72",
+            "54"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4×4=？",
+          "visual": null,
+          "answer": "16",
+          "opts": [
+            "16",
+            "12",
+            "20",
+            "24"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個算式等於42？",
+          "visual": null,
+          "answer": "6×7",
+          "opts": [
+            "6×7",
+            "5×8",
+            "9×4",
+            "7×7"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個算式等於56？",
+          "visual": null,
+          "answer": "8×7",
+          "opts": [
+            "8×7",
+            "6×9",
+            "7×9",
+            "8×8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3×5=5×□，□是多少？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "3",
+            "5",
+            "8",
+            "15"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "8×6與6×8，哪個答案比較大？",
+          "visual": null,
+          "answer": "兩個一樣大",
+          "opts": [
+            "8×6大",
+            "6×8大",
+            "兩個一樣大",
+            "無法比較"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4×9=□×4，□是多少？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "4",
+            "36",
+            "13"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2×7=？",
+          "visual": null,
+          "answer": "14",
+          "opts": [
+            "14",
+            "12",
+            "16",
+            "21"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3×□=21，□是多少？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "6",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "9×□=63，□是多少？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "6",
+            "8",
+            "9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pansy",
+      "name": "除法初步",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "42÷6=？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "fi",
+          "q": "56÷8=？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "fi",
+          "q": "63÷9=？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "fi",
+          "q": "48÷6=？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "72÷9=？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "54÷6=？",
+          "visual": null,
+          "answer": "9"
+        },
+        {
+          "type": "fi",
+          "q": "35÷7=？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "40÷8=？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "45÷9=？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "28÷7=？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "32÷8=？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "36÷9=？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "21÷7=？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "24÷8=？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "27÷9=？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "□÷9=7，□是多少？",
+          "visual": null,
+          "answer": "63"
+        },
+        {
+          "type": "fi",
+          "q": "□÷7=8，□是多少？",
+          "visual": null,
+          "answer": "56"
+        },
+        {
+          "type": "fi",
+          "q": "64÷8=？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "49÷7=？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "fi",
+          "q": "81÷9=？",
+          "visual": null,
+          "answer": "9"
+        },
+        {
+          "type": "fi",
+          "q": "30÷6=？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "42÷7=？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "54÷9=？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "48÷8=？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "56÷7=？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "mc",
+          "q": "18÷6=？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "3",
+            "2",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "24÷6=？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "3",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "30÷5=？",
+          "visual": null,
+          "answer": "6",
+          "opts": [
+            "6",
+            "5",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "36÷4=？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "8",
+            "7",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "28÷4=？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "6",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "45÷5=？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "8",
+            "7",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "20÷4=？",
+          "visual": null,
+          "answer": "5",
+          "opts": [
+            "5",
+            "4",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "32÷4=？",
+          "visual": null,
+          "answer": "8",
+          "opts": [
+            "8",
+            "7",
+            "9",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "16÷4=？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "3",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "54÷6=？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "8",
+            "7",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "63÷7=？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "8",
+            "7",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "72÷8=？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "8",
+            "7",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "24÷3=？",
+          "visual": null,
+          "answer": "8",
+          "opts": [
+            "8",
+            "7",
+            "9",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "21÷3=？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "6",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "18÷3=？",
+          "visual": null,
+          "answer": "6",
+          "opts": [
+            "6",
+            "5",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "若56÷□=7，□是多少？",
+          "visual": null,
+          "answer": "8",
+          "opts": [
+            "8",
+            "7",
+            "6",
+            "9"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "若□÷9=5，□是多少？",
+          "visual": null,
+          "answer": "45",
+          "opts": [
+            "45",
+            "54",
+            "40",
+            "50"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "36÷□=4，□是多少？",
+          "visual": null,
+          "answer": "9",
+          "opts": [
+            "9",
+            "8",
+            "7",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個算式等於8？",
+          "visual": null,
+          "answer": "48÷6",
+          "opts": [
+            "48÷6",
+            "45÷5",
+            "36÷6",
+            "63÷7"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "42÷□=6，□是多少？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "6",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個數可以被7整除？",
+          "visual": null,
+          "answer": "42",
+          "opts": [
+            "42",
+            "43",
+            "44",
+            "45"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個數可以被9整除？",
+          "visual": null,
+          "answer": "54",
+          "opts": [
+            "50",
+            "54",
+            "55",
+            "56"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個數可以被8整除？",
+          "visual": null,
+          "answer": "64",
+          "opts": [
+            "60",
+            "62",
+            "64",
+            "66"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "有24個蘋果，每袋放6個，可以放幾袋？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "3",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "有45顆糖，每人分9顆，可以分給幾個人？",
+          "visual": null,
+          "answer": "5",
+          "opts": [
+            "5",
+            "4",
+            "6",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "violet",
+      "name": "分數概念",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "把一個圓平分成2份，每份是幾分之幾？",
+          "visual": null,
+          "answer": "1/2"
+        },
+        {
+          "type": "fi",
+          "q": "把一個圓平分成4份，每份是幾分之幾？",
+          "visual": null,
+          "answer": "1/4"
+        },
+        {
+          "type": "fi",
+          "q": "把一個圓平分成3份，每份是幾分之幾？",
+          "visual": null,
+          "answer": "1/3"
+        },
+        {
+          "type": "fi",
+          "q": "把一個正方形平分成8份，每份是幾分之幾？",
+          "visual": null,
+          "answer": "1/8"
+        },
+        {
+          "type": "fi",
+          "q": "1/2和1/4哪個比較大？",
+          "visual": null,
+          "answer": "1/2"
+        },
+        {
+          "type": "fi",
+          "q": "1/3和1/4哪個比較大？",
+          "visual": null,
+          "answer": "1/3"
+        },
+        {
+          "type": "fi",
+          "q": "1/4和1/6哪個比較大？",
+          "visual": null,
+          "answer": "1/4"
+        },
+        {
+          "type": "fi",
+          "q": "1/2+1/2=？",
+          "visual": null,
+          "answer": "1"
+        },
+        {
+          "type": "fi",
+          "q": "把一個蛋糕平分給4個小朋友，每人得幾分之幾？",
+          "visual": null,
+          "answer": "1/4"
+        },
+        {
+          "type": "fi",
+          "q": "有一條繩子，剪去1/2後，還剩幾分之幾？",
+          "visual": null,
+          "answer": "1/2"
+        },
+        {
+          "type": "fi",
+          "q": "2/3的分子是多少？",
+          "visual": null,
+          "answer": "2"
+        },
+        {
+          "type": "fi",
+          "q": "2/3的分母是多少？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "3/4的分子是多少？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "3/4的分母是多少？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "把一個整體平分成5份，每份是幾分之幾？",
+          "visual": null,
+          "answer": "1/5"
+        },
+        {
+          "type": "fi",
+          "q": "1/6中，分母是多少？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "把一個正方形平分成4份，取其中3份是幾分之幾？",
+          "visual": null,
+          "answer": "3/4"
+        },
+        {
+          "type": "fi",
+          "q": "把一個圓平分成8份，取其中5份是幾分之幾？",
+          "visual": null,
+          "answer": "5/8"
+        },
+        {
+          "type": "fi",
+          "q": "4/4等於多少？",
+          "visual": null,
+          "answer": "1"
+        },
+        {
+          "type": "fi",
+          "q": "2/2等於多少？",
+          "visual": null,
+          "answer": "1"
+        },
+        {
+          "type": "fi",
+          "q": "0/4等於多少？",
+          "visual": null,
+          "answer": "0"
+        },
+        {
+          "type": "fi",
+          "q": "1/3等於把整體分成幾份？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "一個蛋糕切成4份，弟弟吃了1份，姊姊吃了2份，兩人共吃了幾分之幾？",
+          "visual": null,
+          "answer": "3/4"
+        },
+        {
+          "type": "fi",
+          "q": "1/4+1/4+1/4=？",
+          "visual": null,
+          "answer": "3/4"
+        },
+        {
+          "type": "fi",
+          "q": "一個披薩切成8片，吃了3片，剩下幾分之幾？",
+          "visual": null,
+          "answer": "5/8"
+        },
+        {
+          "type": "mc",
+          "q": "1/2和1/3比較，哪個大？",
+          "visual": null,
+          "answer": "1/2",
+          "opts": [
+            "1/2",
+            "1/3",
+            "一樣大",
+            "無法比較"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1/4和1/6比較，哪個大？",
+          "visual": null,
+          "answer": "1/4",
+          "opts": [
+            "1/4",
+            "1/6",
+            "一樣大",
+            "無法比較"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1/2的分母是多少？",
+          "visual": null,
+          "answer": "2",
+          "opts": [
+            "2",
+            "1",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "把圓形平分成6份，每份是幾分之幾？",
+          "visual": null,
+          "answer": "1/6",
+          "opts": [
+            "1/6",
+            "1/5",
+            "6/1",
+            "6/6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3/5的分子是多少？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "3",
+            "5",
+            "8",
+            "2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3/5的分母是多少？",
+          "visual": null,
+          "answer": "5",
+          "opts": [
+            "5",
+            "3",
+            "8",
+            "2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個分數最大？",
+          "visual": null,
+          "answer": "1/2",
+          "opts": [
+            "1/2",
+            "1/3",
+            "1/4",
+            "1/6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個分數最小？",
+          "visual": null,
+          "answer": "1/6",
+          "opts": [
+            "1/2",
+            "1/3",
+            "1/4",
+            "1/6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2/4與哪個分數相等？",
+          "visual": null,
+          "answer": "1/2",
+          "opts": [
+            "1/2",
+            "1/4",
+            "2/3",
+            "3/4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "把一個正方形分成4份，塗色3份，塗色部分是多少？",
+          "visual": null,
+          "answer": "3/4",
+          "opts": [
+            "3/4",
+            "1/4",
+            "3/3",
+            "4/3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1/2是一個整體的多少？",
+          "visual": null,
+          "answer": "一半",
+          "opts": [
+            "一半",
+            "三分之一",
+            "四分之一",
+            "全部"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4/4等於多少？",
+          "visual": null,
+          "answer": "1",
+          "opts": [
+            "1",
+            "0",
+            "4",
+            "1/2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個分數等於整體的一半？",
+          "visual": null,
+          "answer": "2/4",
+          "opts": [
+            "2/4",
+            "1/3",
+            "2/3",
+            "3/4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個圓被分成3份，有1份塗了顏色，塗色部分是幾分之幾？",
+          "visual": null,
+          "answer": "1/3",
+          "opts": [
+            "1/3",
+            "1/2",
+            "2/3",
+            "3/1"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "哪個分數最接近1（最大）？",
+          "visual": null,
+          "answer": "3/4",
+          "opts": [
+            "3/4",
+            "2/4",
+            "1/4",
+            "1/2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "0/5等於多少？",
+          "visual": null,
+          "answer": "0",
+          "opts": [
+            "0",
+            "1",
+            "5",
+            "1/5"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "把一個蛋糕平分成8份，每份是幾分之幾？",
+          "visual": null,
+          "answer": "1/8",
+          "opts": [
+            "1/8",
+            "8/1",
+            "8",
+            "1/4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個分數大於1/2？",
+          "visual": null,
+          "answer": "3/4",
+          "opts": [
+            "3/4",
+            "1/4",
+            "1/3",
+            "1/6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "分母是4的分數中，哪個最小（但大於0）？",
+          "visual": null,
+          "answer": "1/4",
+          "opts": [
+            "1/4",
+            "2/4",
+            "3/4",
+            "4/4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個不是分數？",
+          "visual": null,
+          "answer": "5",
+          "opts": [
+            "1/2",
+            "3/4",
+            "5",
+            "1/3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個分數等於1/2？",
+          "visual": null,
+          "answer": "2/4",
+          "opts": [
+            "2/4",
+            "2/3",
+            "2/6",
+            "2/8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "把9個橘子平分成3份，每份是整體的幾分之幾？",
+          "visual": null,
+          "answer": "1/3",
+          "opts": [
+            "1/3",
+            "1/9",
+            "3/9",
+            "3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個分數比1/2小？",
+          "visual": null,
+          "answer": "1/3",
+          "opts": [
+            "1/3",
+            "3/4",
+            "2/3",
+            "5/8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個蛋糕分成6份，吃了2份，還剩幾分之幾？",
+          "visual": null,
+          "answer": "4/6",
+          "opts": [
+            "4/6",
+            "2/6",
+            "1/6",
+            "6/4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個分數等於整體的全部？",
+          "visual": null,
+          "answer": "4/4",
+          "opts": [
+            "4/4",
+            "4/5",
+            "3/4",
+            "1/4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balloon-flower",
+      "name": "長度測量",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "150公分=1公尺幾公分？",
+          "visual": null,
+          "answer": "1公尺50公分"
+        },
+        {
+          "type": "fi",
+          "q": "3公里=多少公尺？",
+          "visual": null,
+          "answer": "3000"
+        },
+        {
+          "type": "fi",
+          "q": "1公尺=多少公分？",
+          "visual": null,
+          "answer": "100"
+        },
+        {
+          "type": "fi",
+          "q": "1公里=多少公尺？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "2公尺50公分=多少公分？",
+          "visual": null,
+          "answer": "250"
+        },
+        {
+          "type": "fi",
+          "q": "300公分=多少公尺？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "1公尺30公分=多少公分？",
+          "visual": null,
+          "answer": "130"
+        },
+        {
+          "type": "fi",
+          "q": "5公里=多少公尺？",
+          "visual": null,
+          "answer": "5000"
+        },
+        {
+          "type": "fi",
+          "q": "2000公尺=多少公里？",
+          "visual": null,
+          "answer": "2"
+        },
+        {
+          "type": "fi",
+          "q": "3公尺=多少公分？",
+          "visual": null,
+          "answer": "300"
+        },
+        {
+          "type": "fi",
+          "q": "175公分=1公尺幾公分？",
+          "visual": null,
+          "answer": "1公尺75公分"
+        },
+        {
+          "type": "fi",
+          "q": "2公尺80公分=多少公分？",
+          "visual": null,
+          "answer": "280"
+        },
+        {
+          "type": "fi",
+          "q": "1公里500公尺=多少公尺？",
+          "visual": null,
+          "answer": "1500"
+        },
+        {
+          "type": "fi",
+          "q": "4000公尺=多少公里？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "1公尺比90公分長多少公分？",
+          "visual": null,
+          "answer": "10"
+        },
+        {
+          "type": "fi",
+          "q": "2公里300公尺=多少公尺？",
+          "visual": null,
+          "answer": "2300"
+        },
+        {
+          "type": "fi",
+          "q": "500公分=多少公尺？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "120公分+80公分=多少公分？",
+          "visual": null,
+          "answer": "200"
+        },
+        {
+          "type": "fi",
+          "q": "3公尺-150公分=多少公分？",
+          "visual": null,
+          "answer": "150"
+        },
+        {
+          "type": "fi",
+          "q": "1公里-500公尺=多少公尺？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "100公分=多少公尺？",
+          "visual": null,
+          "answer": "1"
+        },
+        {
+          "type": "fi",
+          "q": "2公尺=多少公分？",
+          "visual": null,
+          "answer": "200"
+        },
+        {
+          "type": "fi",
+          "q": "7公里=多少公尺？",
+          "visual": null,
+          "answer": "7000"
+        },
+        {
+          "type": "fi",
+          "q": "5000公尺=多少公里？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "1公尺的一半是多少公分？",
+          "visual": null,
+          "answer": "50"
+        },
+        {
+          "type": "mc",
+          "q": "1公尺=幾公分？",
+          "visual": null,
+          "answer": "100",
+          "opts": [
+            "100",
+            "10",
+            "1000",
+            "50"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公里=幾公尺？",
+          "visual": null,
+          "answer": "1000",
+          "opts": [
+            "1000",
+            "100",
+            "10000",
+            "500"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "200公分=幾公尺？",
+          "visual": null,
+          "answer": "2",
+          "opts": [
+            "2",
+            "20",
+            "0.2",
+            "200"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3公尺=幾公分？",
+          "visual": null,
+          "answer": "300",
+          "opts": [
+            "300",
+            "30",
+            "3000",
+            "3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2000公尺=幾公里？",
+          "visual": null,
+          "answer": "2",
+          "opts": [
+            "2",
+            "20",
+            "0.2",
+            "200"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公尺50公分=幾公分？",
+          "visual": null,
+          "answer": "150",
+          "opts": [
+            "150",
+            "105",
+            "510",
+            "15"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最長？",
+          "visual": null,
+          "answer": "1公里",
+          "opts": [
+            "1公里",
+            "999公尺",
+            "1000公分",
+            "100公尺"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "250公分=幾公尺幾公分？",
+          "visual": null,
+          "answer": "2公尺50公分",
+          "opts": [
+            "2公尺50公分",
+            "25公尺0公分",
+            "2公尺5公分",
+            "2公尺500公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1500公尺=幾公里幾公尺？",
+          "visual": null,
+          "answer": "1公里500公尺",
+          "opts": [
+            "1公里500公尺",
+            "15公里0公尺",
+            "1公里50公尺",
+            "1公里5公尺"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3公里=幾公尺？",
+          "visual": null,
+          "answer": "3000",
+          "opts": [
+            "3000",
+            "300",
+            "30000",
+            "30"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4公尺20公分=幾公分？",
+          "visual": null,
+          "answer": "420",
+          "opts": [
+            "420",
+            "42",
+            "4020",
+            "402"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公尺-30公分=幾公分？",
+          "visual": null,
+          "answer": "70",
+          "opts": [
+            "70",
+            "80",
+            "90",
+            "60"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "80公分+40公分=？",
+          "visual": null,
+          "answer": "1公尺20公分",
+          "opts": [
+            "1公尺20公分",
+            "1公尺40公分",
+            "120公尺",
+            "80公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公里500公尺=幾公尺？",
+          "visual": null,
+          "answer": "2500",
+          "opts": [
+            "2500",
+            "2050",
+            "25000",
+            "250"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最短？",
+          "visual": null,
+          "answer": "50公分",
+          "opts": [
+            "1公尺",
+            "99公分",
+            "1公里",
+            "50公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5公里300公尺=幾公尺？",
+          "visual": null,
+          "answer": "5300",
+          "opts": [
+            "5300",
+            "5030",
+            "53000",
+            "530"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "6公尺=幾公分？",
+          "visual": null,
+          "answer": "600",
+          "opts": [
+            "600",
+            "60",
+            "6000",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個等於2公尺？",
+          "visual": null,
+          "answer": "200公分",
+          "opts": [
+            "200公分",
+            "20公分",
+            "2000公分",
+            "2000公尺"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "100公分等於幾公尺？",
+          "visual": null,
+          "answer": "1公尺",
+          "opts": [
+            "1公尺",
+            "10公尺",
+            "100公尺",
+            "1000公尺"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "公尺比公分大嗎？",
+          "visual": null,
+          "answer": "是",
+          "opts": [
+            "是",
+            "否",
+            "一樣大",
+            "無法比較"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一段3公尺，另一段250公分，哪段比較長？",
+          "visual": null,
+          "answer": "3公尺那段",
+          "opts": [
+            "3公尺那段",
+            "250公分那段",
+            "一樣長",
+            "無法比較"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公尺30公分=幾公分？",
+          "visual": null,
+          "answer": "130",
+          "opts": [
+            "130",
+            "103",
+            "13",
+            "1300"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "400公分=幾公尺？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "40",
+            "400",
+            "0.4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公尺的一半是幾公分？",
+          "visual": null,
+          "answer": "100",
+          "opts": [
+            "100",
+            "50",
+            "200",
+            "150"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個換算正確？",
+          "visual": null,
+          "answer": "1000公尺=1公里",
+          "opts": [
+            "1000公尺=1公里",
+            "100公尺=1公里",
+            "10公尺=1公里",
+            "10000公尺=1公里"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gardenia",
+      "name": "重量測量",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "2000公克=多少公斤？",
+          "visual": null,
+          "answer": "2"
+        },
+        {
+          "type": "fi",
+          "q": "1公斤=多少公克？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "1公斤500公克=多少公克？",
+          "visual": null,
+          "answer": "1500"
+        },
+        {
+          "type": "fi",
+          "q": "3公斤=多少公克？",
+          "visual": null,
+          "answer": "3000"
+        },
+        {
+          "type": "fi",
+          "q": "5000公克=多少公斤？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "2公斤300公克=多少公克？",
+          "visual": null,
+          "answer": "2300"
+        },
+        {
+          "type": "fi",
+          "q": "500公克+500公克=多少公克？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "1公斤-300公克=多少公克？",
+          "visual": null,
+          "answer": "700"
+        },
+        {
+          "type": "fi",
+          "q": "2公斤-500公克=多少公克？",
+          "visual": null,
+          "answer": "1500"
+        },
+        {
+          "type": "fi",
+          "q": "4000公克=多少公斤？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "750公克+250公克=多少公克？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "1公斤200公克=多少公克？",
+          "visual": null,
+          "answer": "1200"
+        },
+        {
+          "type": "fi",
+          "q": "3公斤500公克=多少公克？",
+          "visual": null,
+          "answer": "3500"
+        },
+        {
+          "type": "fi",
+          "q": "6000公克=多少公斤？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "1公斤的一半是多少公克？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "800公克+400公克=幾公斤幾公克？",
+          "visual": null,
+          "answer": "1公斤200公克"
+        },
+        {
+          "type": "fi",
+          "q": "2500公克=幾公斤幾公克？",
+          "visual": null,
+          "answer": "2公斤500公克"
+        },
+        {
+          "type": "fi",
+          "q": "7公斤=多少公克？",
+          "visual": null,
+          "answer": "7000"
+        },
+        {
+          "type": "fi",
+          "q": "1公斤750公克=多少公克？",
+          "visual": null,
+          "answer": "1750"
+        },
+        {
+          "type": "fi",
+          "q": "4公斤200公克=多少公克？",
+          "visual": null,
+          "answer": "4200"
+        },
+        {
+          "type": "fi",
+          "q": "600公克+800公克=多少公克？",
+          "visual": null,
+          "answer": "1400"
+        },
+        {
+          "type": "fi",
+          "q": "2000公克-800公克=多少公克？",
+          "visual": null,
+          "answer": "1200"
+        },
+        {
+          "type": "fi",
+          "q": "1公斤的四分之一是多少公克？",
+          "visual": null,
+          "answer": "250"
+        },
+        {
+          "type": "fi",
+          "q": "5公斤500公克=多少公克？",
+          "visual": null,
+          "answer": "5500"
+        },
+        {
+          "type": "fi",
+          "q": "8000公克=多少公斤？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "mc",
+          "q": "1公斤=幾公克？",
+          "visual": null,
+          "answer": "1000",
+          "opts": [
+            "1000",
+            "100",
+            "10000",
+            "500"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公斤=幾公克？",
+          "visual": null,
+          "answer": "2000",
+          "opts": [
+            "2000",
+            "200",
+            "20000",
+            "2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3000公克=幾公斤？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "3",
+            "30",
+            "0.3",
+            "300"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公斤500公克=幾公克？",
+          "visual": null,
+          "answer": "1500",
+          "opts": [
+            "1500",
+            "150",
+            "1050",
+            "15000"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最重？",
+          "visual": null,
+          "answer": "2公斤",
+          "opts": [
+            "2公斤",
+            "1500公克",
+            "1000公克",
+            "1公斤800公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "500公克+600公克=？",
+          "visual": null,
+          "answer": "1100公克",
+          "opts": [
+            "1100公克",
+            "1000公克",
+            "1200公克",
+            "110公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公斤-500公克=？",
+          "visual": null,
+          "answer": "1500公克",
+          "opts": [
+            "1500公克",
+            "1000公克",
+            "1200公克",
+            "2500公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4500公克=幾公斤幾公克？",
+          "visual": null,
+          "answer": "4公斤500公克",
+          "opts": [
+            "4公斤500公克",
+            "45公斤0公克",
+            "4公斤50公克",
+            "4公斤5公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公斤的一半是多少公克？",
+          "visual": null,
+          "answer": "500",
+          "opts": [
+            "500",
+            "250",
+            "1000",
+            "200"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最輕？",
+          "visual": null,
+          "answer": "500公克",
+          "opts": [
+            "1公斤",
+            "500公克",
+            "1公斤500公克",
+            "2公斤"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3公斤200公克=幾公克？",
+          "visual": null,
+          "answer": "3200",
+          "opts": [
+            "3200",
+            "3020",
+            "32000",
+            "320"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1500公克=幾公斤幾公克？",
+          "visual": null,
+          "answer": "1公斤500公克",
+          "opts": [
+            "1公斤500公克",
+            "15公斤0公克",
+            "1公斤50公克",
+            "1公斤5公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個正確？",
+          "visual": null,
+          "answer": "1公斤=1000公克",
+          "opts": [
+            "1公斤=1000公克",
+            "1公斤=100公克",
+            "1公斤=10000公克",
+            "1公斤=500公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公斤300公克+700公克=幾公斤？",
+          "visual": null,
+          "answer": "3公斤",
+          "opts": [
+            "3公斤",
+            "2公斤",
+            "2.5公斤",
+            "3公斤300公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公斤400公克+600公克=？",
+          "visual": null,
+          "answer": "2公斤",
+          "opts": [
+            "2公斤",
+            "1公斤1000公克",
+            "1公斤",
+            "2000公斤"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "6公斤=幾公克？",
+          "visual": null,
+          "answer": "6000",
+          "opts": [
+            "6000",
+            "600",
+            "60000",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個等於2公斤500公克？",
+          "visual": null,
+          "answer": "2500公克",
+          "opts": [
+            "2500公克",
+            "250公克",
+            "25000公克",
+            "2050公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "媽媽買了1公斤蘋果和800公克橘子，共幾公克？",
+          "visual": null,
+          "answer": "1800",
+          "opts": [
+            "1800",
+            "1008",
+            "800",
+            "2800"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一顆石頭重400公克，5顆共重幾公克？",
+          "visual": null,
+          "answer": "2000",
+          "opts": [
+            "2000",
+            "1000",
+            "4005",
+            "400"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7000公克=幾公斤？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "70",
+            "700",
+            "0.7"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最接近1公斤？",
+          "visual": null,
+          "answer": "999公克",
+          "opts": [
+            "999公克",
+            "1100公克",
+            "900公克",
+            "500公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公斤的四分之一是多少公克？",
+          "visual": null,
+          "answer": "250",
+          "opts": [
+            "250",
+            "500",
+            "100",
+            "750"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公斤的一半是幾公克？",
+          "visual": null,
+          "answer": "1000",
+          "opts": [
+            "1000",
+            "500",
+            "2000",
+            "250"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個換算正確？",
+          "visual": null,
+          "answer": "3公斤=3000公克",
+          "opts": [
+            "3公斤=3000公克",
+            "3公斤=300公克",
+            "3公斤=30000公克",
+            "3公斤=30公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個重量最重？",
+          "visual": null,
+          "answer": "1公斤100公克",
+          "opts": [
+            "900公克",
+            "1公斤100公克",
+            "1000公克",
+            "1公斤"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narcissus",
+      "name": "時間計算",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "1小時=多少分鐘？",
+          "visual": null,
+          "answer": "60"
+        },
+        {
+          "type": "fi",
+          "q": "2小時30分=多少分鐘？",
+          "visual": null,
+          "answer": "150"
+        },
+        {
+          "type": "fi",
+          "q": "上午9:00到下午3:00共幾小時？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "1分鐘=多少秒？",
+          "visual": null,
+          "answer": "60"
+        },
+        {
+          "type": "fi",
+          "q": "2分鐘=多少秒？",
+          "visual": null,
+          "answer": "120"
+        },
+        {
+          "type": "fi",
+          "q": "90分鐘=幾小時幾分？",
+          "visual": null,
+          "answer": "1小時30分"
+        },
+        {
+          "type": "fi",
+          "q": "3小時=多少分鐘？",
+          "visual": null,
+          "answer": "180"
+        },
+        {
+          "type": "fi",
+          "q": "1小時20分=多少分鐘？",
+          "visual": null,
+          "answer": "80"
+        },
+        {
+          "type": "fi",
+          "q": "上午8:30到上午11:30共幾小時？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "早上7:00到早上7:30共幾分鐘？",
+          "visual": null,
+          "answer": "30"
+        },
+        {
+          "type": "fi",
+          "q": "120分鐘=多少小時？",
+          "visual": null,
+          "answer": "2"
+        },
+        {
+          "type": "fi",
+          "q": "45分鐘+15分鐘=多少分鐘？",
+          "visual": null,
+          "answer": "60"
+        },
+        {
+          "type": "fi",
+          "q": "1小時-20分鐘=多少分鐘？",
+          "visual": null,
+          "answer": "40"
+        },
+        {
+          "type": "fi",
+          "q": "150分鐘=幾小時幾分？",
+          "visual": null,
+          "answer": "2小時30分"
+        },
+        {
+          "type": "fi",
+          "q": "一天有幾小時？",
+          "visual": null,
+          "answer": "24"
+        },
+        {
+          "type": "fi",
+          "q": "半小時=多少分鐘？",
+          "visual": null,
+          "answer": "30"
+        },
+        {
+          "type": "fi",
+          "q": "2小時45分=多少分鐘？",
+          "visual": null,
+          "answer": "165"
+        },
+        {
+          "type": "fi",
+          "q": "100分鐘=1小時幾分鐘？",
+          "visual": null,
+          "answer": "1小時40分"
+        },
+        {
+          "type": "fi",
+          "q": "上午6:00到中午12:00共幾小時？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "240分鐘=多少小時？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "1分鐘30秒=多少秒？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "一星期有幾天？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "fi",
+          "q": "1小時30分+30分=多少小時？",
+          "visual": null,
+          "answer": "2"
+        },
+        {
+          "type": "fi",
+          "q": "早上9:15的45分鐘後是幾點？",
+          "visual": null,
+          "answer": "10:00"
+        },
+        {
+          "type": "fi",
+          "q": "3分鐘=多少秒？",
+          "visual": null,
+          "answer": "180"
+        },
+        {
+          "type": "mc",
+          "q": "1小時=幾分鐘？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "100",
+            "24",
+            "12"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1分鐘=幾秒？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "100",
+            "24",
+            "50"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2小時=幾分鐘？",
+          "visual": null,
+          "answer": "120",
+          "opts": [
+            "120",
+            "200",
+            "100",
+            "60"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "90分鐘=幾小時幾分？",
+          "visual": null,
+          "answer": "1小時30分",
+          "opts": [
+            "1小時30分",
+            "9小時0分",
+            "1小時90分",
+            "2小時"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "上午8:00到上午11:00共幾小時？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "3",
+            "2",
+            "4",
+            "8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一天有幾小時？",
+          "visual": null,
+          "answer": "24",
+          "opts": [
+            "24",
+            "12",
+            "60",
+            "7"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "半小時=幾分鐘？",
+          "visual": null,
+          "answer": "30",
+          "opts": [
+            "30",
+            "60",
+            "15",
+            "45"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下午3:00的2小時後是幾點？",
+          "visual": null,
+          "answer": "下午5:00",
+          "opts": [
+            "下午5:00",
+            "下午4:00",
+            "下午6:00",
+            "上午5:00"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "上午9:30到上午10:30共幾分鐘？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "30",
+            "90",
+            "100"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "150分鐘=幾小時幾分？",
+          "visual": null,
+          "answer": "2小時30分",
+          "opts": [
+            "2小時30分",
+            "1小時50分",
+            "3小時0分",
+            "2小時0分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一星期有幾天？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "6",
+            "5",
+            "8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "小明7:30出門，9:00到學校，走路花了幾分鐘？",
+          "visual": null,
+          "answer": "90",
+          "opts": [
+            "90",
+            "60",
+            "30",
+            "120"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最長？",
+          "visual": null,
+          "answer": "130分鐘",
+          "opts": [
+            "2小時",
+            "100分鐘",
+            "130分鐘",
+            "1小時"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2小時20分=幾分鐘？",
+          "visual": null,
+          "answer": "140",
+          "opts": [
+            "140",
+            "240",
+            "120",
+            "220"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下午1:00的前2小時是幾點？",
+          "visual": null,
+          "answer": "上午11:00",
+          "opts": [
+            "上午11:00",
+            "下午3:00",
+            "上午1:00",
+            "下午11:00"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "60秒=幾分鐘？",
+          "visual": null,
+          "answer": "1",
+          "opts": [
+            "1",
+            "6",
+            "60",
+            "10"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "早上6:00到下午6:00共幾小時？",
+          "visual": null,
+          "answer": "12",
+          "opts": [
+            "12",
+            "6",
+            "24",
+            "18"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1小時30分-30分=幾分鐘？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "30",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個時間最短？",
+          "visual": null,
+          "answer": "50分鐘",
+          "opts": [
+            "1小時",
+            "50分鐘",
+            "70分鐘",
+            "90分鐘"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2小時的一半是幾分鐘？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "30",
+            "120",
+            "90"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一天有幾分鐘？",
+          "visual": null,
+          "answer": "1440",
+          "opts": [
+            "1440",
+            "240",
+            "60",
+            "720"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "上午10:45的15分鐘後是幾點？",
+          "visual": null,
+          "answer": "上午11:00",
+          "opts": [
+            "上午11:00",
+            "上午10:60",
+            "上午11:15",
+            "上午10:45"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4分鐘=幾秒？",
+          "visual": null,
+          "answer": "240",
+          "opts": [
+            "240",
+            "400",
+            "60",
+            "160"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下午2:30+1小時30分=幾點？",
+          "visual": null,
+          "answer": "下午4:00",
+          "opts": [
+            "下午4:00",
+            "下午3:30",
+            "下午5:00",
+            "下午3:00"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5分鐘=幾秒？",
+          "visual": null,
+          "answer": "300",
+          "opts": [
+            "300",
+            "500",
+            "60",
+            "250"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peacock-grass",
+      "name": "角度圖形",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "直角是幾度？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "平角是幾度？",
+          "visual": null,
+          "answer": "180"
+        },
+        {
+          "type": "fi",
+          "q": "小於90度的角叫做什麼角？",
+          "visual": null,
+          "answer": "銳角"
+        },
+        {
+          "type": "fi",
+          "q": "大於90度的角叫做什麼角？",
+          "visual": null,
+          "answer": "鈍角"
+        },
+        {
+          "type": "fi",
+          "q": "正方形有幾個角？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "三角形有幾個角？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "長方形有幾個直角？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "圓形有幾個角？",
+          "visual": null,
+          "answer": "0"
+        },
+        {
+          "type": "fi",
+          "q": "銳角比直角大還是小？",
+          "visual": null,
+          "answer": "小"
+        },
+        {
+          "type": "fi",
+          "q": "鈍角比直角大還是小？",
+          "visual": null,
+          "answer": "大"
+        },
+        {
+          "type": "fi",
+          "q": "45度是銳角還是鈍角？",
+          "visual": null,
+          "answer": "銳角"
+        },
+        {
+          "type": "fi",
+          "q": "120度是銳角還是鈍角？",
+          "visual": null,
+          "answer": "鈍角"
+        },
+        {
+          "type": "fi",
+          "q": "正三角形的每個角是幾度？",
+          "visual": null,
+          "answer": "60"
+        },
+        {
+          "type": "fi",
+          "q": "直角三角形有幾個直角？",
+          "visual": null,
+          "answer": "1"
+        },
+        {
+          "type": "fi",
+          "q": "正方形的每個角是幾度？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "兩個直角合起來是幾度？",
+          "visual": null,
+          "answer": "180"
+        },
+        {
+          "type": "fi",
+          "q": "一個平角等於幾個直角？",
+          "visual": null,
+          "answer": "2"
+        },
+        {
+          "type": "fi",
+          "q": "360度是幾個直角？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "150度比直角大多少度？",
+          "visual": null,
+          "answer": "60"
+        },
+        {
+          "type": "fi",
+          "q": "五角形有幾個角？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "六邊形有幾個角？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "45度+45度=幾度？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "60度是銳角嗎？（是/否）",
+          "visual": null,
+          "answer": "是"
+        },
+        {
+          "type": "fi",
+          "q": "長方形的四個角都是幾度？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "90度+90度=幾度？",
+          "visual": null,
+          "answer": "180"
+        },
+        {
+          "type": "mc",
+          "q": "直角是幾度？",
+          "visual": null,
+          "answer": "90度",
+          "opts": [
+            "90度",
+            "45度",
+            "180度",
+            "360度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個是直角？",
+          "visual": null,
+          "answer": "90度",
+          "opts": [
+            "90度",
+            "45度",
+            "120度",
+            "180度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "銳角比直角？",
+          "visual": null,
+          "answer": "小",
+          "opts": [
+            "小",
+            "大",
+            "一樣",
+            "無法比較"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個角是鈍角？",
+          "visual": null,
+          "answer": "120度",
+          "opts": [
+            "120度",
+            "90度",
+            "45度",
+            "30度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個角是銳角？",
+          "visual": null,
+          "answer": "60度",
+          "opts": [
+            "60度",
+            "90度",
+            "120度",
+            "180度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正方形有幾個直角？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "三角形最多有幾個直角？",
+          "visual": null,
+          "answer": "1",
+          "opts": [
+            "1",
+            "2",
+            "3",
+            "0"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "平角是幾度？",
+          "visual": null,
+          "answer": "180",
+          "opts": [
+            "180",
+            "90",
+            "360",
+            "270"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個圓有幾度？",
+          "visual": null,
+          "answer": "360",
+          "opts": [
+            "360",
+            "180",
+            "90",
+            "270"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個圖形所有角都是直角？",
+          "visual": null,
+          "answer": "長方形",
+          "opts": [
+            "長方形",
+            "三角形",
+            "菱形",
+            "梯形"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "135度是什麼角？",
+          "visual": null,
+          "answer": "鈍角",
+          "opts": [
+            "鈍角",
+            "銳角",
+            "直角",
+            "平角"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "30度是什麼角？",
+          "visual": null,
+          "answer": "銳角",
+          "opts": [
+            "銳角",
+            "直角",
+            "鈍角",
+            "平角"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "兩個直角合在一起是幾度？",
+          "visual": null,
+          "answer": "180",
+          "opts": [
+            "180",
+            "90",
+            "270",
+            "360"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正三角形每個角是幾度？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "90",
+            "45",
+            "30"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "五邊形有幾個角？",
+          "visual": null,
+          "answer": "5",
+          "opts": [
+            "5",
+            "4",
+            "6",
+            "3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最大？",
+          "visual": null,
+          "answer": "150度",
+          "opts": [
+            "150度",
+            "90度",
+            "60度",
+            "45度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "如果一個角是直角，另一個是鈍角，哪個比較大？",
+          "visual": null,
+          "answer": "鈍角",
+          "opts": [
+            "鈍角",
+            "直角",
+            "一樣大",
+            "無法判斷"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個正確？",
+          "visual": null,
+          "answer": "直角=90度",
+          "opts": [
+            "直角=90度",
+            "直角=45度",
+            "直角=180度",
+            "直角=60度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長方形有幾個角？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "3",
+            "2",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "以下哪個圖形沒有角？",
+          "visual": null,
+          "answer": "圓形",
+          "opts": [
+            "圓形",
+            "正方形",
+            "長方形",
+            "直角三角形"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "45度比直角小多少度？",
+          "visual": null,
+          "answer": "45",
+          "opts": [
+            "45",
+            "90",
+            "135",
+            "180"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "60度和30度加起來是幾度？",
+          "visual": null,
+          "answer": "90",
+          "opts": [
+            "90",
+            "60",
+            "30",
+            "120"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個是鈍角？",
+          "visual": null,
+          "answer": "91度",
+          "opts": [
+            "89度",
+            "91度",
+            "90度",
+            "80度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正方形四個角之和是幾度？",
+          "visual": null,
+          "answer": "360",
+          "opts": [
+            "360",
+            "180",
+            "90",
+            "270"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個角最小？",
+          "visual": null,
+          "answer": "20度",
+          "opts": [
+            "20度",
+            "90度",
+            "120度",
+            "180度"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tuberose",
+      "name": "面積初步",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "長6公分、寬4公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "24"
+        },
+        {
+          "type": "fi",
+          "q": "長5公分、寬3公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "15"
+        },
+        {
+          "type": "fi",
+          "q": "邊長4公分的正方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "16"
+        },
+        {
+          "type": "fi",
+          "q": "長7公分、寬4公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "28"
+        },
+        {
+          "type": "fi",
+          "q": "邊長5公分的正方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "25"
+        },
+        {
+          "type": "fi",
+          "q": "長10公分、寬6公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "60"
+        },
+        {
+          "type": "fi",
+          "q": "邊長3公分的正方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "9"
+        },
+        {
+          "type": "fi",
+          "q": "長9公分、寬4公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "36"
+        },
+        {
+          "type": "fi",
+          "q": "長方形面積的計算公式是什麼？",
+          "visual": null,
+          "answer": "長×寬"
+        },
+        {
+          "type": "fi",
+          "q": "格子紙上有3×4個格子，面積是多少平方公分（每格1平方公分）？",
+          "visual": null,
+          "answer": "12"
+        },
+        {
+          "type": "fi",
+          "q": "格子紙上有5×5個格子，面積是多少平方公分？",
+          "visual": null,
+          "answer": "25"
+        },
+        {
+          "type": "fi",
+          "q": "邊長7公分的正方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "49"
+        },
+        {
+          "type": "fi",
+          "q": "長12公分、寬4公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "48"
+        },
+        {
+          "type": "fi",
+          "q": "邊長8公分的正方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "64"
+        },
+        {
+          "type": "fi",
+          "q": "一個長方形面積是42平方公分，長是7公分，寬是幾公分？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "一個正方形面積是49平方公分，邊長是幾公分？",
+          "visual": null,
+          "answer": "7"
+        },
+        {
+          "type": "fi",
+          "q": "一個正方形面積是64平方公分，邊長是幾公分？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "格子紙上有4×7個格子，面積是多少平方公分？",
+          "visual": null,
+          "answer": "28"
+        },
+        {
+          "type": "fi",
+          "q": "長5公分、寬9公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "45"
+        },
+        {
+          "type": "fi",
+          "q": "長11公分、寬3公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "33"
+        },
+        {
+          "type": "fi",
+          "q": "格子紙上有5×6個格子，面積是多少平方公分？",
+          "visual": null,
+          "answer": "30"
+        },
+        {
+          "type": "fi",
+          "q": "長10公分、寬10公分，面積是多少平方公分？",
+          "visual": null,
+          "answer": "100"
+        },
+        {
+          "type": "fi",
+          "q": "一個長方形面積是72平方公分，長是9公分，寬是幾公分？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "長8公分、寬5公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "40"
+        },
+        {
+          "type": "fi",
+          "q": "一個長方形面積是30平方公分，長是6公分，寬是幾公分？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "mc",
+          "q": "長方形面積的公式是？",
+          "visual": null,
+          "answer": "長×寬",
+          "opts": [
+            "長×寬",
+            "長+寬",
+            "長×高",
+            "(長+寬)×2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長5公分、寬4公分的長方形面積是？",
+          "visual": null,
+          "answer": "20平方公分",
+          "opts": [
+            "20平方公分",
+            "18平方公分",
+            "9平方公分",
+            "45平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "邊長6公分的正方形面積是？",
+          "visual": null,
+          "answer": "36平方公分",
+          "opts": [
+            "36平方公分",
+            "24平方公分",
+            "12平方公分",
+            "30平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長7公分、寬3公分的長方形面積是？",
+          "visual": null,
+          "answer": "21平方公分",
+          "opts": [
+            "21平方公分",
+            "20平方公分",
+            "10平方公分",
+            "42平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個長方形面積是24平方公分，長是8公分，寬是？",
+          "visual": null,
+          "answer": "3公分",
+          "opts": [
+            "3公分",
+            "4公分",
+            "6公分",
+            "2公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "邊長5公分的正方形面積是？",
+          "visual": null,
+          "answer": "25平方公分",
+          "opts": [
+            "25平方公分",
+            "20平方公分",
+            "10平方公分",
+            "50平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "格子紙上3行4列的格子，共幾平方公分？",
+          "visual": null,
+          "answer": "12平方公分",
+          "opts": [
+            "12平方公分",
+            "7平方公分",
+            "24平方公分",
+            "34平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個面積最大？",
+          "visual": null,
+          "answer": "長6公分寬6公分",
+          "opts": [
+            "長8公分寬4公分",
+            "長6公分寬6公分",
+            "長7公分寬5公分",
+            "長9公分寬3公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "面積用什麼單位？",
+          "visual": null,
+          "answer": "平方公分",
+          "opts": [
+            "平方公分",
+            "公分",
+            "公尺",
+            "公克"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長10公分、寬5公分的長方形面積是？",
+          "visual": null,
+          "answer": "50平方公分",
+          "opts": [
+            "50平方公分",
+            "30平方公分",
+            "15平方公分",
+            "100平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "面積=長×寬，若長=4，面積=20，寬=？",
+          "visual": null,
+          "answer": "5",
+          "opts": [
+            "5",
+            "4",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個正方形周長是16公分，邊長是幾公分？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "8",
+            "2",
+            "16"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "邊長4公分的正方形面積是？",
+          "visual": null,
+          "answer": "16平方公分",
+          "opts": [
+            "16平方公分",
+            "8平方公分",
+            "4平方公分",
+            "12平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長9公分、寬4公分的長方形面積是？",
+          "visual": null,
+          "answer": "36平方公分",
+          "opts": [
+            "36平方公分",
+            "26平方公分",
+            "13平方公分",
+            "72平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "面積50平方公分，長是10公分，寬是？",
+          "visual": null,
+          "answer": "5公分",
+          "opts": [
+            "5公分",
+            "4公分",
+            "6公分",
+            "40公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個不是面積單位？",
+          "visual": null,
+          "answer": "公分",
+          "opts": [
+            "公分",
+            "平方公分",
+            "平方公尺",
+            "平方公里"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個長方形長12公分、寬5公分，面積是多少平方公分？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "34",
+            "17",
+            "120"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "邊長7公分的正方形面積是？",
+          "visual": null,
+          "answer": "49平方公分",
+          "opts": [
+            "49平方公分",
+            "28平方公分",
+            "14平方公分",
+            "77平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "格子紙上4×4的格子，面積是多少平方公分？",
+          "visual": null,
+          "answer": "16平方公分",
+          "opts": [
+            "16平方公分",
+            "8平方公分",
+            "4平方公分",
+            "44平方公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "若一個長方形寬是3公分、面積是27平方公分，長是？",
+          "visual": null,
+          "answer": "9公分",
+          "opts": [
+            "9公分",
+            "3公分",
+            "27公分",
+            "8公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個長方形面積最小？",
+          "visual": null,
+          "answer": "長1公分寬12公分",
+          "opts": [
+            "長2公分寬8公分",
+            "長3公分寬5公分",
+            "長4公分寬4公分",
+            "長1公分寬12公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正方形面積是81平方公分，邊長是？",
+          "visual": null,
+          "answer": "9公分",
+          "opts": [
+            "9公分",
+            "8公分",
+            "7公分",
+            "10公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "面積的計算是長×寬，那周長的計算是？",
+          "visual": null,
+          "answer": "(長+寬)×2",
+          "opts": [
+            "(長+寬)×2",
+            "長×寬×2",
+            "長×寬",
+            "長+寬"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長6公分、寬8公分的長方形面積是多少平方公分？",
+          "visual": null,
+          "answer": "48",
+          "opts": [
+            "48",
+            "28",
+            "56",
+            "40"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個長方形面積最小？",
+          "visual": null,
+          "answer": "長2公分寬3公分",
+          "opts": [
+            "長2公分寬3公分",
+            "長3公分寬4公分",
+            "長4公分寬4公分",
+            "長5公分寬2公分"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delphinium",
+      "name": "統計圖表",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "一班喜歡貓的有8人，喜歡狗的有12人，哪種寵物比較受歡迎？",
+          "visual": null,
+          "answer": "狗"
+        },
+        {
+          "type": "fi",
+          "q": "圖表顯示：蘋果30個、橘子20個、香蕉15個，哪種水果最多？",
+          "visual": null,
+          "answer": "蘋果"
+        },
+        {
+          "type": "fi",
+          "q": "圖表顯示：蘋果30個、橘子20個、香蕉15個，共有幾個水果？",
+          "visual": null,
+          "answer": "65"
+        },
+        {
+          "type": "fi",
+          "q": "一班喜歡藍色12人、紅色8人、綠色10人，最少人喜歡哪種顏色？",
+          "visual": null,
+          "answer": "紅色"
+        },
+        {
+          "type": "fi",
+          "q": "月份統計：1月15次，2月10次，3月20次，哪個月最多？",
+          "visual": null,
+          "answer": "3月"
+        },
+        {
+          "type": "fi",
+          "q": "長條圖：甲組50分、乙組60分、丙組40分，哪組分數最低？",
+          "visual": null,
+          "answer": "丙組"
+        },
+        {
+          "type": "fi",
+          "q": "統計圖：A有5個、B有8個、C有3個，共有幾個？",
+          "visual": null,
+          "answer": "16"
+        },
+        {
+          "type": "fi",
+          "q": "一班男生15人，女生13人，男生比女生多幾人？",
+          "visual": null,
+          "answer": "2"
+        },
+        {
+          "type": "fi",
+          "q": "統計圖顯示：星期一跑步12圈，星期二9圈，星期三15圈，三天共跑多少圈？",
+          "visual": null,
+          "answer": "36"
+        },
+        {
+          "type": "fi",
+          "q": "圖像統計圖中，每個圖示代表5本書，若有3個圖示，共有幾本書？",
+          "visual": null,
+          "answer": "15"
+        },
+        {
+          "type": "fi",
+          "q": "統計圖顯示喝水：早上300毫升，中午400毫升，下午200毫升，共喝多少毫升？",
+          "visual": null,
+          "answer": "900"
+        },
+        {
+          "type": "fi",
+          "q": "統計圖中A=12，B=7，A比B多幾？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "若每個圖示代表10人，有4個圖示，共有幾人？",
+          "visual": null,
+          "answer": "40"
+        },
+        {
+          "type": "fi",
+          "q": "圖表：三年一班30人，三年二班28人，三年三班32人，哪班最多？",
+          "visual": null,
+          "answer": "三年三班"
+        },
+        {
+          "type": "fi",
+          "q": "圖表：三年一班30人，三年二班28人，三年三班32人，共有幾人？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "長條圖：國語80分、數學90分、自然70分，哪科分數最高？",
+          "visual": null,
+          "answer": "數學"
+        },
+        {
+          "type": "fi",
+          "q": "長條圖：國語80分、數學90分、自然70分，哪科分數最低？",
+          "visual": null,
+          "answer": "自然"
+        },
+        {
+          "type": "fi",
+          "q": "圖像統計：每格代表2個，有5格，共有幾個？",
+          "visual": null,
+          "answer": "10"
+        },
+        {
+          "type": "fi",
+          "q": "班上有25人，其中喜歡數學12人，其餘喜歡國語，喜歡國語有幾人？",
+          "visual": null,
+          "answer": "13"
+        },
+        {
+          "type": "fi",
+          "q": "圖表：一月雨天5天，二月雨天3天，三月雨天8天，三個月共幾天雨天？",
+          "visual": null,
+          "answer": "16"
+        },
+        {
+          "type": "fi",
+          "q": "圖表：A有15個，B有10個，A+B=？",
+          "visual": null,
+          "answer": "25"
+        },
+        {
+          "type": "fi",
+          "q": "長條圖中最高的長條代表什麼？",
+          "visual": null,
+          "answer": "數量最多"
+        },
+        {
+          "type": "fi",
+          "q": "若圖像統計圖中每個圖示代表3個，有6個圖示，共有幾個？",
+          "visual": null,
+          "answer": "18"
+        },
+        {
+          "type": "fi",
+          "q": "統計表：週一20人，週二25人，週三15人，兩天合計（週一+週三）是多少人？",
+          "visual": null,
+          "answer": "35"
+        },
+        {
+          "type": "fi",
+          "q": "圖像統計圖中，每個圖示代表4顆糖，有5個圖示，共幾顆糖？",
+          "visual": null,
+          "answer": "20"
+        },
+        {
+          "type": "mc",
+          "q": "長條圖中，長條越長代表？",
+          "visual": null,
+          "answer": "數量越多",
+          "opts": [
+            "數量越多",
+            "數量越少",
+            "數量不變",
+            "無法判斷"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "統計表中，喜歡甜食18人，喜歡鹹食12人，甜食比鹹食多幾人？",
+          "visual": null,
+          "answer": "6",
+          "opts": [
+            "6",
+            "5",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "圖像統計圖，每個圖示代表2本書，有4個圖示，共有幾本書？",
+          "visual": null,
+          "answer": "8",
+          "opts": [
+            "8",
+            "6",
+            "10",
+            "4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "圖表：A=20，B=15，C=25，哪個最大？",
+          "visual": null,
+          "answer": "C",
+          "opts": [
+            "C",
+            "A",
+            "B",
+            "一樣大"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "圖表：A=20，B=15，C=25，三者合計是？",
+          "visual": null,
+          "answer": "60",
+          "opts": [
+            "60",
+            "50",
+            "55",
+            "70"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "統計表中，1月15次，2月20次，3月10次，哪個月最少？",
+          "visual": null,
+          "answer": "3月",
+          "opts": [
+            "3月",
+            "1月",
+            "2月",
+            "都一樣"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "若一個圖示代表5個，要表示30個需幾個圖示？",
+          "visual": null,
+          "answer": "6",
+          "opts": [
+            "6",
+            "5",
+            "3",
+            "30"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長條圖：甲60分、乙75分、丙55分，哪個分數最高？",
+          "visual": null,
+          "answer": "乙",
+          "opts": [
+            "乙",
+            "甲",
+            "丙",
+            "都一樣"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪種圖表可以用來比較各組數量多少？",
+          "visual": null,
+          "answer": "長條圖",
+          "opts": [
+            "長條圖",
+            "地圖",
+            "日曆",
+            "時刻表"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "圖表：男生25人，女生20人，男女合計幾人？",
+          "visual": null,
+          "answer": "45",
+          "opts": [
+            "45",
+            "5",
+            "50",
+            "25"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "若每個格子代表10台車，3個格子共有幾台車？",
+          "visual": null,
+          "answer": "30",
+          "opts": [
+            "30",
+            "3",
+            "100",
+            "13"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "統計表：甲有32個，乙有28個，甲比乙多幾個？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "2",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長條圖：A組40人，B組35人，C組45人，最多人的組是？",
+          "visual": null,
+          "answer": "C組",
+          "opts": [
+            "C組",
+            "A組",
+            "B組",
+            "都一樣"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長條圖：A組40人，B組35人，C組45人，最少人的組是？",
+          "visual": null,
+          "answer": "B組",
+          "opts": [
+            "B組",
+            "A組",
+            "C組",
+            "都一樣"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "圖表：喜歡畫畫15人，喜歡運動20人，喜歡閱讀10人，三者合計？",
+          "visual": null,
+          "answer": "45",
+          "opts": [
+            "45",
+            "35",
+            "40",
+            "50"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "若要統計全班喜歡的科目，應該用？",
+          "visual": null,
+          "answer": "統計表",
+          "opts": [
+            "統計表",
+            "算術計算",
+            "量尺",
+            "體重計"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長條圖的縱軸通常代表？",
+          "visual": null,
+          "answer": "數量",
+          "opts": [
+            "數量",
+            "顏色",
+            "形狀",
+            "名字"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "統計表：甲=30，乙=30，丙=40，哪組最多？",
+          "visual": null,
+          "answer": "丙",
+          "opts": [
+            "丙",
+            "甲",
+            "乙",
+            "甲和乙一樣多"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "圖像統計圖每個圖示=3，要表示21個需幾個圖示？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "3",
+            "21",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "圖表：1月銷量100，2月銷量80，3月銷量120，2月比3月少幾？",
+          "visual": null,
+          "answer": "40",
+          "opts": [
+            "40",
+            "20",
+            "80",
+            "120"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長條圖：甲=45，乙=55，乙比甲多幾？",
+          "visual": null,
+          "answer": "10",
+          "opts": [
+            "10",
+            "5",
+            "15",
+            "100"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "統計表：星期一30人，星期二25人，星期三35人，哪天人數居中（不多也不少）？",
+          "visual": null,
+          "answer": "星期一",
+          "opts": [
+            "星期一",
+            "星期二",
+            "星期三",
+            "都一樣"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "若每個圖示代表6個，有4個圖示，共幾個？",
+          "visual": null,
+          "answer": "24",
+          "opts": [
+            "24",
+            "10",
+            "36",
+            "12"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長條圖：A=50，B=30，C=20，A是B的幾倍？",
+          "visual": null,
+          "answer": "不到2倍",
+          "opts": [
+            "不到2倍",
+            "2倍",
+            "3倍",
+            "5倍"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最好用來記錄每天天氣？",
+          "visual": null,
+          "answer": "統計表",
+          "opts": [
+            "統計表",
+            "時刻表",
+            "地圖",
+            "食譜"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lotus",
+      "name": "乘法應用題",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "每盒有8個蘋果，5盒共有幾個？",
+          "visual": null,
+          "answer": "40"
+        },
+        {
+          "type": "fi",
+          "q": "3排每排6顆珠子，共幾顆？",
+          "visual": null,
+          "answer": "18"
+        },
+        {
+          "type": "fi",
+          "q": "每袋有9個橘子，4袋共有幾個？",
+          "visual": null,
+          "answer": "36"
+        },
+        {
+          "type": "fi",
+          "q": "每行有7顆珠子，共5行，共有幾顆？",
+          "visual": null,
+          "answer": "35"
+        },
+        {
+          "type": "fi",
+          "q": "每人需要6枝鉛筆，8人共需幾枝？",
+          "visual": null,
+          "answer": "48"
+        },
+        {
+          "type": "fi",
+          "q": "一週有7天，4週有幾天？",
+          "visual": null,
+          "answer": "28"
+        },
+        {
+          "type": "fi",
+          "q": "每組5人，9組共幾人？",
+          "visual": null,
+          "answer": "45"
+        },
+        {
+          "type": "fi",
+          "q": "每班30人，3班共幾人？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "每箱有24瓶，3箱共幾瓶？",
+          "visual": null,
+          "answer": "72"
+        },
+        {
+          "type": "fi",
+          "q": "小明每天跑3圈，一週（7天）共跑幾圈？",
+          "visual": null,
+          "answer": "21"
+        },
+        {
+          "type": "fi",
+          "q": "每行植樹6棵，9行共幾棵？",
+          "visual": null,
+          "answer": "54"
+        },
+        {
+          "type": "fi",
+          "q": "一個月有4週，每週洗2次衣服，共洗幾次？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "每頁有8道題，6頁共幾道題？",
+          "visual": null,
+          "answer": "48"
+        },
+        {
+          "type": "fi",
+          "q": "每人分到6顆糖，7人共需幾顆？",
+          "visual": null,
+          "answer": "42"
+        },
+        {
+          "type": "fi",
+          "q": "教室有8排，每排7張椅子，共幾張椅子？",
+          "visual": null,
+          "answer": "56"
+        },
+        {
+          "type": "fi",
+          "q": "一個停車場有6排，每排停8輛車，共幾輛？",
+          "visual": null,
+          "answer": "48"
+        },
+        {
+          "type": "fi",
+          "q": "小明每天看書30分鐘，一週（7天）共看幾分鐘？",
+          "visual": null,
+          "answer": "210"
+        },
+        {
+          "type": "fi",
+          "q": "3個4等於多少？",
+          "visual": null,
+          "answer": "12"
+        },
+        {
+          "type": "fi",
+          "q": "6個7等於多少？",
+          "visual": null,
+          "answer": "42"
+        },
+        {
+          "type": "fi",
+          "q": "9個8等於多少？",
+          "visual": null,
+          "answer": "72"
+        },
+        {
+          "type": "fi",
+          "q": "一包糖有12顆，買了5包，共幾顆？",
+          "visual": null,
+          "answer": "60"
+        },
+        {
+          "type": "fi",
+          "q": "學校有6個年級，每個年級有4個班，共幾個班？",
+          "visual": null,
+          "answer": "24"
+        },
+        {
+          "type": "fi",
+          "q": "每盒蠟筆有8枝，9盒共幾枝？",
+          "visual": null,
+          "answer": "72"
+        },
+        {
+          "type": "fi",
+          "q": "4個小朋友各帶7本書，共幾本？",
+          "visual": null,
+          "answer": "28"
+        },
+        {
+          "type": "fi",
+          "q": "每天吃3顆藥，吃一週（7天）共吃幾顆？",
+          "visual": null,
+          "answer": "21"
+        },
+        {
+          "type": "mc",
+          "q": "每籃有6顆蘋果，7籃共幾顆？",
+          "visual": null,
+          "answer": "42",
+          "opts": [
+            "42",
+            "36",
+            "48",
+            "13"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每排9人，8排共幾人？",
+          "visual": null,
+          "answer": "72",
+          "opts": [
+            "72",
+            "63",
+            "81",
+            "17"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "小明跳繩5分鐘跳了60下，10分鐘共跳幾下？",
+          "visual": null,
+          "answer": "120",
+          "opts": [
+            "120",
+            "60",
+            "65",
+            "100"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一週有7天，3週有幾天？",
+          "visual": null,
+          "answer": "21",
+          "opts": [
+            "21",
+            "14",
+            "28",
+            "20"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每組5人，6組共幾人？",
+          "visual": null,
+          "answer": "30",
+          "opts": [
+            "30",
+            "25",
+            "35",
+            "11"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每盒8個，4盒共幾個？",
+          "visual": null,
+          "answer": "32",
+          "opts": [
+            "32",
+            "28",
+            "36",
+            "12"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個月有4週，每週5天上課，一個月上課幾天？",
+          "visual": null,
+          "answer": "20",
+          "opts": [
+            "20",
+            "25",
+            "15",
+            "40"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每行7棵樹，9行共幾棵？",
+          "visual": null,
+          "answer": "63",
+          "opts": [
+            "63",
+            "56",
+            "72",
+            "16"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每人得9顆糖，5人共需幾顆？",
+          "visual": null,
+          "answer": "45",
+          "opts": [
+            "45",
+            "40",
+            "54",
+            "14"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個算式解決「每盒6個，3盒共幾個？」",
+          "visual": null,
+          "answer": "6×3",
+          "opts": [
+            "6×3",
+            "6+3",
+            "6-3",
+            "6÷3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每張桌子4條腿，6張桌子共幾條腿？",
+          "visual": null,
+          "answer": "24",
+          "opts": [
+            "24",
+            "20",
+            "28",
+            "10"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每班30人，4班共幾人？",
+          "visual": null,
+          "answer": "120",
+          "opts": [
+            "120",
+            "90",
+            "150",
+            "34"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一隻蜘蛛有8條腿，5隻蜘蛛共幾條腿？",
+          "visual": null,
+          "answer": "40",
+          "opts": [
+            "40",
+            "35",
+            "45",
+            "13"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每行種6棵花，7行共幾棵？",
+          "visual": null,
+          "answer": "42",
+          "opts": [
+            "42",
+            "36",
+            "48",
+            "13"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "小明每天讀5頁書，一週（7天）共讀幾頁？",
+          "visual": null,
+          "answer": "35",
+          "opts": [
+            "35",
+            "30",
+            "40",
+            "12"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3個小朋友，每人有9枝鉛筆，共幾枝？",
+          "visual": null,
+          "answer": "27",
+          "opts": [
+            "27",
+            "21",
+            "33",
+            "12"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每瓶飲料8元，買6瓶共需幾元？",
+          "visual": null,
+          "answer": "48",
+          "opts": [
+            "48",
+            "42",
+            "54",
+            "14"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "5行，每行8個座位，共幾個座位？",
+          "visual": null,
+          "answer": "40",
+          "opts": [
+            "40",
+            "35",
+            "45",
+            "13"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "小紅每天跑步7圈，6天共跑幾圈？",
+          "visual": null,
+          "answer": "42",
+          "opts": [
+            "42",
+            "36",
+            "48",
+            "13"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "9個小朋友，每人分到7顆糖，共需幾顆？",
+          "visual": null,
+          "answer": "63",
+          "opts": [
+            "63",
+            "56",
+            "72",
+            "16"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每條魚2元，買9條共幾元？",
+          "visual": null,
+          "answer": "18",
+          "opts": [
+            "18",
+            "16",
+            "20",
+            "11"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個問題需要用乘法計算？",
+          "visual": null,
+          "answer": "每盒6個蛋，買3盒共幾個",
+          "opts": [
+            "每盒6個蛋，買3盒共幾個",
+            "5個加3個是多少",
+            "10個拿走4個剩幾個",
+            "8顆糖分給4人各幾顆"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每天練習鋼琴30分鐘，一週（7天）共幾分鐘？",
+          "visual": null,
+          "answer": "210",
+          "opts": [
+            "210",
+            "200",
+            "220",
+            "30"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一隻螞蟻有6條腿，9隻螞蟻共幾條腿？",
+          "visual": null,
+          "answer": "54",
+          "opts": [
+            "54",
+            "48",
+            "63",
+            "15"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "每列有8顆珠子，7列共幾顆？",
+          "visual": null,
+          "answer": "56",
+          "opts": [
+            "56",
+            "48",
+            "63",
+            "15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magnolia",
+      "name": "加減混合計算",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "152+34-86=？",
+          "visual": null,
+          "answer": "100"
+        },
+        {
+          "type": "fi",
+          "q": "300-150+80=？",
+          "visual": null,
+          "answer": "230"
+        },
+        {
+          "type": "fi",
+          "q": "500-200-150=？",
+          "visual": null,
+          "answer": "150"
+        },
+        {
+          "type": "fi",
+          "q": "100+250-180=？",
+          "visual": null,
+          "answer": "170"
+        },
+        {
+          "type": "fi",
+          "q": "450-130+80=？",
+          "visual": null,
+          "answer": "400"
+        },
+        {
+          "type": "fi",
+          "q": "600-250-100=？",
+          "visual": null,
+          "answer": "250"
+        },
+        {
+          "type": "fi",
+          "q": "280+120-180=？",
+          "visual": null,
+          "answer": "220"
+        },
+        {
+          "type": "fi",
+          "q": "350+250-400=？",
+          "visual": null,
+          "answer": "200"
+        },
+        {
+          "type": "fi",
+          "q": "480-130+60=？",
+          "visual": null,
+          "answer": "410"
+        },
+        {
+          "type": "fi",
+          "q": "720-320+100=？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "350-150+100=？",
+          "visual": null,
+          "answer": "300"
+        },
+        {
+          "type": "fi",
+          "q": "600-100-300=？",
+          "visual": null,
+          "answer": "200"
+        },
+        {
+          "type": "fi",
+          "q": "200+300-100=？",
+          "visual": null,
+          "answer": "400"
+        },
+        {
+          "type": "fi",
+          "q": "450+150-250=？",
+          "visual": null,
+          "answer": "350"
+        },
+        {
+          "type": "fi",
+          "q": "120+80+50=？",
+          "visual": null,
+          "answer": "250"
+        },
+        {
+          "type": "fi",
+          "q": "300-50+150=？",
+          "visual": null,
+          "answer": "400"
+        },
+        {
+          "type": "fi",
+          "q": "560-260+150=？",
+          "visual": null,
+          "answer": "450"
+        },
+        {
+          "type": "fi",
+          "q": "280+70-150=？",
+          "visual": null,
+          "answer": "200"
+        },
+        {
+          "type": "fi",
+          "q": "420-220+100=？",
+          "visual": null,
+          "answer": "300"
+        },
+        {
+          "type": "fi",
+          "q": "500-50+50=？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "375+125-200=？",
+          "visual": null,
+          "answer": "300"
+        },
+        {
+          "type": "fi",
+          "q": "840-340-300=？",
+          "visual": null,
+          "answer": "200"
+        },
+        {
+          "type": "fi",
+          "q": "190+10+100=？",
+          "visual": null,
+          "answer": "300"
+        },
+        {
+          "type": "fi",
+          "q": "650-350+200=？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "320+80-200=？",
+          "visual": null,
+          "answer": "200"
+        },
+        {
+          "type": "mc",
+          "q": "200+150-100=？",
+          "visual": null,
+          "answer": "250",
+          "opts": [
+            "250",
+            "350",
+            "150",
+            "450"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "500-200+100=？",
+          "visual": null,
+          "answer": "400",
+          "opts": [
+            "400",
+            "300",
+            "600",
+            "200"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "350+50-200=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "150",
+            "250",
+            "100"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "600-300+100=？",
+          "visual": null,
+          "answer": "400",
+          "opts": [
+            "400",
+            "300",
+            "200",
+            "500"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "420+80-300=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "100",
+            "300",
+            "400"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "100+200+300=？",
+          "visual": null,
+          "answer": "600",
+          "opts": [
+            "600",
+            "500",
+            "400",
+            "700"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "900-400-300=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "300",
+            "100",
+            "400"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "先算哪個：250+50-100？",
+          "visual": null,
+          "answer": "250+50",
+          "opts": [
+            "250+50",
+            "50-100",
+            "250-100",
+            "250-50"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "185+15-100=？",
+          "visual": null,
+          "answer": "100",
+          "opts": [
+            "100",
+            "200",
+            "150",
+            "50"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "720-20-200=？",
+          "visual": null,
+          "answer": "500",
+          "opts": [
+            "500",
+            "400",
+            "600",
+            "300"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "450+50-300=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "100",
+            "300",
+            "150"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "300-100+400=？",
+          "visual": null,
+          "answer": "600",
+          "opts": [
+            "600",
+            "500",
+            "700",
+            "400"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "285+15+200=？",
+          "visual": null,
+          "answer": "500",
+          "opts": [
+            "500",
+            "400",
+            "600",
+            "300"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "800-300-400=？",
+          "visual": null,
+          "answer": "100",
+          "opts": [
+            "100",
+            "200",
+            "300",
+            "0"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "400+200-300=？",
+          "visual": null,
+          "answer": "300",
+          "opts": [
+            "300",
+            "400",
+            "200",
+            "100"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "175+25-100=？",
+          "visual": null,
+          "answer": "100",
+          "opts": [
+            "100",
+            "200",
+            "50",
+            "150"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "640-340+200=？",
+          "visual": null,
+          "answer": "500",
+          "opts": [
+            "500",
+            "400",
+            "600",
+            "300"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "750-250-300=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "300",
+            "100",
+            "400"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "380+120-200=？",
+          "visual": null,
+          "answer": "300",
+          "opts": [
+            "300",
+            "200",
+            "400",
+            "100"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "560+40-400=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "100",
+            "300",
+            "600"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "280-80+300=？",
+          "visual": null,
+          "answer": "500",
+          "opts": [
+            "500",
+            "400",
+            "600",
+            "200"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "155+45-100=？",
+          "visual": null,
+          "answer": "100",
+          "opts": [
+            "100",
+            "200",
+            "50",
+            "150"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "600-100-100=？",
+          "visual": null,
+          "answer": "400",
+          "opts": [
+            "400",
+            "300",
+            "500",
+            "200"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "470+30-300=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "100",
+            "300",
+            "400"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "360+40-200=？",
+          "visual": null,
+          "answer": "200",
+          "opts": [
+            "200",
+            "100",
+            "300",
+            "400"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reed-flower",
+      "name": "四邊形三角形",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "正方形有幾個角？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "三角形有幾個邊？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "長方形有幾個直角？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "正方形的四個邊都怎樣？",
+          "visual": null,
+          "answer": "等長"
+        },
+        {
+          "type": "fi",
+          "q": "長方形相對的兩個邊怎樣？",
+          "visual": null,
+          "answer": "等長"
+        },
+        {
+          "type": "fi",
+          "q": "三角形有幾個頂點？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "四邊形有幾個邊？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "三角形的三個角加起來等於幾度？",
+          "visual": null,
+          "answer": "180"
+        },
+        {
+          "type": "fi",
+          "q": "正方形邊長5公分，周長是多少公分？",
+          "visual": null,
+          "answer": "20"
+        },
+        {
+          "type": "fi",
+          "q": "長方形長8公分、寬5公分，周長是多少公分？",
+          "visual": null,
+          "answer": "26"
+        },
+        {
+          "type": "fi",
+          "q": "長方形有幾個頂點？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "正三角形邊長3公分，周長是多少公分？",
+          "visual": null,
+          "answer": "9"
+        },
+        {
+          "type": "fi",
+          "q": "四邊形的四個角加起來等於幾度？",
+          "visual": null,
+          "answer": "360"
+        },
+        {
+          "type": "fi",
+          "q": "三角形三邊3、4、5公分，周長是多少公分？",
+          "visual": null,
+          "answer": "12"
+        },
+        {
+          "type": "fi",
+          "q": "邊長6公分的正方形，周長是多少公分？",
+          "visual": null,
+          "answer": "24"
+        },
+        {
+          "type": "fi",
+          "q": "圓形是四邊形嗎？（是/否）",
+          "visual": null,
+          "answer": "否"
+        },
+        {
+          "type": "fi",
+          "q": "正方形每個角都是幾度？",
+          "visual": null,
+          "answer": "90"
+        },
+        {
+          "type": "fi",
+          "q": "長方形長10公分、寬4公分，周長是多少公分？",
+          "visual": null,
+          "answer": "28"
+        },
+        {
+          "type": "fi",
+          "q": "五邊形有幾個頂點？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "fi",
+          "q": "正方形和長方形都屬於什麼圖形？",
+          "visual": null,
+          "answer": "四邊形"
+        },
+        {
+          "type": "fi",
+          "q": "三角形最少幾個角？",
+          "visual": null,
+          "answer": "3"
+        },
+        {
+          "type": "fi",
+          "q": "正三角形三邊都等長，邊長4公分，周長是多少公分？",
+          "visual": null,
+          "answer": "12"
+        },
+        {
+          "type": "fi",
+          "q": "長方形長7公分、寬3公分，周長是多少公分？",
+          "visual": null,
+          "answer": "20"
+        },
+        {
+          "type": "fi",
+          "q": "正方形面積=邊長×邊長，邊長3公分，面積是多少平方公分？",
+          "visual": null,
+          "answer": "9"
+        },
+        {
+          "type": "fi",
+          "q": "六邊形有幾個角？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "mc",
+          "q": "四邊形有幾個邊？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "3",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "三角形有幾個角？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "3",
+            "4",
+            "2",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正方形的四個邊？",
+          "visual": null,
+          "answer": "都相等",
+          "opts": [
+            "都相等",
+            "相對邊相等",
+            "不相等",
+            "各不相同"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個是四邊形？",
+          "visual": null,
+          "answer": "長方形",
+          "opts": [
+            "長方形",
+            "三角形",
+            "圓形",
+            "五邊形"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長方形相對的邊？",
+          "visual": null,
+          "answer": "等長",
+          "opts": [
+            "等長",
+            "不等長",
+            "都不等長",
+            "無法判斷"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正方形每個角是幾度？",
+          "visual": null,
+          "answer": "90度",
+          "opts": [
+            "90度",
+            "60度",
+            "45度",
+            "180度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "三角形所有角度之和？",
+          "visual": null,
+          "answer": "180度",
+          "opts": [
+            "180度",
+            "90度",
+            "360度",
+            "270度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正方形周長=？",
+          "visual": null,
+          "answer": "邊長×4",
+          "opts": [
+            "邊長×4",
+            "邊長×2",
+            "邊長+4",
+            "邊長×3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長方形周長=？",
+          "visual": null,
+          "answer": "(長+寬)×2",
+          "opts": [
+            "(長+寬)×2",
+            "長×寬",
+            "長+寬",
+            "長×4"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個圖形所有邊都相等？",
+          "visual": null,
+          "answer": "正方形",
+          "opts": [
+            "正方形",
+            "長方形",
+            "直角三角形",
+            "梯形"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "邊長5公分的正方形周長是？",
+          "visual": null,
+          "answer": "20公分",
+          "opts": [
+            "20公分",
+            "25公分",
+            "10公分",
+            "15公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長方形長6公分、寬4公分，周長是？",
+          "visual": null,
+          "answer": "20公分",
+          "opts": [
+            "20公分",
+            "24公分",
+            "10公分",
+            "48公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個是三角形的特徵？",
+          "visual": null,
+          "answer": "三個角",
+          "opts": [
+            "三個角",
+            "四個邊",
+            "兩個頂點",
+            "360度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列圖形哪個不是四邊形？",
+          "visual": null,
+          "answer": "圓形",
+          "opts": [
+            "圓形",
+            "正方形",
+            "長方形",
+            "菱形"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正三角形三邊都是4公分，周長是？",
+          "visual": null,
+          "answer": "12公分",
+          "opts": [
+            "12公分",
+            "8公分",
+            "4公分",
+            "16公分"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "五邊形有幾個角？",
+          "visual": null,
+          "answer": "5",
+          "opts": [
+            "5",
+            "4",
+            "6",
+            "3"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "六邊形有幾個邊？",
+          "visual": null,
+          "answer": "6",
+          "opts": [
+            "6",
+            "5",
+            "4",
+            "7"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個說法正確？",
+          "visual": null,
+          "answer": "正方形是特殊的長方形",
+          "opts": [
+            "正方形是特殊的長方形",
+            "長方形是特殊的正方形",
+            "三角形有4個角",
+            "圓形有4個邊"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個四邊形所有角之和？",
+          "visual": null,
+          "answer": "360度",
+          "opts": [
+            "360度",
+            "180度",
+            "270度",
+            "90度"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長方形有幾個直角？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "2",
+            "3",
+            "1"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪種三角形三個邊都相等？",
+          "visual": null,
+          "answer": "正三角形",
+          "opts": [
+            "正三角形",
+            "等腰三角形",
+            "直角三角形",
+            "鈍角三角形"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "長方形和正方形都有幾個直角？",
+          "visual": null,
+          "answer": "4",
+          "opts": [
+            "4",
+            "2",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "三角形的周長=？",
+          "visual": null,
+          "answer": "三邊長度相加",
+          "opts": [
+            "三邊長度相加",
+            "三邊相乘",
+            "底×高",
+            "底×高÷2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個圖形沒有角？",
+          "visual": null,
+          "answer": "圓形",
+          "opts": [
+            "圓形",
+            "三角形",
+            "正方形",
+            "長方形"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "正方形面積是25平方公分，邊長是幾公分？",
+          "visual": null,
+          "answer": "5公分",
+          "opts": [
+            "5公分",
+            "4公分",
+            "6公分",
+            "25公分"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "water-lily",
+      "name": "容量測量",
+      "questions": [
+        {
+          "type": "fi",
+          "q": "1公升=多少毫升？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "2500毫升=幾公升幾毫升？",
+          "visual": null,
+          "answer": "2公升500毫升"
+        },
+        {
+          "type": "fi",
+          "q": "3公升=多少毫升？",
+          "visual": null,
+          "answer": "3000"
+        },
+        {
+          "type": "fi",
+          "q": "1000毫升=多少公升？",
+          "visual": null,
+          "answer": "1"
+        },
+        {
+          "type": "fi",
+          "q": "2公升500毫升=多少毫升？",
+          "visual": null,
+          "answer": "2500"
+        },
+        {
+          "type": "fi",
+          "q": "5公升=多少毫升？",
+          "visual": null,
+          "answer": "5000"
+        },
+        {
+          "type": "fi",
+          "q": "4000毫升=多少公升？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "1公升半=多少毫升？",
+          "visual": null,
+          "answer": "1500"
+        },
+        {
+          "type": "fi",
+          "q": "500毫升+500毫升=多少毫升？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "2公升-500毫升=多少毫升？",
+          "visual": null,
+          "answer": "1500"
+        },
+        {
+          "type": "fi",
+          "q": "3公升200毫升=多少毫升？",
+          "visual": null,
+          "answer": "3200"
+        },
+        {
+          "type": "fi",
+          "q": "1500毫升=幾公升幾毫升？",
+          "visual": null,
+          "answer": "1公升500毫升"
+        },
+        {
+          "type": "fi",
+          "q": "6000毫升=多少公升？",
+          "visual": null,
+          "answer": "6"
+        },
+        {
+          "type": "fi",
+          "q": "1公升的一半是多少毫升？",
+          "visual": null,
+          "answer": "500"
+        },
+        {
+          "type": "fi",
+          "q": "300毫升+700毫升=多少毫升？",
+          "visual": null,
+          "answer": "1000"
+        },
+        {
+          "type": "fi",
+          "q": "2公升+500毫升=多少毫升？",
+          "visual": null,
+          "answer": "2500"
+        },
+        {
+          "type": "fi",
+          "q": "4500毫升=幾公升幾毫升？",
+          "visual": null,
+          "answer": "4公升500毫升"
+        },
+        {
+          "type": "fi",
+          "q": "7公升=多少毫升？",
+          "visual": null,
+          "answer": "7000"
+        },
+        {
+          "type": "fi",
+          "q": "8000毫升=多少公升？",
+          "visual": null,
+          "answer": "8"
+        },
+        {
+          "type": "fi",
+          "q": "1公升的四分之一是多少毫升？",
+          "visual": null,
+          "answer": "250"
+        },
+        {
+          "type": "fi",
+          "q": "3公升500毫升+500毫升=幾公升？",
+          "visual": null,
+          "answer": "4"
+        },
+        {
+          "type": "fi",
+          "q": "2公升-800毫升=多少毫升？",
+          "visual": null,
+          "answer": "1200"
+        },
+        {
+          "type": "fi",
+          "q": "1公升300毫升=多少毫升？",
+          "visual": null,
+          "answer": "1300"
+        },
+        {
+          "type": "fi",
+          "q": "2公升750毫升=多少毫升？",
+          "visual": null,
+          "answer": "2750"
+        },
+        {
+          "type": "fi",
+          "q": "5000毫升=多少公升？",
+          "visual": null,
+          "answer": "5"
+        },
+        {
+          "type": "mc",
+          "q": "1公升=幾毫升？",
+          "visual": null,
+          "answer": "1000",
+          "opts": [
+            "1000",
+            "100",
+            "10000",
+            "500"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公升=幾毫升？",
+          "visual": null,
+          "answer": "2000",
+          "opts": [
+            "2000",
+            "200",
+            "20000",
+            "2"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3000毫升=幾公升？",
+          "visual": null,
+          "answer": "3",
+          "opts": [
+            "3",
+            "30",
+            "0.3",
+            "300"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公升500毫升=幾毫升？",
+          "visual": null,
+          "answer": "1500",
+          "opts": [
+            "1500",
+            "150",
+            "1050",
+            "15000"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最多？",
+          "visual": null,
+          "answer": "2公升",
+          "opts": [
+            "2公升",
+            "1500毫升",
+            "1000毫升",
+            "1公升800毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "500毫升+600毫升=？",
+          "visual": null,
+          "answer": "1100毫升",
+          "opts": [
+            "1100毫升",
+            "1000毫升",
+            "1200毫升",
+            "110毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公升-500毫升=？",
+          "visual": null,
+          "answer": "1500毫升",
+          "opts": [
+            "1500毫升",
+            "1000毫升",
+            "1200毫升",
+            "2500毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "4500毫升=幾公升幾毫升？",
+          "visual": null,
+          "answer": "4公升500毫升",
+          "opts": [
+            "4公升500毫升",
+            "45公升0毫升",
+            "4公升50毫升",
+            "4公升5毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公升的一半是多少毫升？",
+          "visual": null,
+          "answer": "500",
+          "opts": [
+            "500",
+            "250",
+            "1000",
+            "200"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最少？",
+          "visual": null,
+          "answer": "500毫升",
+          "opts": [
+            "1公升",
+            "500毫升",
+            "1公升500毫升",
+            "2公升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "3公升200毫升=幾毫升？",
+          "visual": null,
+          "answer": "3200",
+          "opts": [
+            "3200",
+            "3020",
+            "32000",
+            "320"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1500毫升=幾公升幾毫升？",
+          "visual": null,
+          "answer": "1公升500毫升",
+          "opts": [
+            "1公升500毫升",
+            "15公升0毫升",
+            "1公升50毫升",
+            "1公升5毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個正確？",
+          "visual": null,
+          "answer": "1公升=1000毫升",
+          "opts": [
+            "1公升=1000毫升",
+            "1公升=100毫升",
+            "1公升=10000毫升",
+            "1公升=500毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公升300毫升+700毫升=幾公升？",
+          "visual": null,
+          "answer": "3公升",
+          "opts": [
+            "3公升",
+            "2公升",
+            "2.5公升",
+            "3公升300毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公升400毫升+600毫升=？",
+          "visual": null,
+          "answer": "2公升",
+          "opts": [
+            "2公升",
+            "1公升1000毫升",
+            "1公升",
+            "2000公升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "6公升=幾毫升？",
+          "visual": null,
+          "answer": "6000",
+          "opts": [
+            "6000",
+            "600",
+            "60000",
+            "6"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個等於2公升500毫升？",
+          "visual": null,
+          "answer": "2500毫升",
+          "opts": [
+            "2500毫升",
+            "250毫升",
+            "25000毫升",
+            "2050毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一瓶水有1公升，另一瓶有800毫升，共幾毫升？",
+          "visual": null,
+          "answer": "1800",
+          "opts": [
+            "1800",
+            "1008",
+            "800",
+            "2800"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一個杯子可裝300毫升，5杯共幾毫升？",
+          "visual": null,
+          "answer": "1500",
+          "opts": [
+            "1500",
+            "1000",
+            "300",
+            "3005"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "7000毫升=幾公升？",
+          "visual": null,
+          "answer": "7",
+          "opts": [
+            "7",
+            "70",
+            "700",
+            "0.7"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個最接近1公升？",
+          "visual": null,
+          "answer": "999毫升",
+          "opts": [
+            "999毫升",
+            "1100毫升",
+            "900毫升",
+            "500毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "1公升的四分之一是多少毫升？",
+          "visual": null,
+          "answer": "250",
+          "opts": [
+            "250",
+            "500",
+            "100",
+            "750"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "2公升的一半是幾毫升？",
+          "visual": null,
+          "answer": "1000",
+          "opts": [
+            "1000",
+            "500",
+            "2000",
+            "250"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "下列哪個容量換算正確？",
+          "visual": null,
+          "answer": "3公升=3000毫升",
+          "opts": [
+            "3公升=3000毫升",
+            "3公升=300毫升",
+            "3公升=30000毫升",
+            "3公升=30毫升"
+          ]
+        },
+        {
+          "type": "mc",
+          "q": "一桶果汁有2公升，5桶共幾毫升？",
+          "visual": null,
+          "answer": "10000",
+          "opts": [
+            "10000",
+            "2500",
+            "1000",
+            "5000"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g3-sunstar",
+      "name": "視覺加法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "桌上有[蘋果:4]個，又放了[蘋果:4]個，共有幾個蘋果？",
+          "operation": "add",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[橘子:5]個，又放了[橘子:7]個，共有幾個橘子？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[糖果:6]個，又放了[糖果:10]個，共有幾個糖果？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[餅乾:7]個，又放了[餅乾:11]個，共有幾個餅乾？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[鉛筆:8]個，又放了[鉛筆:6]個，共有幾個鉛筆？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[書:9]個，又放了[書:9]個，共有幾個書？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[貼紙:10]個，又放了[貼紙:8]個，共有幾個貼紙？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[積木:11]個，又放了[積木:5]個，共有幾個積木？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[氣球:12]個，又放了[氣球:6]個，共有幾個氣球？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[花朵:13]個，又放了[花朵:5]個，共有幾個花朵？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[蘋果:4]個，又放了[蘋果:4]個，共有幾個蘋果？",
+          "operation": "add",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[橘子:5]個，又放了[橘子:7]個，共有幾個橘子？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[糖果:6]個，又放了[糖果:10]個，共有幾個糖果？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[餅乾:7]個，又放了[餅乾:11]個，共有幾個餅乾？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[鉛筆:8]個，又放了[鉛筆:6]個，共有幾個鉛筆？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[書:9]個，又放了[書:9]個，共有幾個書？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[貼紙:10]個，又放了[貼紙:8]個，共有幾個貼紙？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[積木:11]個，又放了[積木:5]個，共有幾個積木？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[氣球:12]個，又放了[氣球:6]個，共有幾個氣球？",
+          "operation": "add",
+          "answer": "18"
+        },
+        {
+          "type": "visual",
+          "q": "桌上有[花朵:13]個，又放了[花朵:5]個，共有幾個花朵？",
+          "operation": "add",
+          "answer": "18"
+        }
+      ]
+    },
+    {
+      "id": "g3-butterfly",
+      "name": "視覺減法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "盒子裡有[蘋果:7]個，拿走了4個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[橘子:10]個，拿走了7個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[糖果:13]個，拿走了10個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[餅乾:14]個，拿走了11個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[鉛筆:10]個，拿走了6個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[書:12]個，拿走了9個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[貼紙:12]個，拿走了8個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[積木:13]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[氣球:14]個，拿走了6個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[花朵:15]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[蘋果:7]個，拿走了4個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[橘子:10]個，拿走了7個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[糖果:13]個，拿走了10個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[餅乾:14]個，拿走了11個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[鉛筆:10]個，拿走了6個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[書:12]個，拿走了9個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "3"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[貼紙:12]個，拿走了8個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "4"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[積木:13]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[氣球:14]個，拿走了6個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "8"
+        },
+        {
+          "type": "visual",
+          "q": "盒子裡有[花朵:15]個，拿走了5個，還剩幾個？",
+          "operation": "subtract",
+          "answer": "10"
+        }
+      ]
+    },
+    {
+      "id": "g3-rainbow",
+      "name": "雙名詞加法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "這裡有[男生:4]個和[女生:6]個，一共有幾個？",
+          "operation": "add",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[蘋果:5]個和[橘子:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[貓:6]個和[狗:8]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[紅球:7]個和[藍球:9]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[書:8]個和[鉛筆:4]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[玫瑰:9]個和[百合:5]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[小雞:4]個和[小鴨:6]個，一共有幾個？",
+          "operation": "add",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[杯子:5]個和[盤子:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[男生:6]個和[女生:8]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[蘋果:7]個和[橘子:9]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[貓:8]個和[狗:4]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[紅球:9]個和[藍球:5]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[書:4]個和[鉛筆:6]個，一共有幾個？",
+          "operation": "add",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[玫瑰:5]個和[百合:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[小雞:6]個和[小鴨:8]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[杯子:7]個和[盤子:9]個，一共有幾個？",
+          "operation": "add",
+          "answer": "16"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[男生:8]個和[女生:4]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[蘋果:9]個和[橘子:5]個，一共有幾個？",
+          "operation": "add",
+          "answer": "14"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[貓:4]個和[狗:6]個，一共有幾個？",
+          "operation": "add",
+          "answer": "10"
+        },
+        {
+          "type": "visual",
+          "q": "這裡有[紅球:5]個和[藍球:7]個，一共有幾個？",
+          "operation": "add",
+          "answer": "12"
+        }
+      ]
+    },
+    {
+      "id": "g3-starlight",
+      "name": "雙名詞減法",
+      "questions": [
+        {
+          "type": "visual",
+          "q": "老師有[餅乾:10]個，分給了[小朋友:4]個，還剩幾個餅乾？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[糖果:11]個，分給了[同學:5]個，還剩幾個糖果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[蘋果:12]個，分給了[朋友:6]個，還剩幾個蘋果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[書:13]個，分給了[同學:7]個，還剩幾個書？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[貼紙:14]個，分給了[小孩:8]個，還剩幾個貼紙？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[積木:10]個，分給了[朋友:4]個，還剩幾個積木？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[橘子:11]個，分給了[鄰居:5]個，還剩幾個橘子？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[鉛筆:12]個，分給了[同學:6]個，還剩幾個鉛筆？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[餅乾:13]個，分給了[小朋友:7]個，還剩幾個餅乾？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[糖果:14]個，分給了[同學:8]個，還剩幾個糖果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[蘋果:10]個，分給了[朋友:4]個，還剩幾個蘋果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[書:11]個，分給了[同學:5]個，還剩幾個書？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[貼紙:12]個，分給了[小孩:6]個，還剩幾個貼紙？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[積木:13]個，分給了[朋友:7]個，還剩幾個積木？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[橘子:14]個，分給了[鄰居:8]個，還剩幾個橘子？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[鉛筆:10]個，分給了[同學:4]個，還剩幾個鉛筆？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[餅乾:11]個，分給了[小朋友:5]個，還剩幾個餅乾？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[糖果:12]個，分給了[同學:6]個，還剩幾個糖果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[蘋果:13]個，分給了[朋友:7]個，還剩幾個蘋果？",
+          "operation": "subtract",
+          "answer": "6"
+        },
+        {
+          "type": "visual",
+          "q": "老師有[書:14]個，分給了[同學:8]個，還剩幾個書？",
+          "operation": "subtract",
+          "answer": "6"
+        }
+      ]
+    }
+  ]
+}
